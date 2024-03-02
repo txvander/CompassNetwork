@@ -1,4 +1,4 @@
-nav {
+header nav {
     justify-content: right;
     align-items: right;
     left: 0;
@@ -10,7 +10,7 @@ nav {
     width: 100%;
 }
 
-nav img {
+header nav img {
     height: 80%;
     width: auto;
     margin-right: 1%;
@@ -19,7 +19,7 @@ nav img {
     user-select: none;
 }
 
-nav h1 {
+header nav h1 {
     font-size: 4vw;
     font-weight: 800;
     margin-right: 1%;
