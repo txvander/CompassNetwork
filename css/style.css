@@ -1,5 +1,5 @@
 nav {
-    justify-content: left;
+    justify-content: right;
     align-items: center;
     left: 0;
     margin: 0;
@@ -9,6 +9,22 @@ nav {
     height: 7vw;
     width: 100%;
 }
-body {
-    background-image: url("https://media.discordapp.net/attachments/1213308290973433946/1213314587785437206/Screenshot_2024-03-01_at_8.33.51_PM.png?ex=65f50644&is=65e29144&hm=7edbe19da2c74cfeb0571c2c0fd2f5f41a73b304ed57cb757011ca238e2d47f6&=&format=webp&quality=lossless&width=1051&height=671");
+
+nav img {
+    height: 80%;
+    width: auto;
+    margin-right: 1%;
+    border-radius: 1vw;
+    cursor: pointer;
+    user-select: none;
+}
+
+nav h1 {
+    font-size: 4vw;
+    font-weight: 800;
+    margin-right: 1%;
+}
+
+header {
+    background-image: url("https://media.discordapp.net/attachments/1213308290973433946/1213314587785437206/Screenshot_2024-03-01_at_8.33.51_PM.png?ex=65f50644&is=65e29144&hm=7edbe19da2c74cfeb0571c2c0fd2f5f41a73b304ed57cb757011ca238e2d47f6&=&format=webp&quality=lossless&width=auto&height=auto");
 }
