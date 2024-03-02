@@ -1,0 +1,14 @@
+nav {
+    justify-content: left;
+    align-items: center;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    height: 7vw;
+    width: 100%;
+}
+body {
+    background-image: url("../../images/pages/index.png");
+}
