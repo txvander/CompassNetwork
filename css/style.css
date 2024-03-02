@@ -1,34 +1,98 @@
-/* Style the navigation bar */
-.navbar {
-    width: 100%;
-    background-color: #555;
-    overflow: auto;
-  }
-  
-  /* Navbar links */
-  .navbar a {
-    float: left;
-    text-align: center;
-    padding: 12px;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.main-box {
+    display: inline;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: auto;
+    max-width: 60rem;
+    place-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+body {    
+    background-color: black;
+    margin: 0;   
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 0;
+    font-family: 'Bebas Neue', sans-serif;
     color: white;
+    text-shadow: 10px 10px 4px black;
+}
+
+h2 {
+    font-size: 1rem;
+    line-height: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    text-shadow: 1px 3px 4px black;
+}
+
+.topnav {
+    float: right;
+    color: #adadad;
+    text-align: center;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.467);
+   
+  }
+
+.nav-tab {
+    float: right;
+    color: #adadad;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', sans-serif;
+    transition: color .3s ease-in-out;
+  }
+
+  .right-padding-nav {
+    padding-right: 25px;
   }
   
-  /* Navbar links on mouse-over */
-  .navbar a:hover {
-    background-color: #000;
+  .left-padding-nav {
+    padding-left: 5rem;
   }
   
-  /* Current/active navbar link */
-  .active {
-    background-color: #04AA6D;
+  .topnav a:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  .topnav a.active {
+    color: white;
+   
   }
   
-  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-  @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-    }
-  }
+  .main-holder {
+  background-image: url("https://media.discordapp.net/attachments/1213308290973433946/1213314587785437206/Screenshot_2024-03-01_at_8.33.51_PM.png ex=65f50644&is=65e29144&hm=7edbe19da2c74cfeb0571c2c0fd2f5f41a73b304ed57cb757011ca238e2d47f6&=&format=webp&quality=lossless&width=1051&height=671");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: cover;
+}
+
+a {
+  
+  color: #adadad;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
+  transition: color .3s ease-in-out;
+}
+
+
+.main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
