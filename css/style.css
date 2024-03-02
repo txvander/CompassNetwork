@@ -29,3 +29,16 @@ header {
     background-image: url("https://media.discordapp.net/attachments/1213308290973433946/1213314587785437206/Screenshot_2024-03-01_at_8.33.51_PM.png?ex=65f50644&is=65e29144&hm=7edbe19da2c74cfeb0571c2c0fd2f5f41a73b304ed57cb757011ca238e2d47f6&=&format=webp&quality=lossless&width=auto&height=auto");
     background-repeat: no-repeat;
 }
+
+.bg {
+    
+    background-image: url("https://media.discordapp.net/attachments/1213308290973433946/1213314587785437206/Screenshot_2024-03-01_at_8.33.51_PM.png?ex=65f50644&is=65e29144&hm=7edbe19da2c74cfeb0571c2c0fd2f5f41a73b304ed57cb757011ca238e2d47f6&=&format=webp&quality=lossless&width=auto&height=auto");
+  
+    
+    height: 100%;
+  
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
