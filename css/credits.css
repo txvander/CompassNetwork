@@ -98,9 +98,9 @@ a {
 }
 .header {
   padding: 60px;
-  background-image: url();
+  background-image: url("https://cdn.discordapp.com/attachments/1150431390362517624/1213872073890336829/Screenshot_2024-03-01_at_8.35.46_PM.png?ex=65f70d77&is=65e49877&hm=4a647a9b3505a6733088675717d5c2ab2cb77d621784bd2df8c7fb2528be377c&");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 650px;
   text-align: center;
 }
