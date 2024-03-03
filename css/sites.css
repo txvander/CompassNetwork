@@ -103,3 +103,12 @@ a {
   height: 650px;
   text-align: center;
 }
+.footer-logo-holder 
+{
+  overflow: hidden;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
