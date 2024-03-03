@@ -30,7 +30,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 0;
     font-family: 'Bebas Neue', sans-serif;
     color: white;
@@ -95,4 +95,12 @@ a {
     display: flex;
     height: 100%;
     width: 100%;
+}
+.header {
+  padding: 60px;
+  background-image: url("https://cdn.discordapp.com/attachments/1150431390362517624/1213670652905660476/tumblr_inline_o29dknziVa1rtb73a_500.jpg?ex=65f651e0&is=65e3dce0&hm=80ddd4cc88088f2e66c2d6c3b3abe500a9de925def21f2df89f626c20068a1e9&");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  text-align: center;
 }
