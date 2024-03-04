@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 html {
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -98,7 +98,7 @@ a {
 }
 .header {
   padding: 60px;
-  background-image: url("https://cdn.discordapp.com/attachments/1150431390362517624/1213872221840343080/Screenshot_2024-03-01_at_8.35.24_PM.png?ex=65f70d9a&is=65e4989a&hm=5ac4ed400691e25d014a28c0ff4b6959e2d9cda531ab8cf3816a4d9ed700d882&");
+  background-image: url(pages/contact.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 650px;

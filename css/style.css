@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 html {
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -104,7 +104,7 @@ a {
 }
 .header {
   padding: 60px;
-  background-image: url("https://cdn.discordapp.com/attachments/1150431390362517624/1213672472445190164/firewatch-sunrise-minimal-4k-u9-1366x768.jpg?ex=65f65392&is=65e3de92&hm=a097cd8e84df55e1ad45627ad95218953e46402e37b2a2ee724fd08e86e6e04e&");
+  background-image: url(pages/index.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 650px;
