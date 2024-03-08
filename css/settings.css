@@ -74,7 +74,7 @@ h2 {
   }
   
   .main-holder {
-  background-image: url(pages/settings.png);
+  background-image: url(..pages/settings.png);
   background-repeat: repeat-x;
   background-position: center;
   background-size: cover;
