@@ -98,7 +98,7 @@ a {
 }
 .header {
   padding: 60px;
-  background-image: url(pages/contact.png);
+  background-image: url(../images/contact.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 650px;

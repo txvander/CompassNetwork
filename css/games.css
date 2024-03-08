@@ -98,7 +98,7 @@ a {
 }
 .header {
   padding: 60px;
-  background-image: url(pages/games.png);
+  background-image: url(../images/games.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 690px;

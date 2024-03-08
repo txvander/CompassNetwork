@@ -97,7 +97,7 @@ a {
 }
 .header {
   padding: 60px;
-  background-image: url(pages/settings.png);
+  background-image: url(../images/settings.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 650px;
