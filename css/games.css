@@ -21,6 +21,10 @@ body {
     margin: 0;   
 }
 
+main { 
+  text-align: center;
+}
+
 h1 {
     font-size: 6rem;
     line-height: 0;
@@ -39,7 +43,7 @@ h2 {
 
 .topnav {
     float: right;
-    color: #adadad;
+    color: #eeeeee;
     text-align: center;
     width: fit-content;
 
@@ -48,7 +52,7 @@ h2 {
 
 .nav-tab {
     float: right;
-    color: #adadad;
+    color: #eeeeee;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -81,7 +85,7 @@ h2 {
   background-size: cover;
 }
 
-a {
+.topnav a {
   
   color: #adadad;
   text-align: center;
@@ -138,4 +142,26 @@ a {
   transition: color .3s ease-in-out;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.games .game {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+
+main { 
+  text-align: center;
+}
+
+.game a img {
+  width: 70%;
+  height: 70%;
+  border: 0.23rem solid #111;
+}
+
+main h1 {
+  padding-top: 1rem;
 }
