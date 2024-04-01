@@ -144,31 +144,40 @@ h2 {
   padding-bottom: 1.5rem;
 }
 
-.games .game {
+.games {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  
-}
-.cap {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  color:white;
-  text-align: center;
-  padding-left: 130px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
-main { 
-  text-align: center;
+.game {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  position: relative;
+  transition: transform .3s ease-in-out;
+
+}
+
+.game:hover {
+  transform: scale(1.05);
+  z-index: 1;
 }
 
 .game a img {
-  width: 70%;
-  height: 70%;
-  border: 0.23rem solid #111;
+  display: block;
+  max-width: 100%;
+  transition: transform .3s ease-in-out;
+  width: 50%;
+}
+
+.game a:hover img {
+  transform: scale(1.1);
+}
+main { 
+  text-align: center;
 }
 
 main h1 {
