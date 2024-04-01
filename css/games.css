@@ -151,6 +151,15 @@ h2 {
   align-items: center;
   
 }
+.cap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  color:white;
+  text-align: center;
+  padding-left: 130px;
+}
 
 main { 
   text-align: center;
