@@ -18,7 +18,8 @@ html {
 
 body {    
     background-color: black;
-    margin: 0;   
+    margin: 0; 
+ 
 }
 
 main { 
@@ -153,24 +154,23 @@ h2 {
 }
 
 .game {
-  display: flex;
-  flex-direction: row;
-  margin: 10px;
-  position: relative;
-  transition: transform .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 
 }
 
 .game:hover {
-  transform: scale(1.05);
   z-index: 1;
 }
 
 .game a img {
-  display: block;
-  max-width: 100%;
-  transition: transform .3s ease-in-out;
-  width: 50%;
+    height: auto;
+    width:  150px;
+    margin: 1.5rem;
+    height: 50%;
+    object-fit: cover;
 }
 
 .game a:hover img {
