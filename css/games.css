@@ -172,7 +172,7 @@ h2 {
     height: 50%;
     object-fit: cover;
     border-radius: 15px;
-    transition: transform .25s ease;
+    transition: transform .35s ease;
 }
 
 .game a:hover img {
