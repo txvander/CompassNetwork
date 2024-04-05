@@ -178,5 +178,10 @@ a {
   font-size: 27px;
   text-align: center;
   color: #FFFFFF;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;  
+}
+h1 {
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
