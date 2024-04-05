@@ -152,3 +152,15 @@ a {
   width: 4rem;
   height: 4rem;
 }
+.credits {
+  overflow: hidden;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  align-items: top;
+  flex-wrap: wrap;
+}
