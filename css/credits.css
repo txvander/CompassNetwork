@@ -50,11 +50,16 @@ h2 {
     float: right;
     color: #adadad;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 16px;
     text-decoration: none;
     font-size: 1.2rem;
     font-family: 'Bebas Neue', sans-serif;
     transition: color .3s ease-in-out;
+  }
+
+  .nav-tab img{
+    width: 75px;
+    height: 75px;
   }
 
   .right-padding-nav {
