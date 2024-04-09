@@ -29,6 +29,9 @@ h1 {
     text-shadow: 10px 10px 4px black;
 }
 
+.h1p {
+  font-size: 16rem;
+}
 h2 {
     font-size: 1.5rem;
     line-height: 0;
@@ -55,9 +58,6 @@ h2 {
   transition: color.3s ease-in-out;
 }
 
-.home-tab {
-  float: left;
-}
   .nav-tab img{
     width: 80px;
     height: 75px;
