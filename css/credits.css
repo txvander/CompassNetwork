@@ -38,25 +38,26 @@ h2 {
 }
 
 .topnav {
-    float: right;
-    color: #adadad;
-    text-align: center;
-    width: fit-content;
-
-   
-  }
+  float: right;
+  color: #adadad;
+  text-align: center;
+  width: fit-content;
+}
 
 .nav-tab {
-    float: right;
-    color: #adadad;
-    text-align: center;
-    padding: 16px 16px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-family: 'Bebas Neue', sans-serif;
-    transition: color .3s ease-in-out;
-  }
+  float: right;
+  color: #adadad;
+  text-align: center;
+  padding: 25px 25px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  transition: color.3s ease-in-out;
+}
 
+.home-tab {
+  float: left;
+}
   .nav-tab img{
     width: 80px;
     height: 75px;
