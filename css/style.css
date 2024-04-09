@@ -30,6 +30,9 @@ h1 {
   text-align: center;
   padding-top: 30px;
 }
+.h1p {
+  font-size: 16rem;
+}
 p {
 color: white;
 font-family: 'Montserrat', sans-serif;
