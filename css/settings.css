@@ -29,7 +29,7 @@ h1 {
     text-shadow: 10px 10px 4px black;
 }
 .h1p {
-  font-size: 16rem;
+  font-size: 12rem;
 }
 h2 {
     font-size: 1.5rem;
@@ -41,7 +41,7 @@ h2 {
 
 .topnav {
     float: right;
-    color: #adadad;
+    color: #FFFFFF;
     text-align: center;
     width: fit-content;
    
@@ -49,9 +49,9 @@ h2 {
 
   .nav-tab {
     float: right;
-    color: #adadad;
+    color: #FFFFFF;
     text-align: center;
-    padding: 25px 25px;
+    padding: 35px 35px;
     text-decoration: none;
     font-size: 1.5rem;
     font-family: 'Bebas Neue', sans-serif;
@@ -76,7 +76,7 @@ h2 {
   }
   
   .main-holder {
-  background-image: url(../images/settings.png);
+  background-image: url(../images/u.png);
   background-repeat: repeat-x;
   background-position: center;
   background-size: cover;
@@ -99,7 +99,7 @@ a {
 }
 .header {
   padding: 60px;
-  background-image: url(../images/settings.png);
+  background-image: url(../images/u.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 650px;

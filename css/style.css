@@ -14,6 +14,7 @@ html {
     place-content: center;
     padding-left: 2rem;
     padding-right: 2rem;
+    position: relative;
 }
 
 body {    
@@ -31,7 +32,12 @@ h1 {
   padding-top: 30px;
 }
 .h1p {
-  font-size: 16rem;
+  font-size: 12rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: -200%;
 }
 p {
 color: white;
@@ -45,12 +51,12 @@ h2 {
     line-height: 0;
     font-family: 'Bebas Neue', sans-serif;
     color: white;
-    text-shadow: 1px 3px 4px black;
+    text-shadow: 7px 7px 7px black;
 }
 
 .topnav {
     float: right;
-    color: #adadad;
+    color: #FFFFFF;
     text-align: center;
     width: fit-content;
    
@@ -58,9 +64,9 @@ h2 {
 
   .nav-tab {
     float: right;
-    color: #adadad;
+    color: #FFFFFF;
     text-align: center;
-    padding: 25px 25px;
+    padding: 35px 35px;
     text-decoration: none;
     font-size: 1.5rem;
     font-family: 'Bebas Neue', sans-serif;
@@ -107,11 +113,12 @@ a {
 }
 .header {
   padding: 60px;
-  background-image: url(../images/index.jpg);
+  background-image: url(../images/u.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 650px;
   text-align: center;
+  position: relative;
 }
 .footer-logo-holder 
 {

@@ -30,7 +30,7 @@ h1 {
 }
 
 .h1p {
-  font-size: 16rem;
+  font-size: 12rem;
 }
 
 h2 {
@@ -43,7 +43,7 @@ h2 {
 
 .topnav {
     float: right;
-    color: #adadad;
+    color: #FFFFFF;
     text-align: center;
     width: fit-content;
 
@@ -52,9 +52,9 @@ h2 {
 
   .nav-tab {
     float: right;
-    color: #adadad;
+    color: #FFFFFF;
     text-align: center;
-    padding: 25px 25px;
+    padding: 35px 35px;
     text-decoration: none;
     font-size: 1.5rem;
     font-family: 'Bebas Neue', sans-serif;
@@ -102,7 +102,7 @@ a {
 }
 .header {
   padding: 60px;
-  background-image: url(../images/contact.png);
+  background-image: url(../images/u.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 650px;
