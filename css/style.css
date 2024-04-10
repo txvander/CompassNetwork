@@ -55,7 +55,15 @@ h2 {
     color: #FFFFFF;
     text-align: center;
     width: fit-content;
-   
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    position: fixed;
+    top: 10px; /* Move the navigation bar down from the top of the screen by 10 pixels */
+    left: 20px; /* Move the navigation bar 20 pixels to the right of the left edge of the screen */
+    right: 20px; /* Move the navigation bar 20 pixels to the left of the right edge of the screen */
+    width: calc(100% - 60px); /* Set the width of the navigation bar to the full width of the screen minus 60 pixels */
+    z-index: 100;
+    border-radius: 10px; /* Add rounded corners with a radius of 10 pixels */
+    padding: 20px;
   }
 
   .nav-tab {
