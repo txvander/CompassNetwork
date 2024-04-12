@@ -55,25 +55,40 @@ h2 {
     text-decoration: none;
     font-size: 1.5rem;
     font-family: 'Bebas Neue', sans-serif;
-    transition: color .3s ease-in-out;
+    transition: color.3s ease-in-out;
   }
-
-  .right-padding-nav {
+ .right-padding-nav {
     padding-right: 25px;
   }
   
-  .left-padding-nav {
+ .left-padding-nav {
     padding-left: 5rem;
   }
   
-  .topnav a:hover {
+ .topnav a:hover {
     color: rgb(255, 255, 255);
   }
 
-  .topnav a.active {
+ .topnav a.active {
     color: white;
    
   }
+
+ .nav-image {
+    height: 40px; /* Set the height of the image */
+    width: 40px; /* Set the width of the image */
+    transition: transform .6s ease-in-out; /* Add a transition effect on hover */
+  }
+
+ .nav-image:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Add a transparent blackish color on hover */
+    transform: scale(1.1); /* Scale the image slightly on hover */
+    border-radius: 7px;
+    padding: 8px;
+
+    transform: none; /* Prevent the screen from moving when you hover over the logos */
+  }
+  
   
   .main-holder {
   background-image: url(../images/u.png);
