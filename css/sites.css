@@ -145,17 +145,26 @@ a {
   flex-wrap: wrap;
 }
 .footer-tab {
-  float: right;
-  color: #FFFFFF;
+  background-color: transparent;
+  border: 2px solid orange;
+  color: orange;
   text-align: center;
-  padding: 14px 16px;
+  padding:15px 60px;
   text-decoration: none;
-  font-size: 1.4rem;
-  font-family: 'blinker', sans-serif;
-  transition: color .3s ease-in-out;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  font-size: 1.5rem;
+  display: inline-block;
+  font-family: 'Blinker', sans-serif;
+  transition: color .4s ease-in-out;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-color: orange;
+  border-radius: 7px;
 }
+.footer-tab:hover {
+  background-color: orange;
+  color: white;
+}
+
 .footer-media-holder {
   height: fit-content;
   width: 100%;
