@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
 html {
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -24,7 +25,7 @@ body {
 h1 {
     font-size: 6rem;
     line-height: 0;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Blinker', sans-serif;
     color: white;
     text-shadow: 10px 10px 4px black;
 }
@@ -34,7 +35,7 @@ h1 {
 h2 {
     font-size: 1.5rem;
     line-height: 0;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Blinker', sans-serif;
     color: white;
     text-shadow: 1px 3px 4px black;
 }
@@ -77,16 +78,13 @@ h2 {
  .nav-image {
     height: 40px; /* Set the height of the image */
     width: 40px; /* Set the width of the image */
-    transition: transform .6s ease-in-out; /* Add a transition effect on hover */
+    transition: transform .1s ease-in-out; /* Add a transition effect on hover */
   }
 
- .nav-image:hover {
-    background-color: rgba(0, 0, 0, 0.2); /* Add a transparent blackish color on hover */
-    transform: scale(1.1); /* Scale the image slightly on hover */
-    border-radius: 7px;
-    padding: 8px;
-
-    transform: none; /* Prevent the screen from moving when you hover over the logos */
+  .nav-image:hover,
+  .nav-image:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.35em); /* Moves te image up when hovered */
   }
   
   
@@ -102,7 +100,7 @@ a {
   color: #adadad;
   text-align: center;
   text-decoration: none;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Blinker', sans-serif;
   transition: color .3s ease-in-out;
 }
 
@@ -150,7 +148,7 @@ a {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 1.4rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'blinker', sans-serif;
   transition: color .3s ease-in-out;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
