@@ -28,6 +28,7 @@ h1 {
     font-family: 'Blinker', sans-serif;
     color: white;
     text-shadow: 10px 10px 4px black;
+    text-align: center;
 }
 
 .h1p {
@@ -40,7 +41,9 @@ h2 {
     font-family: 'Blinker', sans-serif;
     color: white;
     text-shadow: 1px 3px 4px black;
-}
+    text-align: center; 
+    padding-top: 15px;
+  }
 
 .nav-tab {
   float: right;
@@ -137,8 +140,8 @@ a {
 }
 .footer-tab {
   background-color: transparent;
-  border: 2px solid orange;
-  color: orange;
+  border: 2px solid #eb9534;
+  color: #eb9534;
   text-align: center;
   padding:15px 60px;
   text-decoration: none;
@@ -148,11 +151,11 @@ a {
   transition: color .4s ease-in-out;
   margin: 4px 2px;
   cursor: pointer;
-  border-color: orange;
+  border-color: #eb9534;
   border-radius: 7px;
 }
 .footer-tab:hover {
-  background-color: orange;
+  background-color: #eb9534;
   color: white;
 }
 .footer-media-holder {
@@ -167,4 +170,7 @@ a {
 .footer-media {
   width: 4rem;
   height: 4rem;
+}
+.embed {
+  padding-top: 20px;
 }

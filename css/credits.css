@@ -143,8 +143,8 @@ a {
 }
 .footer-tab {
   background-color: transparent;
-  border: 2px solid orange;
-  color: orange;
+  border: 2px solid #eb9534;
+  color: #eb9534;
   text-align: center;
   padding:15px 60px;
   text-decoration: none;
@@ -154,11 +154,11 @@ a {
   transition: color .4s ease-in-out;
   margin: 4px 2px;
   cursor: pointer;
-  border-color: orange;
+  border-color: #eb9534;
   border-radius: 7px;
 }
 .footer-tab:hover {
-  background-color: orange;
+  background-color: #eb9534;
   color: white;
 }
 .footer-media-holder {
