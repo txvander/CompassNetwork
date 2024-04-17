@@ -178,3 +178,18 @@ a {
   width: 4rem;
   height: 4rem;
 }
+.app-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
