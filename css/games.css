@@ -188,6 +188,8 @@ h2 {
   z-index: 1;
 }
 
+a {text-decoration: none;}
+
 .game a img {
     height: auto;
     width:  170px;
