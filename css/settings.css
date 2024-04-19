@@ -41,10 +41,11 @@ h2 {
 }
 
 .topnav {
-    float: right;
-    color: #FFFFFF;
-    text-align: center;
-    width: fit-content;
+  color: #FFFFFF;
+  background-color: #ff7300;
+  overflow: hidden;
+  margin: -50px;
+  border-radius: 15px;
    
   }
 
@@ -55,8 +56,14 @@ h2 {
     padding: 35px 35px;
     text-decoration: none;
     font-size: 1.5rem;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'blinker', sans-serif;
     transition: color.3s ease-in-out;
+    transition: 0.30s;
+  }
+
+  .nav-tab:hover {
+    transform: translateY(-.3em);
+
   }
  .right-padding-nav {
     padding-right: 25px;
@@ -76,15 +83,16 @@ h2 {
   }
 
  .nav-image {
-    height: 40px; /* Set the height of the image */
-    width: 40px; /* Set the width of the image */
-    transition: transform .1s ease-in-out; /* Add a transition effect on hover */
+    height: 30px; /* Set the height of the image */
+    width: 30px; /* Set the width of the image */
+    vertical-align: bottom;
+
   }
 
   .nav-image:hover,
   .nav-image:focus {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-    transform: translateY(-0.35em); /* Moves te image up when hovered */
+
   }
   
   
@@ -115,7 +123,7 @@ a {
   background-image: url(../images/u.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 650px;
+  height: 500px;
   text-align: center;
 }
 .footer-logo-holder 
