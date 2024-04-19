@@ -168,6 +168,7 @@ a {
   cursor: pointer;
   border-color: #eb9534;
   border-radius: 7px;
+  margin-right: 25px;
 }
 .footer-tab:hover {
   background-color: #eb9534;

@@ -164,6 +164,7 @@ a {
   cursor: pointer;
   border-color: #eb9534;
   border-radius: 7px;
+  margin-right: 25px;
 }
 .footer-tab:hover {
   background-color: #eb9534;
@@ -208,7 +209,7 @@ a {
 }
 
 .credit-item a:hover img{
-  transform: scale(1.23);
+  transform: scale(1.1);
 }
 .credit-item p {
   margin: 5px 0;
