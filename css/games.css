@@ -5,9 +5,7 @@ html {
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
-:root {
-  --uibg: #eb9534;
-}
+
 .main-box {
     display: inline;
     flex-direction: column;
@@ -22,9 +20,7 @@ html {
 body {    
     background-color: black;
     margin: 0; 
-    background-image: url(../images/background.png);
-    background-size: cover;
-
+ 
 }
 
 main { 
@@ -47,11 +43,6 @@ h2 {
     font-family: 'Blinker', sans-serif;
     color: white;
     text-shadow: 1px 3px 4px black;
-
-    margin-right: 10px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-
 }
 
 .nav-tab {
@@ -61,13 +52,14 @@ h2 {
   padding: 35px 35px;
   text-decoration: none;
   font-size: 1.5rem;
-  font-family: 'Blinker', sans-serif;
+  font-family: 'blinker', sans-serif;
   transition: color.3s ease-in-out;
-
   transition: 0.30s;
+  
 }
+
 .nav-tab:hover {
-  transform: translateY(-.3em);
+  transform: translateY(-0.3em);
 }
 .right-padding-nav {
   padding-right: 25px;
@@ -86,16 +78,18 @@ h2 {
  
 }
 
+
+
 .nav-image {
-  height: 40px; /* Set the height of the image */
-  width: 40px; /* Set the width of the image */
-  transition: transform .1s ease-in-out; /* Add a transition effect on hover */
+  height: 30px; /* Set the height of the image */
+  width: 30px; /* Set the width of the image */
+  vertical-align: bottom;
 }
 
 .nav-image:hover,
 .nav-image:focus {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  transform: translateY(-0.35em); /* Moves te image up when hovered */
+
 }
 
   
@@ -106,13 +100,13 @@ h2 {
   background-size: cover;
 }
 
-.topnav a {
-  
-  color: #FFFFFF;
-  text-align: center;
-  text-decoration: none;
-  font-family: 'Bebas Neue', sans-serif;
-  transition: color .3s ease-in-out;
+.topnav  {
+      color: #FFFFFF;
+    background-color: #ff7300;
+    overflow: hidden;
+    margin: -50px;
+    border-radius: 15px;
+
 }
 
 
@@ -121,7 +115,14 @@ h2 {
     height: 100%;
     width: 100%;
 }
-
+.header {
+  padding: 60px;
+  background-image: url(../images/u.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  text-align: center;
+}
 .footer-logo-holder 
 {
   overflow: hidden;
@@ -130,15 +131,11 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../images/background.png);
-  background-size: cover;
 }
 .footer-logo {
   padding-top: 2rem;
   width: 3.7rem;
   height: 3.7rem;
-  background-image: url(../images/background.png);
-  background-size: cover;
 }
 .footer-nav-holder {
   height: fit-content;
@@ -148,13 +145,11 @@ h2 {
   flex-direction: row;
   place-content: center;
   flex-wrap: wrap;
-  background-image: url(../images/background.png);
-  background-size: cover;
 }
 .footer-tab {
   background-color: transparent;
-  border: 2px solid #000000;
-  color: #ffffff;
+  border: 2px solid #eb9534;
+  color: #eb9534;
   text-align: center;
   padding:15px 60px;
   text-decoration: none;
@@ -164,14 +159,12 @@ h2 {
   transition: color .4s ease-in-out;
   margin: 4px 2px;
   cursor: pointer;
-  border-color: #000000;
+  border-color: #eb9534;
   border-radius: 7px;
-  margin-right: 25px;
-  
 }
 .footer-tab:hover {
   background-color: #eb9534;
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 
@@ -181,7 +174,6 @@ h2 {
   justify-content: center;
   margin: 0 auto;
   max-width: 1200px;
-
 }
 
 .game {
@@ -189,15 +181,14 @@ h2 {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 15px;
-    cursor: pointer;
-
 
 }
 
 .game:hover {
   z-index: 1;
 }
+
+a {text-decoration: none;}
 
 .game a img {
     height: auto;
@@ -211,7 +202,6 @@ h2 {
 
 .game a:hover img {
   transform: scale(1.3);
-	filter: brightness(85%);
 
 }
 main { 
@@ -229,12 +219,8 @@ main h1 {
   flex-direction: row;
   place-content: center;
   flex-wrap: wrap;
-  background-image: url(../images/background.png);
-  background-size: cover;
 }
 .footer-media {
   width: 4rem;
   height: 4rem;
-      background-image: url(../images/background.png);
-    background-size: cover;
 }
