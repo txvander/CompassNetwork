@@ -15,11 +15,13 @@ html {
     place-content: center;
     padding-left: 2rem;
     padding-right: 2rem;
+    
 }
 
 body {    
     background-color: black;
     margin: 0;   
+    background-image: url(../images/background.png);
 }
 
 h1 {
@@ -120,12 +122,8 @@ a {
 }
 .header {
   padding: 60px;
-  background-image: url(../images/u.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 650px;
-  text-align: center;
 }
+
 .footer-logo-holder 
 {
   overflow: hidden;
@@ -134,11 +132,14 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 .footer-logo {
   padding-top: 2rem;
   width: 3.7rem;
   height: 3.7rem;
+    background-image: url(../images/background.png);
+  
 }
 .footer-nav-holder {
   height: fit-content;
@@ -148,11 +149,12 @@ a {
   flex-direction: row;
   place-content: center;
   flex-wrap: wrap;
+  background-image: url(../images/background.png);
 }
 .footer-tab {
   background-color: transparent;
-  border: 2px solid #eb9534;
-  color: #eb9534;
+  border: 2px solid #000000;
+  color: #ffffff;
   text-align: center;
   padding:15px 60px;
   text-decoration: none;
@@ -162,13 +164,14 @@ a {
   transition: color .4s ease-in-out;
   margin: 4px 2px;
   cursor: pointer;
-  border-color: #eb9534;
+  border-color: #000000;
   border-radius: 7px;
   margin-right: 25px;
+  
 }
 .footer-tab:hover {
   background-color: #eb9534;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .footer-media-holder {
   height: fit-content;
@@ -178,10 +181,14 @@ a {
   flex-direction: row;
   place-content: center;
   flex-wrap: wrap;
+  background-image: url(../images/background.png);
+  background-size: cover;
 }
 .footer-media {
   width: 4rem;
   height: 4rem;
+      background-image: url(../images/background.png);
+    background-size: cover;
 }
 .credit-row {
   display: flex;
