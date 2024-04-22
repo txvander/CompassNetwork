@@ -39,27 +39,38 @@ h2 {
     color: white;
     text-shadow: 3px 6px 5px black;
 }
-
 .topnav {
+
   color: #FFFFFF;
   background-color: #ff7300;
   overflow: hidden;
   margin: -50px;
   border-radius: 15px;
-   
-  }
+  height: 60px;
 
-  .nav-tab {
-    float: right;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 35px 35px;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-family: 'blinker', sans-serif;
-    transition: color.3s ease-in-out;
-    transition: 0.30s;
-  }
+  
+
+  
+
+
+}
+
+.nav-tab {
+  float: right;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 15px;
+  margin-right: 20px;
+
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: 'blinker', sans-serif;
+  transition: color.3s ease-in-out;
+  transition: 0.30s;
+  
+
+  
+}
 
   .nav-tab:hover{
     transform: translateY(-0.3em);

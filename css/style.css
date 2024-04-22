@@ -58,6 +58,7 @@ h3 {
     overflow: hidden;
     margin: -50px;
     border-radius: 15px;
+    height: 60px;
 
     
 
@@ -70,7 +71,9 @@ h3 {
     float: right;
     color: #FFFFFF;
     text-align: center;
-    padding: 35px 35px;
+    margin-top: 15px;
+    margin-right: 20px;
+
     text-decoration: none;
     font-size: 1.5rem;
     font-family: 'blinker', sans-serif;
