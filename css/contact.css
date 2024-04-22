@@ -20,6 +20,8 @@ html {
 body {    
     background-color: black;
     margin: 0;   
+    background-image: url(../images/bg1.png);
+    background-size: cover;
 }
 
 h1 {
@@ -101,7 +103,7 @@ h2 {
 
   
   .main-holder {
-  background-image: url(../images/contact.png);
+  background-image: url(../images/background.png);
   background-repeat: repeat-x;
   background-position: center;
   background-size: cover;
@@ -124,11 +126,6 @@ a {
 }
 .header {
   padding: 60px;
-  background-image: url(../images/u.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 650px;
-  text-align: center;
 }
 .footer-logo-holder 
 {
@@ -152,13 +149,14 @@ a {
   flex-direction: row;
   place-content: center;
   flex-wrap: wrap;
+  background-image: url(../images/bg1.png);
 }
 .footer-tab {
   background-color: transparent;
-  border: 2px solid #eb9534;
-  color: #eb9534;
+  border: 2px solid #000000;
+  color: #ffffff;
   text-align: center;
-  padding:15px 60px;
+  padding:15px 50px;
   text-decoration: none;
   font-size: 1.5rem;
   display: inline-block;
@@ -166,13 +164,13 @@ a {
   transition: color .4s ease-in-out;
   margin: 4px 2px;
   cursor: pointer;
-  border-color: #eb9534;
+  border-color: white;
   border-radius: 7px;
   margin-right: 25px;
 }
 .footer-tab:hover {
-  background-color: #eb9534;
-  color: white;
+  background-color: white;
+  color: black;
 }
 .footer-media-holder {
   height: fit-content;
@@ -182,6 +180,7 @@ a {
   flex-direction: row;
   place-content: center;
   flex-wrap: wrap;
+  background-image: url(../images/bg1.png);
 }
 .footer-media {
   width: 4rem;
