@@ -30,7 +30,8 @@ main {
 .topnav {
 
   color: #FFFFFF;
-  background-color: #ff7300;
+  background-image: url('../images/navbar.png');
+  background-size: 100%;
   overflow: hidden;
   margin: -50px;
   border-radius: 15px;
@@ -49,7 +50,7 @@ main {
   text-align: center;
   margin-top: 15px;
   margin-right: 20px;
-
+  text-align: center;
   text-decoration: none;
   font-size: 1.5rem;
   font-family: 'blinker', sans-serif;

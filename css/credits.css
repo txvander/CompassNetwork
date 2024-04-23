@@ -45,7 +45,8 @@ h2 {
 .topnav {
 
   color: #FFFFFF;
-  background-color: #ff7300;
+  background-image: url('../images/navbar.png');
+  background-size: 100%;
   overflow: hidden;
   margin: -50px;
   border-radius: 15px;
