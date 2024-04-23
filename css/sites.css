@@ -21,6 +21,7 @@ body {
     background-color: black;
     margin: 0;   
     background-image: url(../images/bg1.png);
+    background-size: cover;
 }
 
 h1 {
@@ -162,6 +163,7 @@ a {
   place-content: center;
   flex-wrap: wrap;
   background-image: url(../images/bg1.png);
+  background-size: cover;
 }
 .footer-tab {
   background-color: transparent;
@@ -194,6 +196,7 @@ a {
   place-content: center;
   flex-wrap: wrap;
   background-image: url(../images/bg1.png);
+  background-size: cover;
 }
 .footer-media {
   width: 4rem;
