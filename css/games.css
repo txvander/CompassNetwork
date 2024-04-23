@@ -184,20 +184,33 @@ h2 {
 }
 
 
+#searchInput {
+  background-color: #060225;
+  padding: 15px;
+  border-radius: 10px;
+  width: 700px;
+  border: solid;
+  color: #FFFFFF;
+  font-size: 150%;
+  font-family: 'Blinker', sans-serif;
+  margin-top: 100px;
+
+
+}
+
+
 .games {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
   max-width: 1200px;
+
 }
 
 .game {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-
+    display: inline-block;
+    
 }
 
 .game:hover {
