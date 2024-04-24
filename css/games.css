@@ -258,6 +258,12 @@ h2 {
 
 }
 
+.gamehot img:hover {
+    filter: brightness(80%);
+
+  
+}
+
 
 
 
