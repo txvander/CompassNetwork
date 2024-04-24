@@ -149,6 +149,12 @@ a {
   align-items: center;
   
 }
+
+#nav-logo {
+  margin-top: 7px;
+  margin-left: 10px;
+  width: 50px;
+}
 .footer-logo {
   padding-top: 2rem;
   width: 3.7rem;

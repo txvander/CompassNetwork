@@ -60,6 +60,16 @@ h2 {
 
 }
 
+#nav-logo {
+  margin-top: 7px;
+  margin-left: 10px;
+  width: 50px;
+}
+
+#hot {
+  width: 10px;
+}
+
 .nav-tab {
   float: right;
   color: #FFFFFF;

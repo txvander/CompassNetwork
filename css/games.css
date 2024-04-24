@@ -62,6 +62,12 @@ main {
   
 }
 
+#nav-logo {
+  margin-top: 7px;
+  margin-left: 10px;
+  width: 50px;
+}
+
 h1 {
     font-size: 6rem;
     line-height: 0;
@@ -73,11 +79,18 @@ h1 {
   font-size: 12rem;
 }
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 0;
     font-family: 'Blinker', sans-serif;
     color: white;
     text-shadow: 1px 3px 4px black;
+}
+
+#hot {
+  width: 20px;
+  margin: -2px;
+  margin-left: 5px;
+  
 }
 
 
@@ -210,29 +223,70 @@ h2 {
 
 .game {
     display: inline-block;
+    background-color:#080927;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px 2px white;
+    margin-top: 20px;
+    width: 200px;
+
+
     
 }
 
-.game:hover {
-  z-index: 1;
+.gamehot {
+  display: inline-block;
+  background-color:#080927;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px 2px #ff7300;
+  margin-top: 20px;
+  width: 200px;
+
+
+  
 }
+
+.gamehot img {
+  height: auto;
+  width:  170px;
+  margin: 10px;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform .35s ease;
+
+}
+
+
+
+
+.game:hover {
+  filter: brightness(80%);
+
+}
+
+
 
 a {text-decoration: none;}
 
-.game a img {
+.game img {
     height: auto;
     width:  170px;
-    margin: 1.7rem;
+    margin: 10px;
     height: 50%;
     object-fit: cover;
     border-radius: 15px;
     transition: transform .35s ease;
+
 }
 
-.game a:hover img {
 
-  filter: brightness(80%);
-}
+
+
+
+
+
 main { 
   text-align: center;
 }

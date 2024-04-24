@@ -161,6 +161,14 @@ a {
   padding: 60px;
   height: 650px;
 }
+
+#nav-logo {
+  margin-top: 7px;
+  margin-left: 10px;
+  width: 50px;
+}
+
+
 .footer-logo-holder 
 {
   overflow: hidden;
