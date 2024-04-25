@@ -229,6 +229,12 @@
       "link": "games/basketbros/index.html",
       "id": "game",
       "image": "games/basketbros/thumb.jpg"
-    }
+    },
+   {
+   "title": "Drift Hunters",
+    "link": "games/drifthunters/",
+    "id": "game",
+    "image": "images/drifthunt.png"
+  }
   ]
   
