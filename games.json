@@ -57,6 +57,62 @@
   },
 
   {
+    "title": "Idle breakout",
+    "link": "games/idle-breakout/index.html",
+    "id": "game",
+    "image": "games/idle-breakout/img/thumbnail.png"
+  },
+
+  {
+    "title": "Rocket league",
+    "link": "games/rocketleague/index.html",
+    "id": "game",
+    "image": "games/rocketleague/splash.webp"
+  },
+
+  {
+    "title": "BitLife",
+    "link": "games/bitlife/index.html",
+    "id": "game",
+    "image": "games/bitlife/bitlife.png"
+  },
+
+  {
+    "title": "Jetpack joyride",
+    "link": "games/jetpackjoyride/index.html",
+    "id": "game",
+    "image": "games/jetpackjoyride/logo.jpeg"
+  },
+
+  {
+    "title": "Age of war",
+    "link": "games/ageofwar/index.html",
+    "id": "game",
+    "image": "games/ageofwar/warofage.jpg"
+  },
+
+  {
+    "title": "Cookie clicker",
+    "link": "games/cookie-clicker/index.html",
+    "id": "game",
+    "image": "games/cookie-clicker/cookie1.jpeg"
+  },
+
+  {
+    "title": "60S Burger run",
+    "link": "games/60sburgerrun/index.html",
+    "id": "game",
+    "image": "games/60sburgerrun/icon.png"
+  },
+
+  {
+    "title": "2048 Cupcakes",
+    "link": "games/cupcake2048/index.html",
+    "id": "game",
+    "image": "games/cupcake2048/favicon.png"
+  },
+
+  {
     "title": "Tetris ",
     "link": "games/tetris/index.html",
     "id": "game",
@@ -110,11 +166,6 @@
     "image": "games/yohoho/cover.svg"
   },
 
-
-
-
-
-  
     {
       "title": "Crossy Road ",
       "link": "games/crossyroad/",
@@ -193,6 +244,14 @@
       "id": "game",
       "image": "images/drivemad.png"
     },
+
+    {
+      "title": "Drift boss",
+      "link": "games/drift-boss/index.html",
+      "id": "game",
+      "image": "games/drift-boss/icon.png"
+    },
+
     {
       "title": "Gun Mayhem 2",
       "link": "games/gun-mayhem-2/",
