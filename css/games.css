@@ -247,20 +247,21 @@ h2 {
   
 }
 
+
+
 .gamehot img {
-  height: auto;
+  height: 200;
   width:  170px;
   margin: 10px;
-  height: 50%;
+
   object-fit: cover;
   border-radius: 15px;
   transition: transform .35s ease;
 
 }
 
-.gamehot img:hover {
-    filter: brightness(80%);
-
+.gamespace {
+  visibility: hidden;
   
 }
 
@@ -271,16 +272,20 @@ h2 {
   filter: brightness(80%);
 
 }
+.gamehot:hover {
+  filter: brightness(80%);
+
+}
 
 
 
 a {text-decoration: none;}
 
 .game img {
-    height: auto;
+    height: 180px;
     width:  170px;
     margin: 10px;
-    height: 50%;
+
     object-fit: cover;
     border-radius: 15px;
     transition: transform .35s ease;

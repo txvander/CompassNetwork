@@ -29,6 +29,92 @@
     "id": "gamehot",
     "image": "images/sprinter.jpeg"
   },
+  {
+    "title": " ",
+    "link": "no",
+    "id": "gamespace",
+    "image": "THIS IS USED FOR SPACING HOT GAMES WITH THE OTHERS! ! !"
+  },
+  {
+    "title": "Burrito Bison ",
+    "link": "games/burritobison/index.html",
+    "id": "game",
+    "image": "games/burritobison/logo.png"
+  },
+
+  {
+    "title": "Minecraft ",
+    "link": "games/minecraft/index.html",
+    "id": "game",
+    "image": "games/minecraft/logo.png"
+  },
+
+  {
+    "title": "Funny shooter 2 ",
+    "link": "games/funnyshooter2/index.html",
+    "id": "game",
+    "image": "games/funnyshooter2/splash.jpeg"
+  },
+
+  {
+    "title": "Tetris ",
+    "link": "games/tetris/index.html",
+    "id": "game",
+    "image": "games/tetris/icon.png"
+  },
+
+  {
+    "title": "Boxing Random ",
+    "link": "games/boxingrandom/index.html",
+    "id": "game",
+    "image": "games/boxingrandom/cover.jpg"
+  },
+
+  {
+    "title": "Stickman Hook ",
+    "link": "games/stickman-hook/index.html",
+    "id": "game",
+    "image": "games/stickman-hook/icon.jpg"
+  },
+
+  {
+    "title": "Stickman Golf ",
+    "link": "games/stickmangolf/index.html",
+    "id": "game",
+    "image": "games/stickmangolf/splash.png"
+  },
+
+  {
+    "title": "Monkey Mart ",
+    "link": "games/monkeymart/index.html",
+    "id": "game",
+    "image": "games/monkeymart/unnamed.png"
+  },
+
+  {
+    "title": "Rooftop snipers ",
+    "link": "games/rooftopsnipers/index.html",
+    "id": "game",
+    "image": "games/rooftopsnipers/logo.png"
+  },
+  {
+    "title": "Getaway shootout ",
+    "link": "games/getaway-shootout/index.html",
+    "id": "game",
+    "image": "games/getaway-shootout/index.jpg"
+  },
+  {
+    "title": "Yohoho ",
+    "link": "games/yohoho/index.html",
+    "id": "game",
+    "image": "games/yohoho/cover.svg"
+  },
+
+
+
+
+
+  
     {
       "title": "Crossy Road ",
       "link": "games/crossyroad/",
