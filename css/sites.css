@@ -58,6 +58,30 @@ h2 {
 
 }
 
+.app {
+  display: inline-block;
+  background-color:#080927;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px 2px white;
+  margin-top: 20px;
+  width: 200px;
+
+
+  
+}
+
+.app img {
+  height: 180px;
+  width:  170px;
+  margin: 10px;
+
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform .35s ease;
+
+}
+
 .nav-tab {
   float: right;
   color: #FFFFFF;
@@ -216,10 +240,3 @@ a {
   max-width: 1200px;
 }
 
-.app {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-
-}
