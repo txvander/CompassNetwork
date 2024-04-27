@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="images/newlogo.png">
+    
   </head>
 
   <body>
@@ -25,14 +26,33 @@
         <section class="main-box">
           <h1 class="h1p" >
             <center>COMPASS</center>
-          </h1>
+          </h1p>
           <h3>
             <center>V.0.6 HERE!</center>
           </h3>
-        </section>
-      </div>
+          <center>
+
+            <form id="uv-form">
+              <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
+              <input id="uv-address" type="text" placeholder="Search Google or type an URL" class="form__input"/>
+            </form>
+            <div id="uv-log">
+              <p>ERROR LOG:</p>
+              <p id="uv-error"></p>
+              <p id="uv-error-code"></p>
+            </div>
+          </center>
+        </section>        
+      </div>     
     </div>
+
+
+    
     <div>
+
+      <center>
+
+
 
       <hr size="3" noshade color="#FFFFFF">   
       </div>
@@ -49,5 +69,14 @@
       <a class="footer-tab" href="credits.html">CREDITS</a>
       <a class="footer-tab" href="contact.html">CONTACT</a>
     </div>
+    <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="static/register-sw.js" defer></script>
+    <script src="static/search.js" defer></script>
+    <script src="static/index.js" defer></script>
+    <script src="static/error.js" defer></script>
+    <script src="static/erroralert.js"></script>
+
+   
   </body>
 </html>

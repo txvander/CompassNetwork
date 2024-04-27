@@ -16,6 +16,8 @@ html {
     padding-left: 2rem;
     padding-right: 2rem;
     position: relative;
+
+
 }
 
 body {    
@@ -194,6 +196,39 @@ a {
   flex-wrap: wrap;
   background-image: url(../images/bg1.png);
   background-size: cover;
+}
+#uv-address {
+  background-color: #060225;
+  padding: 15px;
+  border-radius: 10px;
+  width: 700px;
+  border: solid;
+  color: #FFFFFF;
+  font-size: 150%;
+  font-family: 'Blinker', sans-serif;
+  margin-top: -100px;
+
+
+
+}
+
+
+
+#uv-log {
+    background-color: #060225;
+    padding: 15px;
+    border-radius: 10px;
+    width: 700px;
+    border: solid;
+    color: #FFFFFF;
+    font-size: 150%;
+    font-family: 'Blinker', sans-serif;
+    margin-top: 100px;
+    height: fit-content;
+
+
+
+  
 }
 .footer-tab {
   background-color: transparent;
