@@ -47,8 +47,8 @@ font-size: 1.5rem;
 text-align: center;
 }
 
-h3 {
-    font-size: 5rem;
+h6 {
+    font-size: 3rem;
     line-height: 0;
     font-family: 'blinker', sans-serif;
     color: white;
@@ -215,12 +215,12 @@ a {
 
 
 #uv-log {
-    background-color: #060225;
+    background-color: transparent;
     padding: 15px;
     border-radius: 10px;
     width: 700px;
     border: solid;
-    color: #FFFFFF;
+    color: transparent;
     font-size: 150%;
     font-family: 'Blinker', sans-serif;
     margin-top: 100px;
