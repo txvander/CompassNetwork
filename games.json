@@ -380,6 +380,30 @@
     "link": "games/drifthunters/",
     "id": "game",
     "image": "images/drifthunt.png"
-  }
+  },
+  {
+    "title": "Doge Miner",
+     "link": "games/dogeminer/",
+     "id": "game",
+     "image": "images/doge.png"
+   },
+   {
+    "title": "Cluster Rush",
+     "link": "games/cluster-rush/",
+     "id": "game",
+     "image": "images/cluster.png"
+   },
+   {
+    "title": "Fireboy and Watergirl",
+     "link": "games/fireboywatergirl/",
+     "id": "game",
+     "image": "images/fbwg.jpeg"
+   },
+   {
+    "title": "N-Gon",
+     "link": "games/n-gon/",
+     "id": "game",
+     "image": "images/ngon.jpeg"
+   }
   ]
   
