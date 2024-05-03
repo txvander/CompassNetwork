@@ -36,12 +36,6 @@
     "image": "THIS IS USED FOR SPACING HOT GAMES WITH THE OTHERS! ! !"
   },
   {
-    "title": "Amazing Rope Police ",
-    "link": "games/amazing-rope-police/index.html",
-    "id": "game",
-    "image": "games/amazing-rope-police/splash.jpeg"
-  },
-  {
     "title": "Burrito Bison ",
     "link": "games/burritobison/index.html",
     "id": "game",
@@ -68,7 +62,6 @@
     "id": "game",
     "image": "games/idle-breakout/img/thumbnail.png"
   },
-  
 
   {
     "title": "Rocket league",
@@ -410,7 +403,19 @@
     "title": "N-Gon",
      "link": "games/n-gon/",
      "id": "game",
-     "image": "images/ngon.jpeg"
+     "image": "images/gon.png"
+   },
+   {
+    "title": "Tiny Fishing",
+     "link": "games/tiny-fishing/",
+     "id": "game",
+     "image": "images/fish.png"
+   },
+   {
+    "title": "Papa's Burgeria",
+     "link": "games/papasburgeria/",
+     "id": "game",
+     "image": "images/papaburger.jpg"
    }
   ]
   
