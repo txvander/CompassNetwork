@@ -416,6 +416,18 @@
      "link": "games/papasburgeria/",
      "id": "game",
      "image": "images/papaburger.jpg"
+   },
+   {
+    "title": "HexGL",
+     "link": "games/HexGL/",
+     "id": "game",
+     "image": "images/hexgl.jpg"
+   },
+   {
+    "title": "Amazing Rope Police",
+     "link": "games/amazing-rope-police/",
+     "id": "game",
+     "image": "images/amazing.jpeg"
    }
   ]
   
