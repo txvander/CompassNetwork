@@ -1,36 +1,31 @@
-"use strict";
-/**
- * @type {HTMLFormElement}
- */
-const form = document.getElementById("uv-form");
-/**
- * @type {HTMLInputElement}
- */
-const address = document.getElementById("uv-address");
-/**
- * @type {HTMLInputElement}
- */
-const searchEngine = document.getElementById("uv-search-engine");
-/**
- * @type {HTMLParagraphElement}
- */
-const error = document.getElementById("uv-error");
-/**
- * @type {HTMLPreElement}
- */
-const errorCode = document.getElementById("uv-error-code");
 
-form.addEventListener("submit", async (event) => {
-  event.preventDefault();
+let inject_button = document.getElementById("inject");
+let url_input = document.getElementById("url"); 
+let js_input = document.getElementById("js");
 
-  try {
-    await registerSW();
-  } catch (err) {
-    error.textContent = "Failed to register service worker.";
-    errorCode.textContent = err.toString();
-    throw err;
-  }
+inject_button.addEventListener("click", () => {
+    let js = js_input.value;
+    
+    
+    let win = window.open();
+    let script = win.document.createElement("script");
+    script.innerHTML = js;
+    win.document.body.appendChild(script);
 
-  const url = search(address.value, searchEngine.value);
-  location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
-});
+})
+
+let inject_car_axle_client = document.getElementById("inject-car-axle-client");
+
+inject_car_axle_client.addEventListener("click", () => {
+    js_input.value = `fetch("https://raw.githubusercontent.com/car-axle-client/car-axle-client/v6/docs/testing/index.js")
+                .then((res) => res.text())
+                .then((js) => eval(js));`;
+
+    let js = js_input.value;
+    
+    
+    let win = window.open();
+    let script = win.document.createElement("script");
+    script.innerHTML = js;
+    win.document.body.appendChild(script);
+})
