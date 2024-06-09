@@ -428,6 +428,90 @@
      "link": "games/amazing-rope-police/",
      "id": "game",
      "image": "images/amazing.jpeg"
+   },
+   {
+    "title": "CSGO Case Clicker",
+     "link": "games/csgo-clicker/",
+     "id": "game",
+     "image": "images/csgo.png"
+   },
+   {
+    "title": "Volley Random",
+     "link": "games/volley-random/",
+     "id": "game",
+     "image": "images/volley.png"
+   },
+   {
+    "title": "Paper.IO 2",
+     "link": "games/paperio2/",
+     "id": "game",
+     "image": "images/paperio2.png"
+   },
+   {
+    "title": "There Is No Game",
+     "link": "games/there-is-no-game/",
+     "id": "game",
+     "image": "images/nogame.png"
+   },
+   {
+    "title": "Temple Run",
+     "link": "games/temple-run-2/",
+     "id": "game",
+     "image": "images/temple-run.png"
+   },
+   {
+    "title": "A Dark Room",
+     "link": "games/adarkroom/",
+     "id": "game",
+     "image": "images/adr.png"
+   },
+   {
+    "title": "Death Run 3D",
+     "link": "games/death-run-3d/",
+     "id": "game",
+     "image": "images/death.png"
+   },
+   {
+    "title": "Soccer Random",
+     "link": "games/soccer-random/",
+     "id": "game",
+     "image": "images/soccer.png"
+   },
+   {
+    "title": "World's Hardest Game",
+     "link": "games/worlds-hardest-game/",
+     "id": "game",
+     "image": "images/whg.jpg"
+   },
+   {
+    "title": "World's Hardest Game 2",
+     "link": "games/worlds-hardest-game-2/",
+     "id": "game",
+     "image": "images/whg2.jpg"
+   },
+   {
+    "title": "Superhot",
+     "link": "games/superhot/",
+     "id": "game",
+     "image": "images/hot.jpg"
+   },
+   {
+    "title": "Slope 2",
+     "link": "games/slope-2/",
+     "id": "game",
+     "image": "images/slope2.png"
+   },
+   {
+    "title": "Time Shooter",
+     "link": "games/timeshooter1/",
+     "id": "game",
+     "image": "images/ts1.png"
+   },
+   {
+    "title": "Time Shooter 2",
+     "link": "games/timeshooter2/",
+     "id": "game",
+     "image": "images/ts2.jpg"
    }
   ]
   
