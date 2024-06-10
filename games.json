@@ -33,13 +33,31 @@
     "title": " ",
     "link": "no",
     "id": "gamespace",
-    "image": "THIS IS USED FOR SPACING HOT GAMES WITH THE OTHERS! ! !"
+    "image": "(--> THIS IS USED FOR SPACING HOT GAMES WITH THE OTHERS! ! !)"
   },
   {
     "title": "Burrito Bison ",
     "link": "games/burritobison/index.html",
     "id": "game",
     "image": "games/burritobison/logo.png"
+  },
+  {
+    "title": "Chess ",
+    "link": "games/chess/index.html",
+    "id": "game",
+    "image": "games/chess/icon.png"
+  },
+  {
+    "title": "Krunker ",
+    "link": "games/krunker/index.html",
+    "id": "game",
+    "image": "games/krunker/img/krunker-io.jpg"
+  },
+  {
+    "title": "College Retrobowl ",
+    "link": "games/retrobowlcollege/index.html",
+    "id": "game",
+    "image": "games/retrobowlcollege/unnamed.png"
   },
 
   {
