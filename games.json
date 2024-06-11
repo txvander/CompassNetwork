@@ -530,6 +530,24 @@
      "link": "games/timeshooter2/",
      "id": "game",
      "image": "images/ts2.jpg"
+   },
+   {
+    "title": "Five Nights at Freddy's",
+     "link": "games/fnaf/",
+     "id": "game",
+     "image": "images/fnaf.jpg"
+   },
+   {
+    "title": "Five Nights at Freddy's 2",
+     "link": "games/fnaf2/",
+     "id": "game",
+     "image": "images/fnaf2.webp"
+   },
+   {
+    "title": "Dogeminer 2",
+     "link": "games/Dogeminer2/",
+     "id": "game",
+     "image": "images/Doge2.jpg"
    }
   ]
   
