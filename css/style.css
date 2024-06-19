@@ -267,49 +267,4 @@ a {
   width: 4rem;
   height: 4rem;
 }
-.Counter {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 20px;
-  color: #ffffff;
-}
 
-.counter-box {
-  padding: 20px;
-  margin: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  width: 180px;
-  height: 130px;
-  color: #ffffff;
-}
-
-.counter-box h2 {
-  margin-top: 0;
-  color: #ffffff;
-  position: relative; 
-  text-align: center;
-}
-
-.counter-box h2 span {
-  position: relative; 
-  z-index: 1; 
-}
-
-.counter-box span {
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffffff;
-}
-.counter-box h2:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 24px;
-  height: 24px;
-  background-image: url('images/3kh0.png'); 
-  background-size: 24px 24px;
-  background-repeat: no-repeat;
-}
