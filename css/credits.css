@@ -27,7 +27,7 @@ body {
 h1 {
     font-size: 6rem;
     line-height: 0;
-    font-family: 'blinker', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     text-shadow: 10px 10px 4px black;
 }
@@ -38,7 +38,7 @@ h1 {
 h2 {
     font-size: 1.5rem;
     line-height: 0;
-    font-family: 'blinker', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     text-shadow: 1px 3px 4px black;
 }
@@ -79,7 +79,7 @@ h2 {
 
   text-decoration: none;
   font-size: 1.5rem;
-  font-family: 'blinker', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   transition: color.3s ease-in-out;
   transition: 0.30s;
   
@@ -134,7 +134,7 @@ a {
   color: #adadad;
   text-align: center;
   text-decoration: none;
-  font-family: 'blinker', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   transition: color .3s ease-in-out;
 }
 
@@ -182,7 +182,7 @@ a {
   text-decoration: none;
   font-size: 1.5rem;
   display: inline-block;
-  font-family: 'Blinker', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   transition: color .4s ease-in-out;
   margin: 4px 2px;
   cursor: pointer;
@@ -243,7 +243,7 @@ a {
   font-size: 27px;
   text-align: center;
   color: #FFFFFF;
-  font-family: 'blinker', sans-serif; 
+  font-family: 'Montserrat', sans-serif;
   justify-content: center;
 }
 h1 {
