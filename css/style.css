@@ -162,7 +162,7 @@ a {
     width: 100%;
 }
 .header {
-  padding: 20px;
+  padding: 60px;
   height: 650px;
 }
 
@@ -271,7 +271,6 @@ a {
 }
 
 .stats-logo {
-  padding-top: 1rem;
   font-size: 2rem;
   line-height: 0;
   color: #ffffff;
@@ -280,7 +279,7 @@ a {
 
 .stats-holder {
   overflow: hidden;
-  padding-bottom: 1rem;
+  padding-bottom: 5rem;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -307,4 +306,6 @@ a {
 }
 .stats {
   display: block;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
