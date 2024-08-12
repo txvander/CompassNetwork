@@ -129,7 +129,14 @@
     "id": "game",
     "image": "games/cupcake2048/favicon.png"
   },
-
+  
+ {
+    "title": "Baldis Basics",
+    "link": "games/baldis-basics/index.html",
+    "id": "game",
+    "image": "games/baldis-basics/splash.png"
+  },
+  
   {
     "title": "Tetris ",
     "link": "games/tetris/index.html",
