@@ -309,3 +309,10 @@ a {
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
+.stats-icon {
+  width: 70px; 
+  height: 70px;  
+  padding-bottom: 2.5rem;
+  padding-left: 1.7rem;
+}
+
