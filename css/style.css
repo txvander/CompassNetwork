@@ -294,6 +294,7 @@ a {
     object-fit: contain;
     width: 80px; 
     height: 80px;  
+    padding-bottom: 1.5rem;
 }
 
 .stats-title {
