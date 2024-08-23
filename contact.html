@@ -2,10 +2,29 @@
 <html>
     <head>
       <title>Compass - Contact</title>
-        <link rel="stylesheet" href="css/contact.css">
+        <link id="themeStylesheet" rel="stylesheet" href="css/contact.css">
         <link rel="icon" type="image/png" href="images/newlogo.png">
     </head>
     <body>
+      
+    <script>
+      function localtheme() {
+
+          const storedTheme = localStorage.getItem('theme');
+          const themeStylesheet = document.getElementById('themeStylesheet');
+
+          if (storedTheme === 'dark') {
+              themeStylesheet.href = 'themes/midnight/contact.css';
+          } else {
+              themeStylesheet.href = 'css/contact.css'; 
+          }
+      }
+
+
+      window.onload = function() {
+          localtheme();
+      };
+  </script>
       <div class="header">       
         <div class="bg"></div>
         <div class="topnav">

@@ -16,38 +16,18 @@ html {
     padding-left: 2rem;
     padding-right: 2rem;
 }
-p {
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-
-  }
 
 body {    
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    margin: 0; 
     background-image: url(../images/bg1.png);
-    margin: 0;  
     background-size: cover;
 }
 
+main { 
+  text-align: center;
+}
 
-h1 {
-    font-size: 3rem;
-    line-height: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    text-shadow: 10px 10px 4px black;
-}
-.h1p {
-  font-size: 12rem;
-}
-h2 {
-    font-size: 1.5rem;
-    line-height: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    text-shadow: 1px 3px 4px black;
-}
 .topnav {
 
   color: #FFFFFF;
@@ -71,7 +51,7 @@ h2 {
   text-align: center;
   margin-top: 15px;
   margin-right: 20px;
-
+  text-align: center;
   text-decoration: none;
   font-size: 1.5rem;
   font-family: 'Montserrat', sans-serif;
@@ -82,40 +62,72 @@ h2 {
   
 }
 
-  .nav-tab:hover {
-    transform: translateY(-.3em);
+#nav-logo {
+  margin-top: 7px;
+  margin-left: 10px;
+  width: 50px;
+}
 
-  }
- .right-padding-nav {
-    padding-right: 25px;
-  }
-  
- .left-padding-nav {
-    padding-left: 5rem;
-  }
-  
- .topnav a:hover {
-    color: rgb(255, 255, 255);
-  }
-
- .topnav a.active {
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
     color: white;
-   
-  }
+    text-shadow: 10px 10px 4px black;
+}
+.h1p {
+  font-size: 12rem;
+}
+h2 {
+    font-size: 1.2rem;
+    line-height: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: 1px 3px 4px black;
+}
 
- .nav-image {
-    height: 30px; /* Set the height of the image */
-    width: 30px; /* Set the width of the image */
-    vertical-align: bottom;
-
-  }
-
-  .nav-image:hover,
-  .nav-image:focus {
-    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-
-  }
+#hot {
+  width: 20px;
+  margin: -2px;
+  margin-left: 5px;
   
+}
+
+
+
+.nav-tab:hover {
+  transform: translateY(-0.3em);
+}
+.right-padding-nav {
+  padding-right: 25px;
+}
+
+.left-padding-nav {
+  padding-left: 5rem;
+}
+
+.topnav a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.topnav a.active {
+  color: white;
+ 
+}
+
+
+
+.nav-image {
+  height: 30px; /* Set the height of the image */
+  width: 30px; /* Set the width of the image */
+  vertical-align: bottom;
+}
+
+.nav-image:hover,
+.nav-image:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+
+}
+
   
   .main-holder {
   background-image: url(../images/u.png);
@@ -124,30 +136,17 @@ h2 {
   background-size: cover;
 }
 
-a {
-  
-  color: #adadad;
-  text-align: center;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  transition: color .3s ease-in-out;
-}
+
 
 
 .main {
-
+    display: flex;
     height: 100%;
     width: 100%;
 }
 .header {
   padding: 60px;
 
-}
-
-#nav-logo {
-  margin-top: 7px;
-  margin-left: 10px;
-  width: 50px;
 }
 .footer-logo-holder 
 {
@@ -196,6 +195,115 @@ a {
   color: black;
 }
 
+
+#searchInput {
+  background-color: #060225;
+  padding: 15px;
+  border-radius: 10px;
+  width: 700px;
+  border: solid;
+  color: #FFFFFF;
+  font-size: 150%;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 100px;
+
+
+}
+
+
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+
+}
+
+.game {
+    display: inline-block;
+    background-color:#080927;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px 2px white;
+    margin-top: 20px;
+    width: 200px;
+
+
+    
+}
+
+.gamehot {
+  display: inline-block;
+  background-color:#080927;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px 2px #ff7300;
+  margin-top: 20px;
+  width: 200px;
+
+
+  
+}
+
+
+
+.gamehot img {
+  height: 200;
+  width:  170px;
+  margin: 10px;
+
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform .35s ease;
+
+}
+
+.gamespace {
+  visibility: hidden;
+  
+}
+
+
+
+
+.game:hover {
+  filter: brightness(80%);
+
+}
+.gamehot:hover {
+  filter: brightness(80%);
+
+}
+
+
+
+a {text-decoration: none;}
+
+.game img {
+    height: 180px;
+    width:  170px;
+    margin: 10px;
+
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform .35s ease;
+
+}
+
+
+
+
+
+
+
+main { 
+  text-align: center;
+}
+
+main h1 {
+  padding-top: 1rem;
+}
 .footer-media-holder {
   height: fit-content;
   width: 100%;
