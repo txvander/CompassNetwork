@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 html {
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -15,52 +17,44 @@ html {
     place-content: center;
     padding-left: 2rem;
     padding-right: 2rem;
+    position: relative;
+
+
 }
-p {
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-
-  }
-
-  #themeswitcher {
-    background-color: #000000;
-    color: #FFFFFF;
-    border-color: #FFFFFF;
-    border-style: solid;
-    border-radius: 5px;
-    transition: 500ms;
-  }
-
-  #themeswitcher:hover{
-    transform: translateY(5px);
-    cursor: pointer;
-  }
 
 body {    
     background-color: black;
+    margin: 0;   
     background-image: url(../images/bg1.png);
-    margin: 0;  
     background-size: cover;
 }
 
-
 h1 {
+  font-size: 6rem;
+  line-height: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-shadow: 10px 10px 4px black;
+  text-align: center;
+  padding-top: 30px;
+}
+.h1p {
+  font-size: 12rem;
+
+}
+p {
+color: white;
+font-family: 'Montserrat', sans-serif;
+font-size: 1.5rem;
+text-align: center;
+}
+
+h6 {
     font-size: 3rem;
     line-height: 0;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    text-shadow: 10px 10px 4px black;
-}
-.h1p {
-  font-size: 12rem;
-}
-h2 {
-    font-size: 1.5rem;
-    line-height: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    text-shadow: 1px 3px 4px black;
+    text-shadow: 7px 7px 7px black;
 }
 .topnav {
 
@@ -97,9 +91,24 @@ h2 {
 }
 
   .nav-tab:hover {
-    transform: translateY(-.3em);
+    transform: translateY(-0.3em);
 
   }
+
+  #nav-text {
+    float: right;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 35px;
+    margin-bottom: -20px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+
+
+
  .right-padding-nav {
     padding-right: 25px;
   }
@@ -120,19 +129,18 @@ h2 {
  .nav-image {
     height: 30px; /* Set the height of the image */
     width: 30px; /* Set the width of the image */
-    vertical-align: bottom;
-
+    transition: transform .1s ease-in-out; /* Add a transition effect on hover */
+    vertical-align: bottom; /* Aligns with the text on the navbar */
+    margin-right: 5px; /* Margin so text doesnt overlap with the icon*/
   }
 
   .nav-image:hover,
   .nav-image:focus {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-
   }
   
-  
   .main-holder {
-  background-image: url(../images/u.png);
+  background-image: url(../images/index.jpg);
   background-repeat: repeat-x;
   background-position: center;
   background-size: cover;
@@ -149,13 +157,13 @@ a {
 
 
 .main {
-
+    display: flex;
     height: 100%;
     width: 100%;
 }
 .header {
   padding: 60px;
-
+  height: 650px;
 }
 
 #nav-logo {
@@ -163,6 +171,8 @@ a {
   margin-left: 10px;
   width: 50px;
 }
+
+
 .footer-logo-holder 
 {
   overflow: hidden;
@@ -171,6 +181,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 .footer-logo {
   padding-top: 2rem;
@@ -187,6 +198,39 @@ a {
   flex-wrap: wrap;
   background-image: url(../images/bg1.png);
   background-size: cover;
+}
+#uv-address {
+  background-color: #060225;
+  padding: 15px;
+  border-radius: 10px;
+  width: 700px;
+  border: solid;
+  color: #FFFFFF;
+  font-size: 150%;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: -100px;
+
+
+
+}
+
+
+
+#uv-log {
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 10px;
+    width: 700px;
+    border: solid;
+    color: transparent;
+    font-size: 150%;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 100px;
+    height: fit-content;
+
+
+
+  
 }
 .footer-tab {
   background-color: transparent;
@@ -224,4 +268,75 @@ a {
 .footer-media {
   width: 4rem;
   height: 4rem;
+}
+
+.stats-logo {
+  font-size: 2rem;
+  line-height: 0;
+  color: #ffffff;
+  padding-bottom: 3rem;
+}
+
+.stats-holder {
+  overflow: hidden;
+  padding-bottom: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 200px;
+}
+
+.stats-holder img {
+    width: 100%; 
+    height: 100%;
+    object-fit: contain;
+    width: 80px; 
+    height: 80px;  
+    padding-bottom: 1.5rem;
+}
+
+.stats-title {
+  font-size: 4rem;
+  line-height: 1;
+  padding-bottom: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  align-items: center;
+}
+
+
+.stats-desc {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+}
+.stats {
+  display: block;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.stats-icon {
+  width: 70px; 
+  height: 70px;  
+  padding-bottom: 2.5rem;
+  padding-left: 1.7rem;
+}
+
+.stats-icon img {
+  width: 110%; 
+  height: 110%;
+  object-fit: contain;
+}
+.stats-box {
+  text-align: center;
+}
+.stats-box img {
+  display: block; 
+  margin: 0 auto; 
+  padding-bottom: 2
 }

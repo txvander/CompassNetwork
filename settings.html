@@ -2,7 +2,7 @@
 <html>
     <head>
       <title>Compass - Settings</title>
-        <link rel="stylesheet" href="css/settings.css">
+        <link id="themeStylesheet" rel="stylesheet"  href="css/settings.css">
         <link rel="icon" type="image/png" href="images/newlogo.png">
     </head>
     <body>
@@ -31,6 +31,30 @@
             channel: '1198130473969405982' // #〈💬〉chatroom
         })
     </script>
+    <h1>Theme</h1><p style="color:white;">(experimental)</p>
+
+    <button onclick="localStorage.setItem('theme', 'default'),location.reload();" id="themeswitcher">Default</button>
+    <button onclick="localStorage.setItem('theme', 'dark'),location.reload();" id="themeswitcher">Midnight</button>
+
+
+    <script>
+      function localtheme() {
+
+          const storedTheme = localStorage.getItem('theme');
+          const themeStylesheet = document.getElementById('themeStylesheet');
+
+          if (storedTheme === 'dark') {
+              themeStylesheet.href = 'themes/Midnight/settings.css';
+          } else {
+              themeStylesheet.href = 'css/settings.css'; 
+          }
+      }
+
+
+      window.onload = function() {
+          localtheme();
+      };
+  </script>
             
         </div>
       </div>

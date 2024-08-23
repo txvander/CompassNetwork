@@ -2,10 +2,29 @@
 <html>
     <head>
       <title>Compass - Games</title>
-        <link rel="stylesheet" href="css/games.css">
+        <link id="themeStylesheet" rel="stylesheet" href="css/games.css">
         <link rel="icon" type="image/png" href="images/newlogo.png">
     </head>
     <body>
+      
+    <script>
+      function localtheme() {
+
+          const storedTheme = localStorage.getItem('theme');
+          const themeStylesheet = document.getElementById('themeStylesheet');
+
+          if (storedTheme === 'dark') {
+              themeStylesheet.href = 'themes/Midnight/games.css';
+          } else {
+              themeStylesheet.href = 'css/games.css'; 
+          }
+      }
+
+
+      window.onload = function() {
+          localtheme();
+      };
+  </script>
       <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
         new Crate({
             server: '1198073712713404486', // Compass
