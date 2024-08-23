@@ -17,6 +17,20 @@ html {
     padding-right: 2rem;
 }
 
+#themeswitcher {
+  background-color: #000000;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  border-style: solid;
+  border-radius: 5px;
+  transition: 500ms;
+}
+
+#themeswitcher:hover{
+  transform: translateY(5px);
+  cursor: pointer;
+}
+
 p {
   color: white;
   font-family: 'Montserrat', sans-serif;

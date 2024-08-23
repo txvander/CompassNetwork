@@ -23,6 +23,20 @@ p {
 
   }
 
+  #themeswitcher {
+    background-color: #000000;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-radius: 5px;
+    transition: 500ms;
+  }
+
+  #themeswitcher:hover{
+    transform: translateY(5px);
+    cursor: pointer;
+  }
+
 body {    
     background-color: black;
     background-image: url(../images/bg1.png);
