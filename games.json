@@ -555,6 +555,12 @@
      "link": "games/Dogeminer2/",
      "id": "game",
      "image": "images/Doge2.jpg"
+   },
+   {
+    "title": "Hole.io",
+     "link": "games/holeio/",
+     "id": "game",
+     "image": "images/holeio.png"
    }
   ]
   
