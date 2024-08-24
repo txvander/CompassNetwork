@@ -7,9 +7,9 @@ The best unblocked games website you could find.
 ## Staff
 
 - FOUNDER - [@txvander](https://github.com/txvander)
-- UX DESIGNER - [@Citraw](https://github.com/cyancitra)
-- DEVELOPER - [@TooMuchJack](https://github.com/toomuchjack)
-- DEVELOPER - [@YourLocalDev](https://github.com/your-local-indian)
+- PROJECT MANAGER - [@Citraw](https://github.com/cyancitra)
+- SECURITY DEVELOPER - [@TooMuchJack](https://github.com/toomuchjack)
+- INTERFACE DEVELOPER - [@YourLocalDev](https://github.com/your-local-indian)
 
 ## Acknowledgements
 
