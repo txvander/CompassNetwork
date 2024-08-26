@@ -449,7 +449,7 @@
      "image": "images/hexgl.jpg"
    },
    {
-    "title": "Amazing Rope Police",
+    "title": "ARP",
      "link": "games/amazing-rope-police/",
      "id": "game",
      "image": "images/amazing.jpeg"
@@ -539,13 +539,13 @@
      "image": "images/ts2.jpg"
    },
    {
-    "title": "Five Nights at Freddy's",
+    "title": "Fnaf One",
      "link": "games/fnaf/",
      "id": "game",
      "image": "images/fnaf.jpg"
    },
    {
-    "title": "Five Nights at Freddy's 2",
+    "title": "Fnaf Two",
      "link": "games/fnaf2/",
      "id": "game",
      "image": "images/fnaf2.webp"
