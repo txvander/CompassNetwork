@@ -16,7 +16,9 @@ The best unblocked games website you could find.
  - [3kh0](https://adfree3kh0.github.io/projects.html)
  - [Potato HQ](https://github.com/potat323424/potatohq)
 
+## Contributions 
 
+![Alt](https://repobeats.axiom.co/api/embed/6be63d91c0a623963b9ba07b8552ab9eed52365d.svg "Repobeats analytics image")
 
 ## Contributing
 
