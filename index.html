@@ -19,8 +19,11 @@
 
           if (storedTheme === 'dark') {
               themeStylesheet.href = 'themes/Midnight/style.css';
+          } else if (storedTheme === 'light') {
+            themeStylesheet.href = 'themes/Light/style.css';
+
           } else {
-              themeStylesheet.href = 'css/style.css'; 
+            themeStylesheet.href = 'css/style.css'; 
           }
       }
 

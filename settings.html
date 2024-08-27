@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Compass - Settings</title>
+      <title id="cloakable">Compass - Settings</title>
         <link id="themeStylesheet" rel="stylesheet"  href="css/settings.css">
-        <link rel="icon" type="image/png" href="images/newlogo.png">
+        <link rel="icon" type="image/png" href="images/newlogo.png" id="cloak">
     </head>
     <body>
       <div class="header">
@@ -35,6 +35,7 @@
 
     <button onclick="localStorage.setItem('theme', 'default'),location.reload();" id="themeswitcher">Default</button>
     <button onclick="localStorage.setItem('theme', 'dark'),location.reload();" id="themeswitcher">Midnight</button>
+    <button onclick="localStorage.setItem('theme', 'light'),location.reload();" id="themeswitcher">Light</button>
 
 
     <script>
@@ -45,8 +46,11 @@
 
           if (storedTheme === 'dark') {
               themeStylesheet.href = 'themes/Midnight/settings.css';
+          } else if (storedTheme === 'light') {
+            themeStylesheet.href = 'themes/Light/settings.css';
+
           } else {
-              themeStylesheet.href = 'css/settings.css'; 
+            themeStylesheet.href = 'css/settings.css'; 
           }
       }
 
@@ -55,6 +59,56 @@
           localtheme();
       };
   </script>
+  <script>
+    function cloakTitle() {
+      const title = document.getElementById('cloakable');
+      const favicon = document.getElementById('cloak');
+      const titleselect = document.getElementById('titleselect');
+      const status = localStorage.getItem('cloak');
+      console.log('Cloak function started');
+
+      
+      if (status === 'google') {
+        console.log('Cloak status succesfully loaded');
+        console.log('Cloak succesfully loaded (GOOGLE)');
+        title.textContent="Google";
+        favicon.href="images/Tab cloaks/google-logo-hd.png"
+      } else if (status === 'youtube') {
+        console.log('Cloak status succesfully loaded');
+        console.log('Cloak succesfully loaded (YOUTUBE)');
+        title.textContent="Youtube";
+        favicon.href="images/Tab cloaks/yt2.png"
+        
+      } else if (status === 'newtab') {
+        console.log('Cloak status succesfully loaded');
+        console.log('Cloak succesfully loaded (NEWTAB)');
+        title.textContent="New Tab";
+        favicon.href="images/Tab cloaks/newtab.png"
+      } else {
+        console.log('No current cloak detected')
+      }
+        
+      
+    }
+    window.onload = function() {
+      cloakTitle();
+    }
+
+
+    
+  </script>
+  <h1>Tab cloak</h1>
+
+  <button onclick="localStorage.setItem('cloak', 'none'),location.reload();" id="themeswitcher">Reset</button>
+  <button onclick="localStorage.setItem('cloak', 'google'),cloakTitle();" id="themeswitcher">Google</button>
+  <button onclick="localStorage.setItem('cloak', 'youtube'),cloakTitle();" id="themeswitcher">Youtube</button>
+  <button onclick="localStorage.setItem('cloak', 'newtab'),cloakTitle();" id="themeswitcher">New tab</button>
+
+
+
+
+
+
             
         </div>
       </div>

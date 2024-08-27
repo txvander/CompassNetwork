@@ -24,7 +24,7 @@ p {
   }
 
   #themeswitcher {
-    background-color: #000000;
+    background-color: #B3B3B3;
     color: #FFFFFF;
     border-color: #FFFFFF;
     border-style: solid;
@@ -38,7 +38,7 @@ p {
   }
 
 body {    
-    background-color: black;
+    background-color: #c5c5c5;
     background-image: url(../images/bg1.png);
     margin: 0;  
     background-size: cover;
@@ -50,7 +50,7 @@ h1 {
     line-height: 0;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 4px 4px 4px black;
 }
 .h1p {
   font-size: 12rem;
@@ -65,8 +65,8 @@ h2 {
 .topnav {
 
   color: #FFFFFF;
-  background-image: url('../images/navbar.png');
   background-size: 100%;
+  background-color: #B3B3B3;
   overflow: hidden;
   margin: -50px;
   border-radius: 15px;

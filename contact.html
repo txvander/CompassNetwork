@@ -7,24 +7,27 @@
     </head>
     <body>
       
-    <script>
-      function localtheme() {
-
-          const storedTheme = localStorage.getItem('theme');
-          const themeStylesheet = document.getElementById('themeStylesheet');
-
-          if (storedTheme === 'dark') {
-              themeStylesheet.href = 'themes/Midnight/contact.css';
-          } else {
+      <script>
+        function localtheme() {
+  
+            const storedTheme = localStorage.getItem('theme');
+            const themeStylesheet = document.getElementById('themeStylesheet');
+  
+            if (storedTheme === 'dark') {
+                themeStylesheet.href = 'themes/Midnight/contact.css';
+            } else if (storedTheme === 'light') {
+              themeStylesheet.href = 'themes/Light/contact.css';
+  
+            } else {
               themeStylesheet.href = 'css/contact.css'; 
-          }
-      }
-
-
-      window.onload = function() {
-          localtheme();
-      };
-  </script>
+            }
+        }
+  
+  
+        window.onload = function() {
+            localtheme();
+        };
+    </script>
       <div class="header">       
         <div class="bg"></div>
         <div class="topnav">
