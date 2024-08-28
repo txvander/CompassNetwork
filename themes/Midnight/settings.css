@@ -6,6 +6,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 .main-box {
     display: inline;
     flex-direction: column;
@@ -16,6 +18,7 @@ html {
     padding-left: 2rem;
     padding-right: 2rem;
 }
+
 
 #themeswitcher {
   background-color: #000000;
@@ -52,6 +55,7 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     color: white;
     text-shadow: 10px 10px 4px black;
+    animation: neon 3s infinite;
 }
 .h1p {
   font-size: 12rem;

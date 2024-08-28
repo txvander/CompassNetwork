@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.main-box {
+    display: inline;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: auto;
+    max-width: 60rem;
+    place-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+body {    
+    background-color: #c5c5c5;
+    margin: 0;   
+    background-image: url(../images/bg1.png);
+    background-size: cover;
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: 10px 10px 4px black;
+    text-align: center;
+}
+
+.h1p {
+  font-size: 12rem;
+}
+
+h2 {
+    font-size: 200%;
+    line-height: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: 1px 3px 4px black;
+    text-align: center; 
+    padding-top: 15px;
+  }
+
+  .topnav {
+
+    color: #FFFFFF;
+    background-image: url('../images/navbar.png');
+    background-size: 100%;
+    background-color: #B3B3B3;
+    overflow: hidden;
+    margin: -50px;
+    border-radius: 15px;
+    height: 60px;
+
+    
+
+    
+
+
+  }
+
+  .nav-tab {
+    float: right;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 20px;
+
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: color.3s ease-in-out;
+    transition: 0.30s;
+    
+
+    
+  }
+
+.nav-tab:hover {
+  transform: translateY(-.3em);
+}
+
+.right-padding-nav {
+  padding-right: 25px;
+}
+
+.left-padding-nav {
+  padding-left: 5rem;
+}
+
+.topnav a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.topnav a.active {
+  color: white;
+ 
+}
+
+
+
+.nav-image {
+  height: 30px; /* Set the height of the image */
+  width: 30px; /* Set the width of the image */
+  vertical-align: bottom;
+
+}
+
+.nav-image:hover,
+.nav-image:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+
+}
+
+  
+  .main-holder {
+  background-image: url(../images/background.png);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: cover;
+}
+
+a {
+  
+  color: #adadad;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
+  transition: color .3s ease-in-out;
+}
+
+
+.main {
+
+    height: 100%;
+    width: 100%;
+}
+.header {
+  padding: 60px;
+}
+
+#nav-logo {
+  margin-top: 7px;
+  margin-left: 10px;
+  width: 50px;
+}
+.footer-logo-holder 
+{
+  overflow: hidden;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo {
+  padding-top: 2rem;
+  width: 3.7rem;
+  height: 3.7rem;
+}
+.footer-nav-holder {
+  height: fit-content;
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  flex-wrap: wrap;
+  background-image: url(../images/bg1.png);
+  background-size: cover;
+}
+.footer-tab {
+  background-color: transparent;
+  border: 2px solid #000000;
+  color: #ffffff;
+  text-align: center;
+  padding:15px 50px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  transition: color .4s ease-in-out;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-color: white;
+  border-radius: 7px;
+  margin-right: 25px;
+}
+.footer-tab:hover {
+  background-color: white;
+  color: black;
+}
+.footer-media-holder {
+  height: fit-content;
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  flex-wrap: wrap;
+  background-image: url(../images/bg1.png);
+  background-size: cover;
+}
+.footer-media {
+  width: 4rem;
+  height: 4rem;
+}
+.embed {
+  padding-top: 20px;
+}
