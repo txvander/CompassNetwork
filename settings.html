@@ -30,12 +30,14 @@
             server: '1198073712713404486', // Compass
             channel: '1198130473969405982' // #〈💬〉chatroom
         })
-    </script>
-    <h1>Theme</h1><p style="color:white;">(experimental)</p>
+
+ </script>
+ <div class="settings-container">
+    <center><h1>Theme</h1><p style="color:white;">(experimental)</p>
 
     <button onclick="localStorage.setItem('theme', 'default'),location.reload();" id="themeswitcher">Default</button>
     <button onclick="localStorage.setItem('theme', 'dark'),location.reload();" id="themeswitcher">Midnight</button>
-
+    </center>
 
     <script>
       function localtheme() {
@@ -55,7 +57,7 @@
           localtheme();
       };
   </script>
-            
+</div>
         </div>
       </div>
       <hr size="3" noshade color="#FFFFFF">   

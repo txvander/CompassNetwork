@@ -3,32 +3,13 @@
 
   <head>
     <title>Compass - Home</title>
-    <link id="themeStylesheet" rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="images/newlogo.png">
     
   </head>
 
   <body>
-    
-    <script>
-      function localtheme() {
-
-          const storedTheme = localStorage.getItem('theme');
-          const themeStylesheet = document.getElementById('themeStylesheet');
-
-          if (storedTheme === 'dark') {
-              themeStylesheet.href = 'themes/Midnight/style.css';
-          } else {
-              themeStylesheet.href = 'css/style.css'; 
-          }
-      }
-
-
-      window.onload = function() {
-          localtheme();
-      };
-  </script>
     <div class="header">
     <div class="bg"></div>
       <div class="topnav"> 
@@ -39,6 +20,7 @@
           <a class="nav-tab" href="games.html"><img class="nav-image" src="images/gamelogo.png"> GAMES</a>         
           <a class="nav-tab" href="index.html"><img class="nav-image" src="images/house.png"> HOME</a>   
       </div>
+      
 
       <h1 class="h1p">COMPASS</h1>
       <h1 id="random-text" style="font-size: 36px;"></h1>
