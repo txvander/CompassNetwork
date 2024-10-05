@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Compass - Contact</title>
+      <title id="cloakable">Compass - Contact</title>
         <link id="themeStylesheet" rel="stylesheet" href="css/contact.css">
-        <link rel="icon" type="image/png" href="images/newlogo.png">
+        <link id="cloak" rel="icon" type="image/png" href="images/newlogo.png">
     </head>
     <body>
       
@@ -23,10 +23,7 @@
             }
         }
   
-  
-        window.onload = function() {
-            localtheme();
-        };
+
     </script>
 
 <script>
@@ -42,7 +39,7 @@
       console.log('Cloak status succesfully loaded');
       console.log('Cloak succesfully loaded (GOOGLE)');
       title.textContent="Google";
-      favicon.href="images/Tab cloaks/google-logo-hd.png"
+      favicon.href="images/Tab cloaks/google.png"
     } else if (status === 'youtube') {
       console.log('Cloak status succesfully loaded');
       console.log('Cloak succesfully loaded (YOUTUBE)');
@@ -60,12 +57,13 @@
       
     
   }
-  window.onload = function() {
-    cloakTitle();
-  }
-
 
   
+</script>
+<script>
+  // script, do not organize or neither will work.
+  addEventListener("DOMContentLoaded", () => {localtheme();});
+  window.onload = function() {cloakTitle();}
 </script>
 
     

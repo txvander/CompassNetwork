@@ -2,10 +2,10 @@
 <html>
 
   <head>
-    <title>Compass - Home</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title id="cloakable">Compass - Home</title>
+    <link id="themeStylesheet" rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/newlogo.png">
+    <link id="cloak" rel="icon" type="image/png" href="images/newlogo.png">
     
   </head>
 
@@ -52,9 +52,6 @@
       
     
   }
-  window.onload = function() {
-    cloakTitle();
-  }
 
 
   
@@ -77,10 +74,13 @@
       }
 
 
-      window.onload = function() {
-          localtheme();
-      };
+
   </script>
+      <script>
+        // script, do not organize or neither will work.
+        addEventListener("DOMContentLoaded", () => {localtheme();});
+        window.onload = function() {cloakTitle();}
+      </script>
     <div class="header">
     <div class="bg"></div>
       <div class="topnav"> 

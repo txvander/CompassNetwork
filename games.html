@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Compass - Games</title>
+      <title id="cloakable">Compass - Games</title>
         <link id="themeStylesheet" rel="stylesheet" href="css/games.css">
-        <link rel="icon" type="image/png" href="images/newlogo.png">
+        <link rel="icon" type="image/png" href="images/newlogo.png" id="cloak">
     </head>
     <body>
 
@@ -20,7 +20,7 @@
             console.log('Cloak status succesfully loaded');
             console.log('Cloak succesfully loaded (GOOGLE)');
             title.textContent="Google";
-            favicon.href="images/Tab cloaks/google-logo-hd.png"
+            favicon.href="images/Tab cloaks/google.png"
           } else if (status === 'youtube') {
             console.log('Cloak status succesfully loaded');
             console.log('Cloak succesfully loaded (YOUTUBE)');
@@ -38,9 +38,7 @@
             
           
         }
-        window.onload = function() {
-          cloakTitle();
-        }
+
     
     
         
@@ -63,10 +61,13 @@
         }
   
   
-        window.onload = function() {
-            localtheme();
-        };
+
     </script>
+        <script>
+          // script, do not organize or neither will work.
+          addEventListener("DOMContentLoaded", () => {localtheme();});
+          window.onload = function() {cloakTitle();}
+        </script>
       <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
         new Crate({
             server: '1198073712713404486', // Compass

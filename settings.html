@@ -55,7 +55,7 @@
           console.log('Cloak status succesfully loaded');
           console.log('Cloak succesfully loaded (GOOGLE)');
           title.textContent="Google";
-          favicon.href="images/Tab cloaks/google-logo-hd.png"
+          favicon.href="images/Tab cloaks/google.png"
         } else if (status === 'youtube') {
           console.log('Cloak status succesfully loaded');
           console.log('Cloak succesfully loaded (YOUTUBE)');
@@ -74,44 +74,34 @@
         
       }
 
-      window.onload = function() {
-          cloakTitle();
-      };
 
 
-
-  
-      
-    </script>
-
-    <script>
-
-    </script>
-
-    <script>
       function localtheme() {
 
-          const storedTheme = localStorage.getItem('theme');
-          const themeStylesheet = document.getElementById('themeStylesheet');
+      const storedTheme = localStorage.getItem('theme');
+      const themeStylesheet = document.getElementById('themeStylesheet');
 
-          if (storedTheme === 'dark') {
-              themeStylesheet.href = 'themes/Midnight/settings.css';
-              console.log('Current theme: dark')
-          } else if (storedTheme === 'light') {
-            themeStylesheet.href = 'themes/Light/settings.css';
-            console.log('Current theme: light')
+if (storedTheme === 'dark') {
+    themeStylesheet.href = 'themes/Midnight/settings.css';
+    console.log('Current theme: dark')
+} else if (storedTheme === 'light') {
+  themeStylesheet.href = 'themes/Light/settings.css';
+  console.log('Current theme: light')
 
-          } else {
-            themeStylesheet.href = 'css/settings.css'; 
-            console.log('Current theme: none')
-          }
-      }
+} else {
+  themeStylesheet.href = 'css/settings.css'; 
+  console.log('Current theme: none')
+}
+}
 
+    </script>
+    
 
-      window.onload = function() {
-          localtheme();
-      };
-  </script>
+    <script>
+      // script, do not organize or neither will work.
+      addEventListener("DOMContentLoaded", () => {localtheme();});
+      window.onload = function() {cloakTitle();}
+    </script>
 
   <h1>Tab cloak</h1>
 
