@@ -3,9 +3,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@keyframes intrance {
+  0% {transform: translateX(-500px);}
+  100% {transform: translateX(0px);}
+}
+
+@keyframes leave {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(100%);}
+}
+
 html {
     overflow-y: scroll;
     scroll-behavior: smooth;
+}
+
+.welcome {
+  background-color: #535353;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  position: fixed;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  align-items: start;
+
+  
+
+}
+
+.welcome h2  {
+  animation: 1s alternate intrance;
+}
+.welcome h3  {
+  animation: 1s alternate intrance;
+}
+.welcome button  {
+  animation: 1s alternate intrance;
+  background-color: #272727;
+  color: #FFFFFF;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 5px;
+  transition: .5s;
+  
+}
+
+.welcome button:hover {
+  transform: translateY(3px);
+}
+h3 {
+  font-weight: 200;
 }
 
 .main-box {
