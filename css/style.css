@@ -86,10 +86,12 @@ h3 {
 
 
 body {    
+    background-image: url(../images/bg1.jpg);
     background-color: black;
     margin: 0;   
-    background-image: url(../images/bg1.png);
-    background-size: cover;
+
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 h1 {

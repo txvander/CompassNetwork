@@ -371,9 +371,6 @@ a {
   margin-top: 10px;
 }
 
-.play:hover {
-  transform: translateX(10px);
-}
 
 .stats-desc {
   font-size: 75%;

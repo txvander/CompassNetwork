@@ -28,7 +28,7 @@ html {
 }
 
 .play:hover {
-  transform: translateX(10px);
+  transform: translateY(10px);
 }
 
 
@@ -90,8 +90,9 @@ h3 {
 body {    
     background-color: black;
     margin: 0;   
-    background-image: url(../images/bg1.png);
-    background-size: cover;
+    background-image: url(background.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 h1 {
