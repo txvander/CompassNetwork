@@ -73,6 +73,8 @@ h3 {
 
 }
 
+
+
 body {    
     background-color: #c5c5c5;
     margin: 0;   
@@ -81,12 +83,12 @@ body {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 3rem;
   line-height: 0;
   font-family: 'Montserrat', sans-serif;
   color: white;
-  text-shadow: 10px 10px 4px black;
-  text-align: center;
+  text-shadow: 5px 5px 4px black;
+
   padding-top: 30px;
 }
 .h1p {
@@ -337,7 +339,8 @@ a {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 200px;
+  gap: 10%;
+  margin-top: -100px;
 }
 
 .stats-holder img {
@@ -350,7 +353,7 @@ a {
 }
 
 .stats-title {
-  font-size: 4rem;
+  font-size: 2rem;
   line-height: 1;
   padding-bottom: 1.5rem;
   font-family: 'Montserrat', sans-serif;
@@ -359,22 +362,36 @@ a {
   align-items: center;
 }
 
+.play {
+  background-color:#3c3c3c;
+  padding: 5px;
+  border-radius: 5px;
+  border-color: #FFFFFF;
+  border-style: solid;
+  margin-top: 10px;
+}
+
+.play:hover {
+  transform: translateX(10px);
+}
 
 .stats-desc {
-  font-size: 1.5rem;
+  font-size: 75%;
   line-height: 1;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   color: #ffffff;
+  margin-top: -20px;
 }
 .stats {
   display: block;
   padding-top: 10rem;
   padding-bottom: 10rem;
+  
 }
 .stats-icon {
-  width: 70px; 
-  height: 70px;  
+  width: 50px; 
+  height: 50px;  
   padding-bottom: 2.5rem;
   padding-left: 1.7rem;
 }
@@ -390,5 +407,8 @@ a {
 .stats-box img {
   display: block; 
   margin: 0 auto; 
-  padding-bottom: 2
+  padding-bottom: 2;
+  width: 40px;
+  margin-bottom: -40px;
+  
 }

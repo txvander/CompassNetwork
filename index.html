@@ -12,22 +12,7 @@
 
   <body>
 
-    <div id="welcome" class="welcome">
-      
-      <h2 style="margin-left: 5%; padding-top: 200px;">WELCOME TO COMPASS</h2>
-      <h3 style="margin-left: 5%; font-size: 100%;">The lightweight, best unblocked games website you could find.</h3>
-      <button style="margin-left: 5%; font-size: 100%; cursor: pointer;" onclick="leave()">Play</button>
-      <script>
 
-
-        function leave() {
-                  document.getElementById('welcome').style.animation = 'leave 2s'
-                  setTimeout(function(){
-                    document.getElementById("welcome").style.display = "none";
-                  }, 1990);
-        }
-      </script>
-    
     </div>
     
     <audio autoplay loop>
@@ -55,8 +40,8 @@
       </div>
       
 
-      <h1 class="h1p">COMPASS</h1>
-      <h1 id="random-text" style="font-size: 36px;"></h1>
+      <h1 style="margin-top: 10%;">Welcome to compass</h1>
+      <h1 id="random-text" style="font-size: 30px;left: 0%;margin-bottom: 100px;"></h1>
       <script>
         const texts = 
         ["The best unblocked games website you could find.", 
@@ -79,6 +64,10 @@
         document.getElementById("random-text").innerHTML = randomText;
       </script>
 
+<a href="games.html" class="play">Play</a>
+      
+
+
 
 
     <div class="stats">
@@ -86,40 +75,40 @@
         <div class="stats-box">
           <img src="images/game.png">
           <div class="stats-title">
-            <center>92</center>
+            92
           </div>
           <div class="stats-desc">
-            <center>Games</center>
+            Games
           </div>
         </div>
 
         <div class="stats-box">
           <img src="images/users.png">
           <div class="stats-title">
-            <center>43K+</center>
+            43K+
           </div>
           <div class="stats-desc">
-            <center>Visits</center>
+            Visits
           </div>
         </div>
 
         <div class="stats-box">
             <img src="images/people.png">
           <div class="stats-title">
-            <center>5k+</center>
+            5k+
           </div>
           <div class="stats-desc">
-            <center>Users</center>
+            Users
           </div>
         </div>
 
         <div class="stats-box">
             <img src="images/dss.png">
           <div class="stats-title">
-            <center>147</center>
+            147
           </div>
           <div class="stats-desc">
-            <center>Discord Members</center>
+            Discord Members
           </div>
         </div>
 
@@ -136,6 +125,7 @@
       </div>
     </div>
     </div>
+    
 
     <footer>   
       <hr size="3" noshade color="#FFFFFF">       
