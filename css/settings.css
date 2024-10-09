@@ -39,8 +39,7 @@ p {
   }
 
 body {    
-    background-color: black;
-    background-image: url(../images/bg1.png);
+    background-color: #272727;
     margin: 0;  
     background-size: cover;
 }

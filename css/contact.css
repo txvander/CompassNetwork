@@ -18,9 +18,8 @@ html {
 }
 
 body {    
-    background-color: black;
+    background-color: #272727;
     margin: 0;   
-    background-image: url(../images/bg1.png);
     background-size: cover;
 }
 
