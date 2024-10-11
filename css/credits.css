@@ -164,13 +164,11 @@ a {
 .footer-nav-holder {
   height: fit-content;
   width: 100%;
-  background-color: #000000;
+  background-color: #272727;
   display: flex;
   flex-direction: row;
   place-content: center;
   flex-wrap: wrap;
-  
-  background-size: cover;background-image: url(../images/bg1.png);
 }
 .footer-tab {
   background-color: transparent;
@@ -196,13 +194,11 @@ a {
 .footer-media-holder {
   height: fit-content;
   width: 100%;
-  background-color: #000000;
+  background-color: #272727;
   display: flex;
   flex-direction: row;
   place-content: center;
   flex-wrap: wrap;
-  
-  background-size: cover;background-image: url(../images/bg1.png);
 }
 .footer-media {
   width: 4rem;

@@ -164,12 +164,11 @@ h2 {
 .footer-nav-holder {
   height: fit-content;
   width: 100%;
-  background-color: #000000;
+  background-color: #272727;
   display: flex;
   flex-direction: row;
   place-content: center;
   flex-wrap: wrap;
-  background-image: url(../images/bg1.png);
   background-size: cover;
 }
 .footer-tab {
@@ -306,12 +305,11 @@ main h1 {
 .footer-media-holder {
   height: fit-content;
   width: 100%;
-  background-color: #000000;
+  background-color: #272727;
   display: flex;
   flex-direction: row;
   place-content: center;
   flex-wrap: wrap;
-  background-image: url(../images/bg1.png);
   background-size: cover;
 }
 .footer-media {
