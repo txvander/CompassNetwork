@@ -575,16 +575,16 @@
      "image": "images/Doge2.jpg"
    },
    {
+    "title": "Territorial.io",
+     "link": "games/file.html",
+     "id": "game",
+     "image": "images/territorialio.png"
+   },
+   {
     "title": "Hole.io",
      "link": "games/holeio/",
      "id": "game",
      "image": "images/holeio.png"
-   },
-  {
-    "title": "Territorial.io ",
-    "link": "games/file.html",
-    "id": "game",
-    "image": "images/territorialio.png"
-  },
+   }
   ]
   
