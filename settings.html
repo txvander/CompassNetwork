@@ -11,7 +11,9 @@
         <div>
           
       <div class="topnav">
+        <a href="index.html">
           <img id="nav-logo" src="images/newlogo.png" alt="Cloudburst-logo">
+        </a>
           <a class="nav-tab" href="contact.html"><img class="nav-image" src="images/phone.png"> CONTACT </a>                   
           <a class="nav-tab" href="credits.html"><img class="nav-image" src="images/settingslogo.png"> CREDITS</a>               
           <a class="nav-tab" href="settings.html"><img class="nav-image" src="images/wheelpng.png"> SETTINGS</a>              
@@ -36,8 +38,9 @@
     <center><h1>Theme</h1><p style="color:white;"></p>
 
     <button onclick="localStorage.setItem('theme', 'default'),location.reload();" id="themeswitcher">Default</button>
-    <button onclick="localStorage.setItem('theme', 'dark'),location.reload();" id="themeswitcher">Midnight</button>
+    <button onclick="localStorage.setItem('theme', 'dark'),location.reload();" id="themeswitcher">Dark</button>
     <button onclick="localStorage.setItem('theme', 'light'),location.reload();" id="themeswitcher">Light</button>
+    
 
 
     <script>
@@ -67,12 +70,21 @@
           console.log('Cloak succesfully loaded (NEWTAB)');
           title.textContent="New Tab";
           favicon.href="images/Tab cloaks/newtab.png"
+
+        }else if (status === 'login') {   
+          console.log('cloak status succesfully loaded');
+          console.log('cloak succesfully loaded (LOGIN)');
+          title.textContent="Login";
+          favicon.href="images/Tab cloaks/classlink.png"
+        
         } else {
           console.log('No current cloak detected')
         }
           
         
       }
+
+        
 
 
 
@@ -109,6 +121,7 @@ if (storedTheme === 'dark') {
   <button onclick="localStorage.setItem('cloak', 'google'),cloakTitle();" id="themeswitcher">Google</button>
   <button onclick="localStorage.setItem('cloak', 'youtube'),cloakTitle();" id="themeswitcher">Youtube</button>
   <button onclick="localStorage.setItem('cloak', 'newtab'),cloakTitle();" id="themeswitcher">New tab</button>
+  <button onclick="localStorage.setItem('cloak', 'login'),cloaktitle();" id="themeswitcher">Login</button>
 
 
 
