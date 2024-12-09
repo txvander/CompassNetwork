@@ -585,8 +585,13 @@
      "link": "games/bloxors/",
      "id":"game",
      "image":"images/bloxors.jpg"
+   },
+   {
+    "title":"thebattle",
+    "link":"games/thebattle/",
+     "id":"game",
+     "image":"images/thebattle.jpeg"
    }
-   
 ]
    
   
