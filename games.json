@@ -579,6 +579,15 @@
      "link": "games/holeio/",
      "id": "game",
      "image": "images/holeio.png"
+   },
+   {
+     "title":"bloxors",
+     "link": "games/bloxors/",
+     "id":"game",
+     "image":"images/bloxors.jpg"
    }
-  ]
+   
+]
+   
   
+
