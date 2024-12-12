@@ -70,12 +70,6 @@
           console.log('Cloak succesfully loaded (NEWTAB)');
           title.textContent="New Tab";
           favicon.href="images/Tab cloaks/newtab.png"
-
-        }else if (status === 'login') {   
-          console.log('cloak status succesfully loaded');
-          console.log('cloak succesfully loaded (LOGIN)');
-          title.textContent="Login";
-          favicon.href="images/Tab cloaks/classlink.png"
         
         } else {
           console.log('No current cloak detected')
@@ -121,8 +115,7 @@ if (storedTheme === 'dark') {
   <button onclick="localStorage.setItem('cloak', 'google'),cloakTitle();" id="themeswitcher">Google</button>
   <button onclick="localStorage.setItem('cloak', 'youtube'),cloakTitle();" id="themeswitcher">Youtube</button>
   <button onclick="localStorage.setItem('cloak', 'newtab'),cloakTitle();" id="themeswitcher">New tab</button>
-  <button onclick="localStorage.setItem('cloak', 'login'),cloaktitle();" id="themeswitcher">Login</button>
-
+ 
 
 
 

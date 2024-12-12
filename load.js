@@ -22,11 +22,11 @@ function cloakTitle() {
       console.log('Cloak succesfully loaded (NEWTAB)');
       title.textContent="New Tab";
       favicon.href="images/Tab cloaks/newtab.png"
+      
     } else {
       console.log('No current cloak detected')
     }
-      
-    
+  
   }
 
 function localtheme() {

@@ -591,6 +591,30 @@
     "link":"games/thebattle/",
      "id":"game",
      "image":"images/thebattle.jpeg"
+   },
+   {
+    "title":"tosstheturtle",
+    "link": "games/tosstheturtle/",
+    "id":"game",
+    "image":"images/turtle.png"
+   },
+   {
+    "title":"thisistheonlylevel",
+    "link":"games/thisistheonlylevel/",
+    "id":"game",
+    "image":"images/level.png"
+   },
+   {
+    "title":"learntofly",
+    "link":"games/learntofly/",
+    "id":"game",
+    "image":"images/fly.jpg"
+   },
+   {
+    "title":"stormthehouse2",
+    "link":"games/stormthehouse2/",
+    "id":"game",
+    "image":"images/house.jpg"
    }
 ]
    
