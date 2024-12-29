@@ -615,7 +615,63 @@
     "link":"games/stormthehouse2/",
     "id":"game",
     "image":"images/house.jpg"
+   },
+   {
+   "title":"Duck of life",
+   "link":"games/Duck-of-life/",
+   "id":"game",
+   "image":"images/duck1.jpeg"
+   },
+   {
+  "title":"Duck of life 2",
+  "link":"games/Duck-of-life2/",
+  "id":"game",
+  "image":"images/duck2.jpeg"
+   },
+   {
+   "title":"Duck of life 3",
+   "link":"games/Duck-of-life3/",
+   "id":"game",
+   "image":"images/duck3.jpeg"
+   },
+   {
+   "title":"Geometry dash",
+   "link":"games/Geometrydash/",
+   "id":"game",
+   "image":"images/geometry.jpeg"
+   },
+   {
+    "title":"learntofly2",
+    "link":"games/learntofly2/",
+    "id":"game",
+    "image":"images/fly2.jpeg"
+   },
+   {
+   "title":"hill-climb-racing",
+   "link":"games/hill-climb-racing/",
+   "id":"game",
+   "image":"images/climb.jpeg"
+   },
+   {
+    "title":"chrome dino",
+    "link":"games/chrome-dino/",
+    "id":"game",
+    "image":"images/chrome.webp"
+   },
+   {
+    "title":"Doodle jump",
+    "link":"games/doodle-jump/",
+    "id":"game",
+    "image":"images/jump.jpeg"
+   },
+   {
+    "title":"1v1 space",
+    "link":"games/1v1space/",
+    "id":"game",
+    "image":"images/splash.png"
    }
+
+   
 ]
    
   
