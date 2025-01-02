@@ -2,69 +2,11 @@
 <html>
     <head>
       <title id="cloakable">Cloudburst - Contact</title>
-        <link id="themeStylesheet" rel="stylesheet" href="css/contact.css">
+        <link id="themeStylesheet" rel="stylesheet" href="css/style.css">
         <link id="cloak" rel="icon" type="image/png" href="images/newlogo.png">
     </head>
     <body>
       
-      <script>
-        function localtheme() {
-  
-            const storedTheme = localStorage.getItem('theme');
-            const themeStylesheet = document.getElementById('themeStylesheet');
-  
-            if (storedTheme === 'dark') {
-                themeStylesheet.href = 'themes/Midnight/contact.css';
-            } else if (storedTheme === 'light') {
-              themeStylesheet.href = 'themes/Light/contact.css';
-  
-            } else {
-              themeStylesheet.href = 'css/contact.css'; 
-            }
-        }
-  
-
-    </script>
-
-<script>
-  function cloakTitle() {
-    const title = document.getElementById('cloakable');
-    const favicon = document.getElementById('cloak');
-    const titleselect = document.getElementById('titleselect');
-    const status = localStorage.getItem('cloak');
-    console.log('Cloak function started');
-
-    
-    if (status === 'google') {
-      console.log('Cloak status succesfully loaded');
-      console.log('Cloak succesfully loaded (GOOGLE)');
-      title.textContent="Google";
-      favicon.href="images/Tab cloaks/google.png"
-    } else if (status === 'youtube') {
-      console.log('Cloak status succesfully loaded');
-      console.log('Cloak succesfully loaded (YOUTUBE)');
-      title.textContent="Youtube";
-      favicon.href="images/Tab cloaks/yt2.png"
-      
-    } else if (status === 'newtab') {
-      console.log('Cloak status succesfully loaded');
-      console.log('Cloak succesfully loaded (NEWTAB)');
-      title.textContent="New Tab";
-      favicon.href="images/Tab cloaks/newtab.png"
-    } else {
-      console.log('No current cloak detected')
-    }
-      
-    
-  }
-
-  
-</script>
-<script>
-  // script, do not organize or neither will work.
-  addEventListener("DOMContentLoaded", () => {localtheme();});
-  window.onload = function() {cloakTitle();}
-</script>
 
     
       <div class="header">       
@@ -79,13 +21,7 @@
           <a class="nav-tab" href="games.html"><img class="nav-image" src="images/gamelogo.png"> GAMES</a>         
           <a class="nav-tab" href="index.html"><img class="nav-image" src="images/house.png"> HOME</a>  
         </div>
-        <div class="main">
-          <section class="main-box">
-            <h1 class="h1p">
-              <center>CONTACT</center>
-            </h1>
-          </section>
-        </div>
+
         </div>
 
         <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
@@ -96,7 +32,9 @@
       </script>
         </div>
       </div>
-      <h2>GET IN TOUCH WITH US TODAY.</h2>
+      <center>
+      <h1>GET IN TOUCH WITH US TODAY.</h1>
+    </center>
       <div class="embed">
         <center><embed src="https://docs.google.com/forms/d/e/1FAIpQLScf2sB_hbACEDLIc4ocF6Y7-i7cZozieJ3UAukbWcAwcdOjzQ/viewform" style="width:500px; height: 700px;"></center>
       </div>

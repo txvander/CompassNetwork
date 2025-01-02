@@ -2,70 +2,11 @@
 <html>
   <head>
     <title id="cloakable">Cloudburst - Credits</title>
-    <link id="themeStylesheet" rel="stylesheet" href="css/credits.css">
+    <link id="themeStylesheet" rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images/newlogo.png" id="cloak">
   </head>
   <body>
     
-    <script>
-      function localtheme() {
-
-          const storedTheme = localStorage.getItem('theme');
-          const themeStylesheet = document.getElementById('themeStylesheet');
-
-          if (storedTheme === 'dark') {
-              themeStylesheet.href = 'themes/Midnight/credits.css';
-          } else if (storedTheme === 'light') {
-            themeStylesheet.href = 'themes/Light/credits.css';
-
-          } else {
-            themeStylesheet.href = 'css/credits.css'; 
-          }
-      }
-
-
-  </script>
-
-<script>
-  function cloakTitle() {
-    const title = document.getElementById('cloakable');
-    const favicon = document.getElementById('cloak');
-    const status = localStorage.getItem('cloak');
-    console.log('Cloak function started');
-
-    
-    if (status === 'google') {
-      console.log('Cloak status succesfully loaded');
-      console.log('Cloak succesfully loaded (GOOGLE)');
-      title.textContent="Google";
-      favicon.href="images/Tab cloaks/google.png"
-    } else if (status === 'youtube') {
-      console.log('Cloak status succesfully loaded');
-      console.log('Cloak succesfully loaded (YOUTUBE)');
-      title.textContent="Youtube";
-      favicon.href="images/Tab cloaks/yt2.png"
-      
-    } else if (status === 'newtab') {
-      console.log('Cloak status succesfully loaded');
-      console.log('Cloak succesfully loaded (NEWTAB)');
-      title.textContent="New Tab";
-      favicon.href="images/Tab cloaks/newtab.png"
-    } else {
-      console.log('No current cloak detected')
-    }
-      
-    
-  }
-
-
-
-  
-</script>
-<script>
-  // script, do not organize or neither will work.
-  addEventListener("DOMContentLoaded", () => {localtheme();});
-  window.onload = function() {cloakTitle();}
-</script>
 
     <div class="header">
     <div class="bg"></div>
@@ -92,7 +33,8 @@
   </script>
 
     </div>
-    <h1>DEVELOPERS</h1>
+    <center>
+     <h1 style="font-size:50px;">DEVELOPERS</h1>
     <div class="credit-row">
       <div class="credit-item">
         <img src="images/exert.png" alt="Founder">
@@ -133,7 +75,7 @@
   </div>
 
 
-      <h1>STAFF TEAM</h1>
+       <h1 style="font-size:50px;">STAFF TEAM</h1>
       <div class="credit-row">
         <div class="credit-item">
           <img src="../images/plane.jpg" alt="lithgames">
@@ -173,7 +115,7 @@
     </div>
     </div>
     <hr size="3" noshade color="#FFFFFF">  
-    <h1>PARTNERS</h1>
+     <h1 style="font-size:50px;">PARTNERS</h1>
     <div class="credit-row">
       
     <div class="credit-item">
@@ -199,7 +141,7 @@
 
     </div>
     <hr size="3" noshade color="#FFFFFF">  
-    <h1>SITE CONTRIBUTORS</h1>,
+     <h1 style="font-size:50px;">SITE CONTRIBUTORS</h1>,
     <div class="credit-row">
       <div class="credit-item">
         <img src="images/3kh0.png" alt="Game Site">

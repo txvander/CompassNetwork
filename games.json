@@ -1,40 +1,35 @@
 [
   {
-    "title": "1v1.lol <img id='hot' src='images/fire_1.png'>",
+    "title": "1v1.lol  ",
     "link": "games/1v1lol/index.html",
-    "id": "gamehot",
+    "id": "game",
     "image": "games/1v1lol/splash.png"
   },
   {
-    "title": "Funny shooter <img id='hot' src='images/fire_1.png'>",
+    "title": "Funny shooter  ",
     "link": "games/funnyshooter/index.html",
-    "id": "gamehot",
+    "id": "game",
     "image": "games/funnyshooter/icon.jpeg"
   },
    {
-    "title": "10 Mins till dawn <img id='hot' src='images/fire_1.png'>",
+    "title": "10 Mins till dawn  ",
     "link": "games/10-minutes-till-dawn/index.html",
-    "id": "gamehot",
+    "id": "game",
     "image": "games/10-minutes-till-dawn/splash.png"
   },
   {
-    "title": "Retrobowl <img id='hot' src='images/fire_1.png'>",
+    "title": "Retrobowl  ",
     "link": "games/retrobowl/",
-    "id": "gamehot",
+    "id": "game",
     "image": "images/retrobowl.ico"
   },
   {
-    "title": "Sprinter <img id='hot' src='images/fire_1.png'>",
+    "title": "Sprinter  ",
     "link": "games/sprinter/",
-    "id": "gamehot",
+    "id": "game",
     "image": "images/sprinter.jpeg"
   },
-  {
-    "title": " ",
-    "link": "no",
-    "id": "gamespace",
-    "image": "(--> THIS IS USED FOR SPACING HOT GAMES WITH THE OTHERS! ! !)"
-  },
+
   {
     "title": "Burrito Bison ",
     "link": "games/burritobison/index.html",

@@ -2,72 +2,12 @@
 <html>
     <head>
       <title id="cloakable">Cloudburst - Games</title>
-        <link id="themeStylesheet" rel="stylesheet" href="css/games.css">
+        <link id="themeStylesheet" rel="stylesheet" href="css/style.css">
         <link rel="icon" type="image/png" href="images/newlogo.png" id="cloak">
     </head>
     <body>
 
-      <script>
-        function cloakTitle() {
-          const title = document.getElementById('cloakable');
-          const favicon = document.getElementById('cloak');
-          const titleselect = document.getElementById('titleselect');
-          const status = localStorage.getItem('cloak');
-          console.log('Cloak function started');
-    
-          
-          if (status === 'google') {
-            console.log('Cloak status succesfully loaded');
-            console.log('Cloak succesfully loaded (GOOGLE)');
-            title.textContent="Google";
-            favicon.href="images/Tab cloaks/google.png"
-          } else if (status === 'youtube') {
-            console.log('Cloak status succesfully loaded');
-            console.log('Cloak succesfully loaded (YOUTUBE)');
-            title.textContent="Youtube";
-            favicon.href="images/Tab cloaks/yt2.png"
-            
-          } else if (status === 'newtab') {
-            console.log('Cloak status succesfully loaded');
-            console.log('Cloak succesfully loaded (NEWTAB)');
-            title.textContent="New Tab";
-            favicon.href="images/Tab cloaks/newtab.png"
-          } else {
-            console.log('No current cloak detected')
-          }
-            
-          
-        }
 
-    
-    
-        
-      </script>
-      
-      <script>
-        function localtheme() {
-  
-            const storedTheme = localStorage.getItem('theme');
-            const themeStylesheet = document.getElementById('themeStylesheet');
-  
-            if (storedTheme === 'dark') {
-                themeStylesheet.href = 'themes/Midnight/games.css';
-            } else if (storedTheme === 'light') {
-              themeStylesheet.href = 'themes/Light/games.css';
-  
-            } else {
-              themeStylesheet.href = 'css/games.css'; 
-            }
-        }
-  
-  
-
-    </script>
-        <script>
-          // script, do not organize or neither will work.
-          addEventListener("DOMContentLoaded", () => {localtheme();});
-          window.onload = function() {cloakTitle();}
-        </script>
       <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
         new Crate({
             server: '1198073712713404486', // Compass
@@ -87,15 +27,11 @@
           <a class="nav-tab" href="games.html"><img class="nav-image" src="images/gamelogo.png"> GAMES</a>         
           <a class="nav-tab" href="index.html"><img class="nav-image" src="images/house.png"> HOME</a> 
       </div>
-      <div class="main">
-        <section class="main-box">
-        </section>
-      </div>
-    </div>
 
 
     </div>      
     <main>
+      
 
 
 
@@ -104,26 +40,29 @@
       <div id="searchContainer">
         <input type="text" id="searchInput" placeholder="Search games. . .">
     </div>
-    <div id="searchResults">
+    <div class="games">
+      <div id="searchResults">
+
     
-    <script type="text/html" id="searchResultTemplate">
-      <div class="{{id}}">
-      <a  href="{{link}}"><img id="gameimg" id="gamelink" src="{{image}}"/><h2>{{title}}</h2></a>
+           <script type="text/html" id="searchResultTemplate">
+               <div class="{{id}}">
+               <a  href="{{link}}"><img id="gameimg" id="gamelink" src="{{image}}"/><h2>{{title}}</h2></a>
       
     
-        </a>
-    </script>
-    </center>
-    
-    </div>
+              </a>
+          </script>
 
     
+      </div>
+  </div>
+
+    
 
 
 
 
 
-    <h1>Want more games? Request any games in Contact or in our Discord Server.</h1>
+    <p>Game your looking for not here? Request some from our discord server! </p>
     </div>
     <hr size="3" noshade color="#FFFFFF">  
     </main>

@@ -92,22 +92,62 @@ h3 {
   transform: translateY(3px);
 }
 
+.credit-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.credit-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 100px;
+  padding-bottom: 2.3rem;
+}
+
+.credit-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  justify-content: center;
+  transition: transform .35s ease;
+}
+
+.credit-item a:hover img{
+  transform: scale(1.1);
+}
+.credit-item p {
+  margin: 5px 0;
+  font-size: 27px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+}
+
 
 body {    
     background-image: url(../images/bg2.jpg);
     background-color: #272727;
     margin: 0;   
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 0;
   font-family: 'Montserrat', sans-serif;
   color: white;
-  text-shadow: 10px 10px 4px black;
+
   padding-top: 30px;
+  
 }
 .h1p {
   font-size: 12rem;
@@ -164,6 +204,21 @@ h6 {
   .nav-tab:hover {
     transform: translateY(-0.3em);
 
+  }
+
+  #searchInput {
+    background-color: #1f1188;
+    padding: 10px;
+    width: 56%;
+    color: #FFFFFF;
+    border-color: #1f1188;
+    border-style: solid;
+    border-radius: 10px;
+  }
+
+  #searchContainer {
+    display: flex;
+    justify-content: center;
   }
 
   #nav-text {
@@ -234,7 +289,7 @@ a {
 }
 .header {
   padding: 60px;
-  height: 650px;
+
 }
 
 #nav-logo {
@@ -334,6 +389,58 @@ a {
   flex-wrap: wrap;
   background-size: cover;
 }
+
+.game {
+  background-color: #1f1188;
+  border-radius: 10px;
+  display: inline-block;
+  height: 180px;
+  width: 150px;
+  margin: 10px;
+  transition: .5s;
+
+}
+
+.game:hover {
+
+  transform: scale(1.05);
+
+}
+
+
+.game a {
+  font-size: 60%;
+  
+}
+
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+
+}
+
+#searchResults {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+
+}
+
+.game img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: -10px;
+  min-width: 100%;
+  object-fit: cover;
+  height: 150px;
+
+}
+
 .footer-media {
   width: 4rem;
   height: 4rem;
@@ -359,15 +466,16 @@ a {
 }
 
 .stats-box img {
-    width: 100%; 
+    width: 40px; 
     height: 100%;
     object-fit: contain;
-    width: 80px; 
+    margin-bottom: -10px;
+ 
 
 }
 
 .stats-title {
-  font-size: 2.5rem;
+  font-size: 1rem;
   line-height: 1;
   padding-bottom: 1.5rem;
   font-family: 'Montserrat', sans-serif;
@@ -378,7 +486,7 @@ a {
 
 
 .stats-desc {
-  font-size: 100%;
+  font-size: 70%;
   line-height: 1;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
