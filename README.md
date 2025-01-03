@@ -6,11 +6,11 @@ The best unblocked games website you could find.
 
 ## Staff
 
-- FOUNDER - [@txvander](https://github.com/txvander)
+- FOUNDER -[@YourLocalDev](https://github.com/your-local-indian)
+- FORMER FOUNDER - [@txvander](https://github.com/txvander)
 - PROJECT MANAGER - [@Citraw](https://github.com/cyancitra)
 - SECURITY DEVELOPER - [@TooMuchJack](https://github.com/toomuchjack)
-- INTERFACE DEVELOPER - [@YourLocalDev](https://github.com/your-local-indian)
-
+- JUNIOR DEVELOPER - [@Nextgengaming]([@TooMuchJack](https://github.com/Diddy-p)
 ## Acknowledgements
 
  - [3kh0](https://adfree3kh0.github.io/projects.html)
