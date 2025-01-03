@@ -664,7 +664,165 @@
     "link":"games/1v1space/",
     "id":"game",
     "image":"images/splash.png"
-   }
+   },
+   {
+    "title":"Blockblast",
+    "link":"games/blockblast/",
+    "id":"game",
+    "image":"images/block.webp"
+   },
+   {
+   "title":"colorswitch",
+   "link":"games/color-switch/",
+   "id":"game",
+   "image":"images/colorswitch.png"
+   },
+   {
+   "title":"bad piggies",
+   "link":"games/bad-piggies/",
+   "id":"game",
+   "image":"images/badpiggies.png"
+   },
+   {
+    "title":"bike champ",
+    "link":"games/bikechamp/",
+    "id":"game",
+    "image":"images/bike.png"
+   },
+   {
+   "title":"bike champ 2",
+   "link":"games/bikechamp2/",
+   "id":"game",
+   "image":"images/bike2.jpg"
+   },
+  {
+    "title":"banjo kazooie",
+    "link":"games/banjo-kazooie/",
+    "id":"game",
+    "image":"images/banjokazooie.png"
+  },
+  {
+  "title":"fnaf three",
+  "link":"games/fnaf3/",
+  "id":"game",
+  "image":"images/fnaf3.webp"
+  },
+  {
+  "title":"fnaf four",
+  "link":"games/fnaf4/",
+  "id":"game",
+  "image":"images/fnaf4.webp"
+  },
+  {
+  "title":"circlo",
+  "link":"games/circlo/",
+  "id":"game",
+  "image":"images/circlo.png"
+  },
+  {
+  "title":"fireboy and watergirl2",
+  "link":"games/fireboyandwatergirl2",
+  "id":"game",
+  "image":"images/fireboyandwatergirl2.jpeg"
+  },
+  {
+  "title":"fruit ninja",
+  "link":"games/fruitninja/",
+  "id":"game",
+  "image":"images/fruit.jpg"
+  },
+  {
+  "title":"paper mario",
+  "link":"games/papermario",
+  "id":"game",
+  "image":"images/papermario.png"
+  },
+  {
+  "title":"pong",
+  "link":"games/pong/",
+  "id":"game",
+  "image":"images/pong.png"
+  },
+  {
+  "title":"Boxing physics2 ",
+  "link":"games/boxingphysics2/",
+  "id":"game",
+  "image":"images/boxing.png"
+  },
+  {
+  "title":"gta 1",
+  "link":"games/gta1/",
+  "id":"game",
+  "image":"images/gta.png"
+  },
+  {
+  "title":"gta 2",
+  "link":"games/gta2/",
+  "id":"game",
+  "image":"images/gta2.png"
+  },
+  {
+  "title":"Doom 64",
+  "link":"games/doom64/",
+  "id":"game",
+  "image":"images/doom64.png"
+  },
+  {
+  "title":"1on1 Soccer",
+  "link":"games/1on1-soccer/",
+  "id":"game",
+  "image":"images/soccer.jpg"
+  },
+  {
+  "title":"Block zapper 3",
+  "link":"games/block-zappers/",
+  "id":"game",
+  "image":"images/block3.png"
+  },
+  {
+  "title":"Duck of life 5",
+  "link":"games/duck-of-life5/",
+  "id":"game",
+  "image":"images/ducklife5.png"
+  },
+  {
+  "title":"Duck of life 6",
+  "link":"games/duck-of-life6/",
+  "id":"game",
+  "image":"images/ducklife6.png"
+  },
+  {
+  "title":"Donkeykong 64",
+  "link":"games/donkeykong64/",
+  "id":"game",
+  "image":"images/donkeykong64.png"
+  },
+  {
+  "title":"Snow rider",
+  "link":"games/snowrider/",
+  "id":"game",
+  "image":"images/snow.png"
+  },
+  {
+  "title":"Turbo racing 3",
+  "link":"games/turboracing3/",
+  "id":"game",
+  "image":"images/racing.png"
+  },
+  {
+  "title":"Cell machine",
+  "link":"games/cell-machine/",
+  "id":"game",
+  "image":"images/cellmachine.png"
+  },
+  {
+  "title":"1defense",
+  "link":"games/1defense/",
+  "id":"game",
+  "image":"images/defense.png"
+  }
+ 
+ 
 
    
 ]

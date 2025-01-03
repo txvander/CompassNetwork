@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const searchResults = document.getElementById('searchResults');
   const searchResultTemplate = document.getElementById('searchResultTemplate').innerHTML;
 
-  searchResults.innerHTML = 'Games loading...';
+  searchResults.innerHTML = 'Games Loading...';
   
 
 
