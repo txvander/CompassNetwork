@@ -10,7 +10,7 @@ The best unblocked games website you could find.
 - FORMER FOUNDER - [@txvander](https://github.com/txvander)
 - PROJECT MANAGER - [@Citraw](https://github.com/cyancitra)
 - SECURITY DEVELOPER - [@TooMuchJack](https://github.com/toomuchjack)
-- JUNIOR DEVELOPER - [@Nextgengaming]([@TooMuchJack](https://github.com/Diddy-p)
+- JUNIOR DEVELOPER - [@Nextgengaming](https://github.com/Diddy-p)
 ## Acknowledgements
 
  - [3kh0](https://adfree3kh0.github.io/projects.html)
