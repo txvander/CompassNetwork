@@ -107,6 +107,9 @@ h3 {
   align-items: center;
   margin: 0 100px;
   padding-bottom: 2.3rem;
+  text-align: center;
+  flex: 1 1 18%; /* Each item takes up 18% of the row */
+  max-width: 200px; /* Optional: Sets a maximum width for each item */
 }
 
 .credit-item img {
@@ -115,18 +118,28 @@ h3 {
   border-radius: 20%;
   justify-content: center;
   transition: transform .35s ease;
+
+  height: auto;
+  border-radius: 10px; /* Optional: Adds rounded corners to images */
 }
+
 
 .credit-item a:hover img{
   transform: scale(1.1);
 }
 .credit-item p {
-  margin: 5px 0;
+  margin: 10px 0;
   font-size: 27px;
   text-align: center;
   color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
   justify-content: center;
+}
+.credit-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping if items don't fit in one row */
+  justify-content: space-around; /* Spreads items evenly with space between */
+  gap: 20px; /* Adds space between items */
 }
 
 
@@ -514,3 +527,5 @@ a {
 .stats-box {
   text-align: center;
 }
+
+
