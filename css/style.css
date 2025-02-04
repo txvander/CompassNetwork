@@ -85,11 +85,11 @@ h3 {
   color: #000000;
   margin-top: 5%;
   display: inline-block;
-  transition: .5s;
+  transition: transform 0.3s ease-in-out;
 }
 
 #play:hover {
-  transform: translateY(3px);
+  transform: scale(1.2);
 }
 
 .credit-row {
@@ -227,13 +227,22 @@ h6 {
     border-color: #1f1188;
     border-style: solid;
     border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
   }
 
   #searchContainer {
     display: flex;
     justify-content: center;
   }
-
+  #searchInput::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+#searchInput:focus {
+  background-color: #1f1188;
+  border-color: #ffffff;
+  box-shadow: 0 0 15px rgba(251, 251, 249, 0.7);
+}
   #nav-text {
     float: right;
     color: #FFFFFF;
@@ -309,6 +318,10 @@ a {
   margin-top: 7px;
   margin-left: 10px;
   width: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+#nav-logo:hover{
+transform: scale(1.2);
 }
 
 
@@ -375,21 +388,22 @@ a {
   border: 2px solid #272727;
   color: #ffffff;
   text-align: center;
-  padding:15px 50px;
+  padding: 15px 50px;
   text-decoration: none;
   font-size: 1.5rem;
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
-  transition: color .4s ease-in-out;
+  transition: transform 0.3s ease-in-out, color 0.4s ease-in-out; /* Added transform transition */
   margin: 4px 2px;
   cursor: pointer;
   border-color: white;
   border-radius: 7px;
-  margin-right: 25px;
+  margin-right:25px;
 }
 .footer-tab:hover {
   background-color: white;
   color: black;
+  transform: scale(1.1); /* Zoom effect */
 }
 
 .footer-media-holder {
@@ -415,7 +429,7 @@ a {
 }
 
 .game:hover {
-
+  box-shadow: 0 0 15px rgba(251, 251, 249, 0.7);
   transform: scale(1.05);
 
 }
@@ -520,10 +534,17 @@ a {
 }
 
 .stats-icon img {
-  width: 110%; 
-  height: 110%;
+  width: 40px; 
+  height: 100%;
   object-fit: contain;
+  margin-bottom: -10px;
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
 }
+
+.stats-box:hover img {
+  transform: scale(1.2); /* Zoom effect */
+}
+
 .stats-box {
   text-align: center;
 }
