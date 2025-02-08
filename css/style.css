@@ -75,22 +75,7 @@ h3 {
   font-weight: 200;
 }
 
-#play {
-  background-color:#FFFFFF;
-  padding: 12px;
-  font-size: 15px;
-  border-radius: 10px;
-  border-color: #FFFFFF;
-  border-style: solid;
-  color: #000000;
-  margin-top: 5%;
-  display: inline-block;
-  transition: transform 0.3s ease-in-out;
-}
 
-#play:hover {
-  transform: scale(1.2);
-}
 
 .credit-row {
   display: flex;
@@ -158,8 +143,8 @@ h1 {
   line-height: 0;
   font-family: 'Montserrat', sans-serif;
   color: white;
-
   padding-top: 30px;
+  text-align: center;
   
 }
 .h1p {
@@ -350,39 +335,7 @@ transform: scale(1.2);
   flex-wrap: wrap;
   background-size: cover;
 }
-#uv-address {
-  background-color: #060225;
-  padding: 15px;
-  border-radius: 10px;
-  width: 700px;
-  border: solid;
-  color: #FFFFFF;
-  font-size: 150%;
-  font-family: 'Montserrat', sans-serif;
-  margin-top: -100px;
 
-
-
-}
-
-
-
-#uv-log {
-    background-color: transparent;
-    padding: 15px;
-    border-radius: 10px;
-    width: 700px;
-    border: solid;
-    color: transparent;
-    font-size: 150%;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 100px;
-    height: fit-content;
-
-
-
-  
-}
 .footer-tab {
   background-color: transparent;
   border: 2px solid #272727;
@@ -549,4 +502,49 @@ transform: scale(1.2);
   text-align: center;
 }
 
-
+.dot {
+  box-shadow: 0 0 150px 100px #00bbff;
+border-radius: 50%;
+height: 320px;
+width: 320px;
+background-image: radial-gradient(
+  farthest-corner at 50% 50%,
+  #ffffff, #009dff
+);
+background-blend-mode: multiply;
+filter: blur(50px) contrast(1.1);
+position: fixed;
+transform: translate(-50%, -50%);
+left: 50vw;
+top: 100vh;
+position: absolute;
+  z-index: -100;
+}
+#proxyFrame {
+  border: none;
+    text-align: center;
+    justify-content: center;
+  }
+  #uv-address {
+    background-color: transparent;
+    border: 1.5px #ffffff solid;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    font-family: "Prompt";
+    background-color: white;
+    outline: none;
+    transition: hover .2s;
+    width: 500px;
+    padding-left: 40px;
+    margin-top: 40px;
+  }
+  @font-face {
+    font-family: Prompt;
+    src: url(/fonts/prompt.ttf);
+  }
+  @font-face {
+    font-family: Fredoka;
+    src: url(/fonts/fredoka.ttf);
+  }
+  

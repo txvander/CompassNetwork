@@ -7,12 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link id="cloak" rel="icon" type="image/png" href="images/newlogo.png">
     <script src="load.js"></script>
+    <script src="/static/uv/uv.bundle.js" defer=""></script>
+    <script src="/static/uv/uv.config.js" defer=""></script>
+    <script src="/static/register-sw.js" defer=""></script>
+    <script src="/static/search.js" defer=""></script>
+    <script src="/static/index.js" defer=""></script>
+    <script src="src/js/fs.js"></script>
+    <script src="src/js/refresh-page.js"></script>
     
   </head>
 
   <body>
-
-
+    
     </div>
     
     <audio autoplay loop>
@@ -43,10 +49,13 @@
 
       <h1 style="margin-top: 15%;">WELCOME TO CLOUDBURST</h1>
       <h1 style="font-size: 90%;">The best unblocked games website you could find.</h1>
-      <a href="games.html" id="play">PLAY NOW !</a>
 
-
-
+      <center>
+        <form id="uv-form">
+            <input id="uv-search-engine" value="https://duckduckgo.com/?q=%s" type="hidden">
+              <input id="uv-address" type="text" placeholder="search duckduckgo or type a url." class="form__input">
+          </form>
+          </center>
       
 
 
