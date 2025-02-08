@@ -145,12 +145,18 @@ h1 {
   color: white;
   padding-top: 30px;
   text-align: center;
+  transition: transform 1s ease-in-out;
   
 }
+h1:hover {
+  transform: scale(1.1);
+}
+
 .h1p {
   font-size: 12rem;
-
 }
+
+
 p {
 color: white;
 font-family: 'Montserrat', sans-serif;

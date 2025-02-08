@@ -720,7 +720,7 @@
   "image":"images/circlo.png"
   },
   {
-  "title":"fireboy and watergirl2",
+  "title":"fbawg2",
   "link":"games/fireboyandwatergirl2",
   "id":"game",
   "image":"images/fireboyandwatergirl2.jpeg"
@@ -820,6 +820,48 @@
   "link":"games/1defense/",
   "id":"game",
   "image":"images/defense.png"
+  },
+  {
+  "title":"Polytrack",
+  "link":"games/polytrack/",
+  "id":"game",
+  "image":"images/poly.jpg"
+  },
+  {
+  "title":"Connect 3",
+  "link":"games/connect-3/",
+  "id":"game",
+  "image":"images/connect3.png"
+  },
+  {
+  "title":"Cars simulator",
+  "link":"games/cars-simulator/",
+  "id":"game",
+  "image":"images/car.png"
+  },
+  {
+  "title":"Angry sharks",
+  "link":"games/angry-sharks/",
+  "id":"game",
+  "image":"images/shark.png"
+  },
+  {
+  "title":"1hobo",
+  "link":"games/1hobo/",
+  "id":"game",
+  "image":"images/hobo.png"
+  },
+  {
+  "title":"2hobo",
+  "link":"games/2hobo/",
+  "id":"game",
+  "image":"images/hobo2.png"
+  },
+  {
+  "title":"2flash",
+  "link":"games/2flash/",
+  "id":"game",
+  "image":"images/flash2.png"
   }
  
  
