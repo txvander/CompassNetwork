@@ -570,6 +570,12 @@
      "image": "images/download.png"
    },
    {
+    "title": "Territorial.io",
+     "link": "games/file.html",
+     "id": "game",
+     "image": "images/Territorialio.png"
+   },
+   {
     "title": "Hole.io",
      "link": "games/holeio/",
      "id": "game",
