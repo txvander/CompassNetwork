@@ -173,12 +173,14 @@ h6 {
 }
 .topnav {
   color: #FFFFFF;
-  background-image: url('../images/navbar.png');
-  background-size: 100%;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Blurred glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
   overflow: hidden;
   margin: -50px;
   border-radius: 15px;
   height: 60px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
 
   
 
@@ -188,25 +190,22 @@ h6 {
 }
 
 .nav-tab {
-  
+
   float: right;
   color: #FFFFFF;
   text-align: center;
   margin-top: 15px;
   margin-right: 20px;
-
   text-decoration: none;
   font-size: 1.5rem;
   font-family: 'Montserrat', sans-serif;
-  transition: color.3s ease-in-out;
-  transition: 0.30s;
-  
+  transition: 0.3s ease-in-out;
 
   
 }
 
   .nav-tab:hover {
-    transform: translateY(-0.3em);
+   transform: translateY(-0.3em);
 
   }
 
@@ -497,11 +496,11 @@ transform: scale(1.2);
   height: 100%;
   object-fit: contain;
   margin-bottom: -10px;
-  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  transition: transform 0.5s ease-in-out;
 }
 
 .stats-box:hover img {
-  transform: scale(1.2); /* Zoom effect */
+  transform: scale(1.2);
 }
 
 .stats-box {
@@ -534,7 +533,7 @@ position: absolute;
   #uv-address {
     background-color: transparent;
     border: 1.5px #ffffff solid;
-    border-radius: 12px;
+    border-radius: 15px;
     padding: 12px;
     text-align: center;
     font-family: "Prompt";
@@ -553,4 +552,11 @@ position: absolute;
     font-family: Fredoka;
     src: url(/fonts/fredoka.ttf);
   }
-  
+  #categorySelect {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #1f1188;
+    background-color: #1f1188;
+    color: #ffffff;
+    cursor: pointer;
+  }

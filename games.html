@@ -39,9 +39,25 @@
 
       <div id="searchContainer">
         <input type="text" id="searchInput" placeholder="Search games. . .">
-    </div>
-    <div class="games">
-      <div id="searchResults">
+        <select id="categorySelect">
+          <option value="all">All Games</option>
+          <option value="sports">Sports Games</option>
+          <option value="shooter">Shooter Games</option>
+          <option value="strategy">Strategy Games</option>
+          <option value="arcade">Arcade Games</option>
+        </select>
+      </div>
+      
+      
+      <div class="games">
+        <div id="searchResults"></div>
+      </div>
+      
+      <script type="text/html" id="searchResultTemplate">
+        <div class="{{id}}">
+          <a  href="{{link}}"><img id="gameimg" src="{{image}}"/><h2>{{title}}</h2></a>
+        </div>
+    
 
     
            <script type="text/html" id="searchResultTemplate">
