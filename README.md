@@ -5,7 +5,7 @@ The best unblocked games website you could find.
 
 
 ## Staff
-- Owner - [@Nextgengaming](https://github.com/Diddy-p)
+- OWNER - [@Nextgengaming](https://github.com/Diddy-p)
 - FOUNDER - [@txvander](https://github.com/txvander)
 - INTERFACE DEVELOPER -[@YourLocalDev](https://github.com/your-local-indian)
 - PROJECT MANAGER - [@Citraw](https://github.com/cyancitra)
