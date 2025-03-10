@@ -536,7 +536,7 @@ position: absolute;
     border-radius: 15px;
     padding: 12px;
     text-align: center;
-    font-family: "Prompt";
+    font-family: 'Montserrat', sans-serif;
     background-color: white;
     outline: none;
     transition: hover .2s;
