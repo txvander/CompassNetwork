@@ -387,7 +387,6 @@ transform: scale(1.2);
 }
 
 .game:hover {
-  box-shadow: 0 0 15px rgba(251, 251, 249, 0.7);
   transform: scale(1.05);
 
 }
