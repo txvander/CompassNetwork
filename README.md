@@ -5,11 +5,11 @@ The best unblocked games website you could find.
 
 
 ## Staff
-- OWNER - [@Nextgengaming](https://github.com/Diddy-p)
-- FOUNDER - [@txvander](https://github.com/txvander)
-- INTERFACE DEVELOPER -[@YourLocalDev](https://github.com/your-local-indian)
-- PROJECT MANAGER - [@Citraw](https://github.com/cyancitra)
-- SECURITY DEVELOPER - [@TooMuchJack](https://github.com/toomuchjack)
+- CEO/FOUNDER - [@Nextgengaming](https://github.com/txvander)
+- CCO - [@txvander](https://github.com/diddy-p)
+- CCO -[@YourLocalDev](https://github.com/your-local-indian)
+- CFO - [@Citraw](https://github.com/cyancitra)
+- CMO - [@TooMuchJack](https://github.com/toomuchjack)
 ## Acknowledgements
 
  - [3kh0](https://adfree3kh0.github.io/projects.html)
