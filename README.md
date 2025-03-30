@@ -5,9 +5,9 @@ The best unblocked games website you could find.
 
 
 ## Staff
-- CEO/FOUNDER - [@txvander](https://github.com/txvander)
-- CCO - [@nextgengaming](https://github.com/diddy-p)
-- CCO -[@YourLocalDev](https://github.com/your-local-indian)
+- CEO & FOUNDER - [@txvander](https://github.com/txvander)
+- COO - [@NextGenGaming](https://github.com/diddy-p)
+- CCO -[@TheKingBallen](https://github.com/your-local-indian)
 - CFO - [@Citraw](https://github.com/cyancitra)
 - CMO - [@TooMuchJack](https://github.com/toomuchjack)
 ## Acknowledgements
