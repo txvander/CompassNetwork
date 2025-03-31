@@ -9,7 +9,7 @@ The best unblocked games website you could find.
 - COO - [@NextGenGaming](https://github.com/diddy-p)
 - CCO -[@TheKingBallen](https://github.com/your-local-indian)
 - CFO - [@Citraw](https://github.com/cyancitra)
-- CMO - [@TooMuchJack](https://github.com/toomuchjack)
+- CMO - [@NotEnoughJack](https://github.com/NotEnoughJack)
 ## Acknowledgements
 
  - [3kh0](https://adfree3kh0.github.io/projects.html)
