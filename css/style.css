@@ -497,4 +497,8 @@ position: absolute;
     font-family: 'Poppins', sans-serif;
   }
 
- 
+ #searchContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
