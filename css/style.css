@@ -129,7 +129,7 @@ h3 {
 
 
 body {    
-    background-image: url(../images/bg4.png);
+    background-image: url(../images/bg5.png); /* enhanced image quality */
     background-color: #272727;
     margin: 0;   
     background-size: cover;
@@ -197,10 +197,6 @@ h6 {
   transition: transform 0.2s ease-in-out;
 }
 
-.topnav:hover {
-transform: translateY(-2px); 
-}
-
 .nav-tab {
   float: right;
   color: #FFFFFF;
@@ -211,8 +207,6 @@ transform: translateY(-2px);
   font-size: 1.5rem;
   font-family: 'Poppins', sans-serif;
   transition: 0.3s ease-in-out;
-
-  
 }
 
   .nav-tab:hover {
@@ -352,6 +346,32 @@ transform: scale(1.2);
   padding-left: 20px; 
   padding-bottom: 10px;
 }
+
+.fa-logo {
+  float: right;
+  text-align: center;
+  margin-top: 12px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 0.3s ease-in-out;
+}
+.fa-brands {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.fa-discord:hover {
+  color:#7289da;
+  text-shadow: 0 0 20px ;
+}
+.fa-youtube:hover {
+  color:#CD201F;
+  text-shadow: 0 0 20px ;
+}
+.fa-x-twitter:hover{
+  color: #ffffff;
+  text-shadow: 0 0 20px;
+}
 .game {
   background-color: black;
   border-radius: 10px;
@@ -401,11 +421,6 @@ transform: scale(1.2);
   object-fit: cover;
   height: 150px;
 
-}
-
-.footer-media {
-  width: 2.5rem;
-  height: 2.5rem;
 }
 
 
@@ -497,8 +512,12 @@ position: absolute;
     font-family: 'Poppins', sans-serif;
   }
 
+<<<<<<< Updated upstream
  #searchContainer {
     display: flex;
     align-items: center;
     gap: 15px; 
 }
+=======
+ 
+>>>>>>> Stashed changes
