@@ -157,6 +157,8 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
+
 h1:hover {
   transform: scale(1.1);
 }
@@ -211,6 +213,7 @@ transform: translateY(-2px);
   font-size: 1.5rem;
   font-family: 'Poppins', sans-serif;
   transition: 0.3s ease-in-out;
+
 
   
 }
