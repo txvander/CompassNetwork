@@ -170,7 +170,7 @@ h1:hover {
 
 p {
 color: white;
-font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
 font-size: 1.5rem;
 text-align: center;
 }
@@ -190,7 +190,7 @@ h6 {
   border-radius: 15px;
   height: 58px;
   width: 95%;
-  max-width: 1200px;
+  max-width: 12000px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   border: 2px solid white;
   box-shadow: 
@@ -500,4 +500,8 @@ position: absolute;
     font-family: 'Poppins', sans-serif;
   }
 
- 
+ #searchContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
