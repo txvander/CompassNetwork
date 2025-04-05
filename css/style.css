@@ -13,6 +13,8 @@
   100% {transform: translateX(100%);}
 }
 
+
+
 html {
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -130,7 +132,6 @@ h3 {
 
 body {    
     background-image: url(../images/bg4.png);
-    background-color: #272727;
     margin: 0;   
     background-size: cover;
     background-repeat: no-repeat;
@@ -157,7 +158,109 @@ h1 {
   display: flex;
   justify-content: center;
 }
+.card {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  width: 175px;
+  height: 195px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  gap: 13px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  border: 2px solid white;
+  border-style: solid;
+}
 
+#cookieSvg {
+  width: 50px;
+}
+
+#cookieSvg g path {
+  fill: rgb(97, 81, 81);
+}
+
+.cookieHeading {
+  font-size: 1.2em;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+}
+
+.cookieDescription {
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.cookieDescription a {
+  --tw-text-opacity: 1;
+  color: rgb(255, 255, 255);
+}
+
+.cookieDescription a:hover {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.acceptButton {
+  width: 80px;
+  height: 30px;
+  background-color: #dadada;
+  transition-duration: .2s;
+  border: none;
+  color: rgb(46, 46, 46);
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px #bebdbd, 0 2px 4px -1px #bebdbd;
+  transition: all .6s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.declineButton {
+  width: 80px;
+  height: 30px;
+  background-color: #dadada;
+  transition-duration: .2s;
+  color: rgb(46, 46, 46);
+  border: none;
+  cursor: not-allowed;
+  font-weight: 600;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px #bebdbd, 0 2px 4px -1px #bebdbd;
+  transition: all .6s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.declineButton:hover {
+  background-color: #ebebeb;
+  box-shadow: 0 10px 15px -3px #bebdbd, 0 4px 6px -2px #bebdbd;
+  transition-duration: .2s;
+}
+
+.acceptButton:hover {
+  background-color: #ebebeb;
+  box-shadow: 0 10px 15px -3px #bebdbd, 0 4px 6px -2px #bebdbd;
+  transition-duration: .2s;
+}
 
 h1:hover {
   transform: scale(1.1);
