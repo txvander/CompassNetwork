@@ -282,7 +282,7 @@ h1 {
   margin: 20px auto;
   margin-top: 34px ;
   padding: 0 20px;
-  width: 600px; 
+  width: 650px; 
   max-width: 95%; 
 }
 
@@ -531,6 +531,7 @@ a {
   text-decoration: none;
   font-size: 1.5rem;
   transition: 0.3s ease-in-out;
+  color: #ffffff;
 }
 .fa-brands {
   height: 2.5rem;
