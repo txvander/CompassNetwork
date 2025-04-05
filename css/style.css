@@ -18,6 +18,12 @@ html {
     scroll-behavior: smooth;
 }
 
+.Title {
+  position: absolute;
+  top: 40%; bottom: -50%; left: 0; right: 0;
+  margin: auto;
+}
+
 .main-box {
     display: inline;
     flex-direction: column;
@@ -303,6 +309,7 @@ a {
 }
 .header {
   padding: 60px;
+  
 }
 
 #nav-logo {
@@ -447,8 +454,9 @@ position: absolute;
     justify-content: center;
   }
   .search-container {
-    position: relative;
-    display: inline-block;
+    position: absolute;
+    top: 50%; bottom: -50%; left: 0; right: 0;
+    margin: auto;
 }
 
 #uv-address {
