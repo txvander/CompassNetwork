@@ -1,76 +1,1243 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Not Found | Compass</title>
-    <link href="https://fonts.googleapis.com/css2?family=Organetto:wght@700&display=swap" rel="stylesheet">
-      <head>
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/logo1.png">
-    
-  </head>
+<html>
 
-  <body>
-    <div class="header">
-    <div class="bg"></div>
-      <div class="topnav"> 
-        <a href="index.html">
-          <img id="nav-logo" src="images/newlogo.png" alt="Cloudburst-logo">
-        </a>
-          <a class="nav-tab" href="contact.html"><img class="nav-image" src="images/phone.png"> CONTACT </a>                   
-          <a class="nav-tab" href="credits.html"><img class="nav-image" src="images/settingslogo.png"> CREDITS</a>               
-          <a class="nav-tab" href="settings.html"><img class="nav-image" src="images/wheelpng.png"> SETTINGS</a>              
-          <a class="nav-tab" href="games.html"><img class="nav-image" src="images/gamelogo.png"> GAMES</a>         
-          <a class="nav-tab" href="index.html"><img class="nav-image" src="images/house.png"> HOME</a>   
-      </div>
+  <head>
+    <title id="cloakable">Compass- Home</title>
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            font-family: 'Organetto', sans-serif;
-            background-color: #0e0d17;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        .container {
-            max-width: 600px;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 4rem;
-            margin: 0;
-        }
-        p {
-            font-size: 1.5rem;
-            margin: 0;
-        }
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes intrance {
+  0% {transform: translateX(-500px);}
+  100% {transform: translateX(0px);}
+}
+
+@keyframes leave {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(100%);}
+}
+
+
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.main-box {
+    display: inline;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: auto;
+    max-width: 60rem;
+    place-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+
+
+}
+
+
+
+.welcome {
+  background-color: #060225;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  position: fixed;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  align-items: start;
+
+  
+
+}
+
+.welcome h2  {
+  animation: 1s alternate intrance;
+}
+.welcome h3  {
+  animation: 1s alternate intrance;
+}
+.welcome button  {
+  animation: 1s alternate intrance;
+  background-color: #060225;
+  color: #FFFFFF;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 5px;
+  transition: .5s;
+  
+}
+
+.welcome button:hover {
+  transform: translateY(3px);
+}
+h3 {
+  font-weight: 200;
+}
+
+.credit-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  }
+  
+  .credit-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 100px;
+  padding-bottom: 2.3rem;
+  text-align: center;
+  flex: 1 1 18%; /* Each item takes up 18% of the row */
+  max-width: 200px; /* Optional: Sets a maximum width for each item */
+  }
+  
+  .credit-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  justify-content: center;
+  transition: transform .35s ease;
+  height: auto;
+  border-radius: 10px; /* Optional: Adds rounded corners to images */
+  }
+  
+  
+  .credit-item a:hover img{
+  transform: scale(1.1);
+  }
+  .credit-item p {
+  margin: 10px 0;
+  font-size: 27px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+  }
+  .credit-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping if items don't fit in one row */
+  justify-content: space-around; /* Spreads items evenly with space between */
+  gap: 20px; /* Adds space between items */
+  }
+  
+  
+
+
+
+
+
+body {    
+
+    background-color: #272727;
+    margin: 0;   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 70px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, white, #b0b0b0); /* White to Light Gray */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.2;
+  padding-top: 5px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.card {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  width: 175px;
+  height: 210px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  gap: 13px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  border: 2px solid white;
+  border-style: solid;
+}
+
+#cookieSvg {
+  width: 50px;
+}
+
+#cookieSvg g path {
+  fill: rgb(97, 81, 81);
+}
+
+.cookieHeading {
+  font-size: 1.2em;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+}
+
+.cookieDescription {
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.cookieDescription a {
+  --tw-text-opacity: 1;
+  color: rgb(255, 255, 255);
+}
+
+.cookieDescription a:hover {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.acceptButton {
+  width: 80px;
+  height: 30px;
+  background-color: #dadada;
+  transition-duration: .2s;
+  border: none;
+  color: rgb(46, 46, 46);
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px #bebdbd, 0 2px 4px -1px #bebdbd;
+  transition: all .6s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.declineButton {
+  width: 80px;
+  height: 30px;
+  background-color: #dadada;
+  transition-duration: .2s;
+  color: rgb(46, 46, 46);
+  border: none;
+  cursor: not-allowed;
+  font-weight: 600;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px #bebdbd, 0 2px 4px -1px #bebdbd;
+  transition: all .6s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.declineButton:hover {
+  background-color: #ebebeb;
+  box-shadow: 0 10px 15px -3px #bebdbd, 0 4px 6px -2px #bebdbd;
+  transition-duration: .2s;
+}
+
+.acceptButton:hover {
+  background-color: #ebebeb;
+  box-shadow: 0 10px 15px -3px #bebdbd, 0 4px 6px -2px #bebdbd;
+  transition-duration: .2s;
+}
+
+
+ 
+
+
+.h1p {
+  font-size: 12rem;
+}
+.menu {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  border-radius: 15px;
+  border: 2px solid white;
+  box-shadow: 
+    0 0 5px #ffffff,   
+    0 0 10px #ffffff;
+  margin: 20px auto;
+  margin-top: 34px ;
+  padding: 0 20px;
+  width: 650px; 
+  max-width: 95%; 
+}
+
+.nav-left {
+  flex-shrink: 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 50px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform-origin: center left;
+  transition: width 0.2s ease-in;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 5px;
+  gap: 5px;
+
+}
+
+.link::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in;
+  transform-origin: center right;
+  background-color: #000000;
+}
+
+.link:hover,
+.link:focus {
+  outline: 0;
+  width: 130px;
+}
+
+.link:hover::before,
+.link:focus::before,
+.link:hover .link-title,
+.link:focus .link-title {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.link-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+  flex-shrink: 0;
+  left: 18px;
+  position: absolute;
+  }
+  
+  .link-icon svg {
+  width: 28px;
+  height: 28px;
+  }
+
+.link-title {
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in;
+  transform-origin: center right;
+  display: block;
+  text-align: center;
+  text-indent: 28px;
+  width: 100%;
+  opacity: 0;
+}
+
+#nav-logo {
+  margin-top: 7px;
+  margin-right: 80px;
+  width: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#nav-logo:hover{
+  transform: scale(1.2);
+  }
+
+
+p {
+color: rgb(255, 255, 255);
+font-family: 'Poppins', sans-serif;
+font-size: 1.2em;
+text-align: center;
+
+}
+
+h6 {
+    font-size: 3rem;
+    line-height: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: 7px 7px 7px black;
+}
+
+
+  #searchInput {
+    background-color: black;
+    padding: 10px;
+    width: 56%;
+    color: #FFFFFF;
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+  }
+
+  #searchContainer {
+    display: flex;
+    justify-content: center;
+  }
+  #searchInput::placeholder {
+    color: #ffffff;
+  }
+  #nav-text {
+    float: right;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 35px;
+    margin-bottom: -5px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+
+
+ .right-padding-nav {
+    padding-right: 25px;
+  }
+  
+ .left-padding-nav {
+    padding-left: 5rem;
+  }
+  
+ .topnav a:hover {
+    color: rgb(255, 255, 255);
+  }
+
+ .topnav a.active {
+    color: white;
+   
+  }
+
+ .nav-image {
+    height: 25px; 
+    width: 25px; 
+    transition: transform .1s ease-in-out; 
+    margin-right: 5px; 
+    vertical-align: middle; 
+    margin-bottom: -0px;
+  }
+
+  .nav-image:hover,
+  .nav-image:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  }
+  
+  .main-holder {
+  background-image: url(../images/index.jpg);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: cover;
+}
+
+a {
+  
+  color: #adadad;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  transition: color .3s ease-in-out;
+}
+
+
+.main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.header {
+  padding: 60px;
+}
+
+
+
+
+.footer-logo-holder {
+  overflow: hidden;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: flex-end; 
+  position: relative; 
+}
+
+.footer-logo {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.footer-media-holder {
+  height: fit-content;
+  width: auto; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-size: cover;
+  position: absolute; 
+  bottom: 0;         
+  left: 0;            
+  padding-left: 20px; 
+  padding-bottom: 10px;
+}
+
+.fa-logo {
+  float: right;
+  text-align: center;
+  margin-top: 12px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 0.3s ease-in-out;
+  color: #ffffff;
+}
+.fa-brands {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.fa-discord:hover {
+  color:#7289da;
+  text-shadow: 0 0 20px ;
+}
+.fa-youtube:hover {
+  color:#CD201F;
+  text-shadow: 0 0 20px ;
+}
+.fa-x-twitter:hover{
+  color: #ffffff;
+  text-shadow: 0 0 20px;
+}
+.game {
+  background-color: black;
+  border-radius: 10px;
+  display: inline-block;
+  height: 180px;
+  width: 150px;
+  margin: 10px;
+  transition: .5s;
+  border: 2px solid white;
+
+}
+
+.game:hover {
+  transform: scale(1.05);
+
+}
+
+
+.game a {
+  font-size: 60%;
+  
+}
+
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+
+}
+
+#searchResults {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+
+}
+
+.game img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: -10px;
+  min-width: 100%;
+  object-fit: cover;
+  height: 150px;
+
+}
+
+
+
+.dot {
+  box-shadow: 0 0 150px 100px #00bbff;
+border-radius: 50%;
+height: 320px;
+width: 320px;
+background-image: radial-gradient(
+  farthest-corner at 50% 50%,
+  #ffffff, #009dff
+);
+background-blend-mode: multiply;
+filter: blur(50px) contrast(1.1);
+position: fixed;
+transform: translate(-50%, -50%);
+left: 50vw;
+top: 100vh;
+position: absolute;
+  z-index: -100;
+}
+#proxyFrame {
+  border: none;
+    text-align: center;
+    justify-content: center;
+  }
+  .search-container {
+    position: relative;
+    display: inline-block;
+}
+
+#uv-address {
+    background-color: black;
+    border: 1.5px #ffffff solid;
+    border-radius: 15px;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: hover .2s;
+    width: 400px;
+    padding-right: 35px; /* Adjusted for icon size */
+    margin-top: 40px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.magnify-icon {
+    position: absolute;
+    top: 73%;
+    right: 15px; /* Adjusted for better placement */
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border: 2px solid #fff; /* White border for the magnifying glass */
+    border-radius: 50%;
+    box-sizing: border-box; /* Include border in the element's total width and height */
+}
+
+.magnify-icon::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    width: 2px;
+    height: 8px;
+    background-color: #fff; /* White handle */
+    transform: rotate(-45deg);
+}
+
+  @font-face {
+    font-family: Prompt;
+    src: url(/fonts/prompt.ttf);
+  }
+  @font-face {
+    font-family: Fredoka;
+    src: url(/fonts/fredoka.ttf);
+  }
+  #categorySelect {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    border-style: solid;
+    background-color:black;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+  }
+ #searchContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+/*MOBILE SUPPORT*/
+@media (max-width: 768px) {
+  .Title {
+    font-size: 30px;
+    margin-left: 80px;
+  }
+  .topnav {
+    color: #FFFFFF;
+    background:black;
+    overflow: hidden;
+    position: fixed;
+    left: 2%;
+    top: 4%;
+    border-radius: 20px;
+    height: 97%;
+    width: 80px;
+    max-width: 12000px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border: 2px solid white;
+    box-shadow: 
+    0 0 5px #ffffff,   
+    0 0 10px #ffffff;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .nav-tab {
+ 
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0rem;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-image {
+    height: 30px; 
+    width: 30px; 
+    transition: transform .1s ease-in-out; 
+    margin-right: 5px; 
+    vertical-align: middle; 
+    margin-bottom: -0px;
+  }
+  #uv-address {
+    background-color: black;
+    border: 1.5px #ffffff solid;
+    border-radius: 15px;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 80px;
+    outline: none;
+    transition: hover .2s;
+    width: 200px;
+    padding-right: 35px; /* Adjusted for icon size */
+    margin-top: 40px;
+    font-weight: bold;
+    color: #ffffff;
+}
+#nav-logo {
+  margin-top: 20px;
+  width: 60px;
+  transition: transform 0.3s ease-in-out;
+}
+#searchResults {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-left: 80px;
+
+}
+#searchContainer {
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.footer-media-holder {
+  margin-left: 100px;
+}
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 0.4em;
+  background-color: black;
+  border-radius: 25px;
+  height: 25em;
+  width: 25em;
+  margin-left: 300px;
+  margin-top: 135px;
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid white;
+}
+
+
+
+#heading {
+  text-align: center;
+  margin: 2em;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: white;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+}
+
+.form .btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2.5em;
+}
+
+.button1 {
+  padding: 0.5em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  border-radius: 5px;
+  margin-right: 0.5em;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.button1:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.button2 {
+  padding: 0.5em;
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.button2:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.button3 {
+  margin-bottom: 3em;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.button3:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
     </style>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link id="cloak" rel="icon" type="image/png" href="images/logo1.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="/static/uv/uv.bundle.js" defer=""></script>                  
+    <script src="/static/uv/uv.config.js" defer=""></script>
+    <script src="/static/register-sw.js" defer=""></script>
+    <script src="/static/search.js" defer=""></script>
+    <script src="/static/index.js" defer=""></script>
+    <script src="src/js/fs.js"></script>
+    <script src="src/js/refresh-page.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3474596213788513"
+     crossorigin="anonymous"></script>
+        <meta property="og:title" content="Compass Network - Home" />
+    <meta property="of:description" content="Compass Network - Creating Concise Entertainment." />
+    <meta property="og:image" content="Cloudburst-logo" />
+    <meta property="og:url" content="https://compassnetwork.online" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
 <body>
-    <div class="container">
-        <h1>404</h1>
-        <p>Oops! The page you are looking for does not exist.</p>
-    </div>
-</body>
- <footer>   
-      <hr size="3" noshade color="#FFFFFF">       
-    <div class="footer-media-holder">
-      <a class="nav-tab" href="https://discord.gg/T924FV6sb8"><img class="footer-media" src="images/ds.png"></a>
-      <a class="nav-tab" href="https://www.youtube.com/@txvander"><img class="footer-media" src="images/pissed.png"></a>
-      <a class="nav-tab" href="https://twitter.com/@compassproxy"><img class="footer-media" src="images/twitter.png"></a>   
-    </div>
-    <div class="footer-nav-holder">
-      <a class="footer-tab" href="index.html">HOME</a>
-      <a class="footer-tab" href="games.html">GAMES</a>
-      <a class="footer-tab" href="settings.html">SETTINGS</a>
-      <a class="footer-tab" href="credits.html">CREDITS</a>
-      <a class="footer-tab" href="contact.html">CONTACT</a>
-    </div>
-  </footer>
-  <p>©️ Compass Network, 2024</p>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: auto;
+    }
+
+    #vanta-globe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      font-family: sans-serif;
+      padding-top: 20%;
+    }
+  </style>
+  <div id="vanta-globe"></div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+
+ 
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      VANTA.GLOBE({
+        el: "#vanta-globe",
+        mouseControls: false,
+        touchControls: false,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0xffffff,
+        color2: 0xffffff,
+        backgroundColor: 0x000000,
+        backgroundAlpha: 1.00,
+        showDots: false,
+        size: 1.00,
+        spacing: 15.00,
+        maxDistance: 20.00,
+        points: 10.00
+      });
+    });
+  </script>
+
+
+  
+
+    <script src="cookie.js"></script>
+
+    <div class="menu">
+      <div class="nav-left">
+        <a href="index.html">
+          <img id="nav-logo" src="images/logo1.png" alt="Cloudburst-logo">
+        </a>
+      </div>
+
+      <a href="index.html" class="link">
+        <span class="link-icon">
+        <img src="images/home1.png" alt="index.html" width="25" height="25">
+        </span>
+            <rect width="256" height="256" fill="none"></rect>
+            <polyline
+              points="76.201 132.201 152.201 40.201 216 40 215.799 103.799 123.799 179.799"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></polyline>
+            <line
+              x1="100"
+              y1="156"
+              x2="160"
+              y2="96"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></line>
+            <path
+              d="M82.14214,197.45584,52.201,227.397a8,8,0,0,1-11.31371,0L28.603,215.11268a8,8,0,0,1,0-11.31371l29.94113-29.94112a8,8,0,0,0,0-11.31371L37.65685,141.65685a8,8,0,0,1,0-11.3137l12.6863-12.6863a8,8,0,0,1,11.3137,0l76.6863,76.6863a8,8,0,0,1,0,11.3137l-12.6863,12.6863a8,8,0,0,1-11.3137,0L93.45584,197.45584A8,8,0,0,0,82.14214,197.45584Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></path>
+          </svg>
+        </span>
+        <span class="link-title">Home</span>
+      </a>
+      
+  
+  <a href="games.html" class="link">
+    <span class="link-icon">
+    <img src="images/game1.png" alt="Ai.html" width="25" height="25">
+    </span>
+        <rect width="256" height="256" fill="none"></rect>
+        <polyline
+          points="76.201 132.201 152.201 40.201 216 40 215.799 103.799 123.799 179.799"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></polyline>
+        <line
+          x1="100"
+          y1="156"
+          x2="160"
+          y2="96"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></line>
+        <path
+          d="M82.14214,197.45584,52.201,227.397a8,8,0,0,1-11.31371,0L28.603,215.11268a8,8,0,0,1,0-11.31371l29.94113-29.94112a8,8,0,0,0,0-11.31371L37.65685,141.65685a8,8,0,0,1,0-11.3137l12.6863-12.6863a8,8,0,0,1,11.3137,0l76.6863,76.6863a8,8,0,0,1,0,11.3137l-12.6863,12.6863a8,8,0,0,1-11.3137,0L93.45584,197.45584A8,8,0,0,0,82.14214,197.45584Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+      </svg>
+    </span>
+    <span class="link-title">Games</span>
+  </a>
+
+  <a href="Ai.html" class="link">
+      <span class="link-icon">
+        <img src="images/ai.png" alt="Ai.html" width="25" height="25">
+        </span>
+        <rect width="256" height="256" fill="none"></rect>
+        <path
+          d="M213.3815,109.61945,133.376,36.88436a8,8,0,0,0-10.76339.00036l-79.9945,72.73477A8,8,0,0,0,40,115.53855V208a8,8,0,0,0,8,8H208a8,8,0,0,0,8-8V115.53887A8,8,0,0,0,213.3815,109.61945Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+      </svg>
+    </span>
+    <span class="link-title">Chat</span>
+  </a>
+
+  <a href="credits.html" class="link">
+    <span class="link-icon">
+      <img src="images/wren.webp" alt="credits" width="25" height="25">
+      </span>
+    
+        <rect width="256" height="256" fill="none"></rect>
+        <path
+          d="M45.42853,176.99811A95.95978,95.95978,0,1,1,79.00228,210.5717l.00023-.001L45.84594,220.044a8,8,0,0,1-9.89-9.89l9.47331-33.15657Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+        <line
+          x1="96"
+          y1="112"
+          x2="160"
+          y2="112"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></line>
+        <line
+          x1="96"
+          y1="144"
+          x2="160"
+          y2="144"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></line>
+      </svg>
+    </span>
+    <span class="link-title">Credits</span>
+  </a>
+
+  <a href="contact.html" class="link">
+    <span class="link-icon">
+      <img src="images/flip.webp" alt="Games Icon" width="25" height="25">
+    </span>
+        <rect width="256" height="256" fill="none"></rect>
+        <circle
+          cx="116"
+          cy="116"
+          r="84"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></circle>
+        <line
+          x1="175.39356"
+          y1="175.40039"
+          x2="223.99414"
+          y2="224.00098"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></line>
+      </svg>
+    </span>
+    <span class="link-title">Contact</span>
+  </a>
+  
+  <a href="profile.html" class="link">
+    <span class="link-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="192"
+        height="192"
+        fill="currentColor"
+        viewBox="0 0 256 256"
+      >
+        <rect width="256" height="256" fill="none"></rect>
+        <circle
+          cx="128"
+          cy="96"
+          r="64"
+          fill="none"
+          stroke="currentColor"
+          stroke-miterlimit="10"
+          stroke-width="16"
+        ></circle>
+        <path
+          d="M30.989,215.99064a112.03731,112.03731,0,0,1,194.02311.002"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+      </svg>
+    </span>
+    <span class="link-title">Profile</span>
+  </a>
+</div>
+
+
+
+<h1 style="margin-top: 12.5%;" class="Title">404</h1>
+<center>
+<h3 style="margin-top: 10.%;" class="Title">Missing page</h3>
+</center>
+
+
+
+  <center>    
+    <form id="uv-form">
+
+
+  <div class="card">
+    <svg xml:space="preserve" viewBox="0 0 122.88 122.25" y="0px" x="0px" id="cookieSvg" version="1.1"><g><path d="M101.77,49.38c2.09,3.1,4.37,5.11,6.86,5.78c2.45,0.66,5.32,0.06,8.7-2.01c1.36-0.84,3.14-0.41,3.97,0.95 c0.28,0.46,0.42,0.96,0.43,1.47c0.13,1.4,0.21,2.82,0.24,4.26c0.03,1.46,0.02,2.91-0.05,4.35h0v0c0,0.13-0.01,0.26-0.03,0.38 c-0.91,16.72-8.47,31.51-20,41.93c-11.55,10.44-27.06,16.49-43.82,15.69v0.01h0c-0.13,0-0.26-0.01-0.38-0.03 c-16.72-0.91-31.51-8.47-41.93-20C5.31,90.61-0.73,75.1,0.07,58.34H0.07v0c0-0.13,0.01-0.26,0.03-0.38 C1,41.22,8.81,26.35,20.57,15.87C32.34,5.37,48.09-0.73,64.85,0.07V0.07h0c1.6,0,2.89,1.29,2.89,2.89c0,0.4-0.08,0.78-0.23,1.12 c-1.17,3.81-1.25,7.34-0.27,10.14c0.89,2.54,2.7,4.51,5.41,5.52c1.44,0.54,2.2,2.1,1.74,3.55l0.01,0 c-1.83,5.89-1.87,11.08-0.52,15.26c0.82,2.53,2.14,4.69,3.88,6.4c1.74,1.72,3.9,3,6.39,3.78c4.04,1.26,8.94,1.18,14.31-0.55 C99.73,47.78,101.08,48.3,101.77,49.38L101.77,49.38z M59.28,57.86c2.77,0,5.01,2.24,5.01,5.01c0,2.77-2.24,5.01-5.01,5.01 c-2.77,0-5.01-2.24-5.01-5.01C54.27,60.1,56.52,57.86,59.28,57.86L59.28,57.86z M37.56,78.49c3.37,0,6.11,2.73,6.11,6.11 s-2.73,6.11-6.11,6.11s-6.11-2.73-6.11-6.11S34.18,78.49,37.56,78.49L37.56,78.49z M50.72,31.75c2.65,0,4.79,2.14,4.79,4.79 c0,2.65-2.14,4.79-4.79,4.79c-2.65,0-4.79-2.14-4.79-4.79C45.93,33.89,48.08,31.75,50.72,31.75L50.72,31.75z M119.3,32.4 c1.98,0,3.58,1.6,3.58,3.58c0,1.98-1.6,3.58-3.58,3.58s-3.58-1.6-3.58-3.58C115.71,34.01,117.32,32.4,119.3,32.4L119.3,32.4z M93.62,22.91c2.98,0,5.39,2.41,5.39,5.39c0,2.98-2.41,5.39-5.39,5.39c-2.98,0-5.39-2.41-5.39-5.39 C88.23,25.33,90.64,22.91,93.62,22.91L93.62,22.91z M97.79,0.59c3.19,0,5.78,2.59,5.78,5.78c0,3.19-2.59,5.78-5.78,5.78 c-3.19,0-5.78-2.59-5.78-5.78C92.02,3.17,94.6,0.59,97.79,0.59L97.79,0.59z M76.73,80.63c4.43,0,8.03,3.59,8.03,8.03 c0,4.43-3.59,8.03-8.03,8.03s-8.03-3.59-8.03-8.03C68.7,84.22,72.29,80.63,76.73,80.63L76.73,80.63z M31.91,46.78 c4.8,0,8.69,3.89,8.69,8.69c0,4.8-3.89,8.69-8.69,8.69s-8.69-3.89-8.69-8.69C23.22,50.68,27.11,46.78,31.91,46.78L31.91,46.78z M107.13,60.74c-3.39-0.91-6.35-3.14-8.95-6.48c-5.78,1.52-11.16,1.41-15.76-0.02c-3.37-1.05-6.32-2.81-8.71-5.18 c-2.39-2.37-4.21-5.32-5.32-8.75c-1.51-4.66-1.69-10.2-0.18-16.32c-3.1-1.8-5.25-4.53-6.42-7.88c-1.06-3.05-1.28-6.59-0.61-10.35 C47.27,5.95,34.3,11.36,24.41,20.18C13.74,29.69,6.66,43.15,5.84,58.29l0,0.05v0h0l-0.01,0.13v0C5.07,73.72,10.55,87.82,20.02,98.3 c9.44,10.44,22.84,17.29,38,18.1l0.05,0h0v0l0.13,0.01h0c15.24,0.77,29.35-4.71,39.83-14.19c10.44-9.44,17.29-22.84,18.1-38l0-0.05 v0h0l0.01-0.13v0c0.07-1.34,0.09-2.64,0.06-3.91C112.98,61.34,109.96,61.51,107.13,60.74L107.13,60.74z M116.15,64.04L116.15,64.04 L116.15,64.04L116.15,64.04z M58.21,116.42L58.21,116.42L58.21,116.42L58.21,116.42z"></path></g></svg>
+     <p class="cookieHeading">We use cookies.</p>
+     <p class="cookieDescription">We use cookies to ensure that we give you the best experience on our website. <br><a href="cookie.html">Read cookies policies</a>.</p>
+                                                                                                                                                         
+     <div class="buttonContainer">
+       <button class="acceptButton">Allow</button>
+     <button class="declineButton">Decline</button>
+     </div>
+     
+   
+   </div>
+ 
+  
+ 
+      
+      
+
+  
+      
+    
+
+
+      
+    
+    <footer>
+      <div class="footer-media-holder">
+        <a class="fa-brands fa-2xl fa-discord fa-logo" href="https://discord.gg/T924FV6sb8"></a>
+        <a class="fa-brands fa-2xl fa-youtube fa-logo" href="https://www.youtube.com/@txvander"></a>
+        <a class="fa-brands fa-2xl fa-x-twitter fa-logo" href="https://twitter.com/@Compassproxy"></a>
+      </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+    </footer>
+
+                                                                                                                                       
+  </body>
 </html>
+ 
