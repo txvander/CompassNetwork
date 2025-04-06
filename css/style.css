@@ -77,17 +77,15 @@ h3 {
   font-weight: 200;
 }
 
-
-
 .credit-row {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   overflow-x: auto;
-}
-
-.credit-item {
+  }
+  
+  .credit-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,41 +95,44 @@ h3 {
   text-align: center;
   flex: 1 1 18%; /* Each item takes up 18% of the row */
   max-width: 200px; /* Optional: Sets a maximum width for each item */
-}
-
-.credit-item img {
+  }
+  
+  .credit-item img {
   width: 100px;
   height: 100px;
   border-radius: 20%;
   justify-content: center;
   transition: transform .35s ease;
-
   height: auto;
   border-radius: 10px; /* Optional: Adds rounded corners to images */
-}
-
-
-.credit-item a:hover img{
+  }
+  
+  
+  .credit-item a:hover img{
   transform: scale(1.1);
-}
-.credit-item p {
+  }
+  .credit-item p {
   margin: 10px 0;
   font-size: 27px;
   text-align: center;
   color: #FFFFFF;
   font-family: 'Montserrat', sans-serif;
   justify-content: center;
-}
-.credit-container {
+  }
+  .credit-container {
   display: flex;
   flex-wrap: wrap; /* Allows wrapping if items don't fit in one row */
   justify-content: space-around; /* Spreads items evenly with space between */
   gap: 20px; /* Adds space between items */
-}
+  }
+  
+  
+
+
+
 
 
 body {    
-    background-image: url(../images/bg4.png);
     background-color: #272727;
     margin: 0;   
     background-size: cover;
@@ -694,6 +695,7 @@ position: absolute;
     align-items: center;
     gap: 15px; 
 }
+
 /*MOBILE SUPPORT*/
 @media (max-width: 768px) {
   .Title {

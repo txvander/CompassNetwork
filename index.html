@@ -24,11 +24,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   </head>
+<body>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: auto;
+    }
 
-  <body>
+    #vanta-globe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
 
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      font-family: sans-serif;
+      padding-top: 20%;
+    }
+  </style>
+  <div id="vanta-globe"></div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+
+ 
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      VANTA.GLOBE({
+        el: "#vanta-globe",
+        mouseControls: false,
+        touchControls: false,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0xffffff,
+        color2: 0xffffff,
+        backgroundColor: 0x000000,
+        backgroundAlpha: 1.00,
+        showDots: false,
+        size: 1.00,
+        spacing: 15.00,
+        maxDistance: 20.00,
+        points: 10.00
+      });
+    });
+  </script>
+
+
+  
 
     <script src="cookie.js"></script>
+
     <div class="menu">
       <div class="nav-left">
         <a href="index.html">
@@ -38,13 +96,7 @@
       
   <a href="index.html" class="link">
     <span class="link-icon">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="192"
-        height="192"
-        fill="currentColor"
-        viewBox="0 0 256 256"
-      >
+      <img src="images/home1.png" alt="Ai.html" width="25" height="25">
         <rect width="256" height="256" fill="none"></rect>
         <path
           d="M213.3815,109.61945,133.376,36.88436a8,8,0,0,0-10.76339.00036l-79.9945,72.73477A8,8,0,0,0,40,115.53855V208a8,8,0,0,0,8,8H208a8,8,0,0,0,8-8V115.53887A8,8,0,0,0,213.3815,109.61945Z"
@@ -58,15 +110,11 @@
     </span>
     <span class="link-title">Home</span>
   </a>
+
   <a href="games.html" class="link">
     <span class="link-icon">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="192"
-        height="192"
-        fill="currentColor"
-        viewBox="0 0 256 256"
-      >
+    <img src="images/game1.png" alt="Ai.html" width="25" height="25">
+    </span>
         <rect width="256" height="256" fill="none"></rect>
         <polyline
           points="76.201 132.201 152.201 40.201 216 40 215.799 103.799 123.799 179.799"
@@ -99,9 +147,28 @@
     </span>
     <span class="link-title">Games</span>
   </a>
+
+  <a href="Ai.html" class="link">
+      <span class="link-icon">
+        <img src="images/ai.png" alt="Ai.html" width="25" height="25">
+        </span>
+        <rect width="256" height="256" fill="none"></rect>
+        <path
+          d="M213.3815,109.61945,133.376,36.88436a8,8,0,0,0-10.76339.00036l-79.9945,72.73477A8,8,0,0,0,40,115.53855V208a8,8,0,0,0,8,8H208a8,8,0,0,0,8-8V115.53887A8,8,0,0,0,213.3815,109.61945Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+      </svg>
+    </span>
+    <span class="link-title">Chat</span>
+  </a>
+
   <a href="credits.html" class="link">
     <span class="link-icon">
-      <img src="images/wren.webp" alt="credits" width="20" height="28">
+      <img src="images/wren.webp" alt="credits" width="25" height="25">
       </span>
     
         <rect width="256" height="256" fill="none"></rect>
@@ -142,7 +209,7 @@
 
   <a href="contact.html" class="link">
     <span class="link-icon">
-      <img src="images/flip.webp" alt="Games Icon" width="20" height="30">
+      <img src="images/flip.webp" alt="Games Icon" width="25" height="25">
     </span>
         <rect width="256" height="256" fill="none"></rect>
         <circle
@@ -170,6 +237,7 @@
     </span>
     <span class="link-title">Contact</span>
   </a>
+  
   <a href="profile.html" class="link">
     <span class="link-icon">
       <svg
