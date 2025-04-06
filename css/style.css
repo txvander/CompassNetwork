@@ -263,11 +263,6 @@ h1 {
   box-shadow: 0 10px 15px -3px #bebdbd, 0 4px 6px -2px #bebdbd;
   transition-duration: .2s;
 }
-
-
- 
-
-
 .h1p {
   font-size: 12rem;
 }
@@ -699,7 +694,7 @@ position: absolute;
 }
 
 /*MOBILE SUPPORT*/
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .Title {
     font-size: 30px;
     margin-left: 80px;
@@ -946,4 +941,14 @@ position: absolute;
 .button3:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
+}
+.settingsContainer {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: 20px auto;
+  text-align: center;
 }
