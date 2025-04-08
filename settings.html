@@ -35,20 +35,28 @@
           font-family: sans-serif;
           padding-top: 20%;
         }
+
+        ::-webkit-scrollbar {
+         display: none;
+    }
+    
+
       </style>
       <div id="vanta-globe"></div>
     
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
     
-     
+      <!-- Theme toggle logic -->
       <script>
-        window.addEventListener('DOMContentLoaded', () => {
-          VANTA.GLOBE({
+        let vantaEffect;
+    
+        function setDarkTheme() {
+          if (vantaEffect) vantaEffect.destroy();
+          vantaEffect = VANTA.GLOBE({
             el: "#vanta-globe",
-            mouseControls: false,
-            touchControls: false,
+            mouseControls: true,
+            touchControls: true,
             gyroControls: false,
             minHeight: 200.00,
             minWidth: 200.00,
@@ -64,8 +72,39 @@
             maxDistance: 20.00,
             points: 10.00
           });
-        });
+          document.body.style.color = "#fff";
+          document.body.style.backgroundColor = "#000";
+        }
+    
+        function setLightTheme() {
+          if (vantaEffect) vantaEffect.destroy();
+          vantaEffect = VANTA.GLOBE({
+            el: "#vanta-globe",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x000000,
+            color2: 0x000000,
+            backgroundColor: 0xffffff,
+            backgroundAlpha: 1.00,
+            showDots: false,
+            size: 1.00,
+            spacing: 15.00,
+            maxDistance: 20.00,
+            points: 10.00
+          });
+          document.body.style.color = "#000";
+          document.body.style.backgroundColor = "#fff";
+        }
+    
+        
+        window.addEventListener('DOMContentLoaded', setDarkTheme);
       </script>
+      
 
       <div class="menu">
         <div class="nav-left">
@@ -260,11 +299,46 @@
                 <button class="declineButton">Decline</button>
             </div>
         </div>
-        <div class="settingsContainer">
+        <div class="settingsRow">
+          <div class="settingsContainer">
             <h2>Tab Cloak</h2>
-            <button id="cloakBtn">Google</button>
+            <div class="button">
+              <button id="googleCloak">Google</button>
+              <button id="youtubeCloak">YouTube</button>
+              <button id="desmosCloak">Desmos</button>
+              <button id="newtabCloak">New Tab</button>
+            </div>
             <script src="tabcloak.js"></script>
+          </div>
+        
+          <div class="settingsContainer">
+            <h2>Theme</h2>
+            <div class="button">
+           <button onclick="setDarkTheme()">Dark</button>
+           <button onclick="setLightTheme()">Light</button>
+            </div>
+          </div>
+        
+          <div class="settingsContainer">
+            <h2>About Blank</h2>
+            <p>Proxy does not work in About Blank</p>
+            <div class="button">
+              <button id="launchBlank">About black</button>
+            </div>
+          </div>
         </div>
+<script>
+  document.getElementById("launchBlank").addEventListener("click", () => {
+  const win = window.open("about:blank", "_blank");
+  const doc = win.document;
+  doc.open();
+  doc.write(document.documentElement.outerHTML);
+  doc.close();
+});
+
+</script>
+  
+        
     </main>
 </div>  
     <!-- Google tag (gtag.js) -->
