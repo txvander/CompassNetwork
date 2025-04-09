@@ -959,7 +959,7 @@ position: absolute;
   border-radius: 8px;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 200px;
+  width: 250px;
   text-align: center;
   flex-shrink: 0;
 
@@ -977,12 +977,17 @@ button {
   color: white;
   border: 2px solid white;
   border-radius: 6px;
-  padding: 8px 16px;
+  padding: 8px 20px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+  margin: 5px;
+}
 
+.btn-theme {
+  width: 6.7rem;
 }
 
 button:hover {
@@ -1003,6 +1008,7 @@ button {
   background-color: #111;
   color: white;
   border: 2px solid white;
+
 }
 
 body.light button {
@@ -1059,14 +1065,14 @@ body.light .fa-youtube:hover {
 
 
 body.light .fa-x-twitter:hover {
-  color: #1DA1F2 !important;
+  color: rgba(29, 161, 242, 0.6) !important;
   text-shadow: 0 0 20px rgba(29, 161, 242, 0.6) !important;
 }
 
 body.light h1 {
   font-size: 70px;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, white, #272727); /* White to Light Gray */
+  background: linear-gradient(to bottom, rgb(0, 0, 0), #4d4c4c); /* White to Light Gray */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
