@@ -23,7 +23,6 @@
     <meta property="og:url" content="https://compassnetwork.online" />
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
   </head>
 <body>
   
@@ -97,6 +96,7 @@ document.body.classList.remove("light");
 document.body.classList.add("dark");
 localStorage.setItem("theme", "dark");
 applyVanta("dark");
+refreshClock();
 }
 
 function setLightTheme() {
@@ -104,6 +104,7 @@ document.body.classList.remove("dark");
 document.body.classList.add("light");
 localStorage.setItem("theme", "light");
 applyVanta("light");
+refreshClock();
 }
 
 
@@ -119,8 +120,8 @@ setDarkTheme();
 
 
   <script src="tabcloak.js"></script>
-
-    <script src="cookie.js"></script>
+  <script src="timecounter.js"></script>
+  <script src="cookie.js"></script>
 
     <div class="menu">
       <div class="nav-left">
@@ -368,12 +369,6 @@ setDarkTheme();
 
 <h1 style="margin-top: 12.5%;" class="Title">Compass Network</h1>
 
-
-
-
-  <center>    
-    <form id="uv-form">
-
     <center>
       <form id="uv-form">
 
@@ -383,6 +378,7 @@ setDarkTheme();
             <div class="magnify-icon"></div>
           </div>
       </form>
+      <div id="clock">XX:XX:XX</div>
   </center>
 <p></p>
   
