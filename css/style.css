@@ -952,6 +952,12 @@ position: absolute;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
 }
+#clock {
+  font-size: 20px; 
+  margin-top: 20px; 
+  text-align: center; 
+  font-weight: bold;
+}
 /* DARK THEME */
 .settingsContainer {
   background-color: transparent;
