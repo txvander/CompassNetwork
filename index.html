@@ -96,6 +96,7 @@ document.body.classList.remove("light");
 document.body.classList.add("dark");
 localStorage.setItem("theme", "dark");
 applyVanta("dark");
+refreshClock();
 }
 
 function setLightTheme() {
@@ -103,6 +104,7 @@ document.body.classList.remove("dark");
 document.body.classList.add("light");
 localStorage.setItem("theme", "light");
 applyVanta("light");
+refreshClock();
 }
 
 
