@@ -1059,14 +1059,14 @@ body.light .fa-youtube:hover {
 
 
 body.light .fa-x-twitter:hover {
-  color: #1DA1F2 !important;
+  color: #ffffff !important;
   text-shadow: 0 0 20px rgba(29, 161, 242, 0.6) !important;
 }
 
 body.light h1 {
   font-size: 70px;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, white, #272727); /* White to Light Gray */
+  background: linear-gradient(to bottom, rgb(0, 0, 0), #4d4c4c); /* White to Light Gray */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
