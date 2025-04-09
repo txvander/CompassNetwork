@@ -1065,7 +1065,7 @@ body.light .fa-youtube:hover {
 
 
 body.light .fa-x-twitter:hover {
-  color: #ffffff !important;
+  color: rgba(29, 161, 242, 0.6) !important;
   text-shadow: 0 0 20px rgba(29, 161, 242, 0.6) !important;
 }
 
