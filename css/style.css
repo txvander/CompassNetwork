@@ -968,7 +968,7 @@ position: absolute;
   width: 250px;
   text-align: center;
   flex-shrink: 0;
-
+  font-weight: bold;
     }
 
     .settingsRow {
@@ -1008,6 +1008,7 @@ body.light .settingsContainer {
   border: 2px solid #000;
   color: black;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
+  font-weight: bold;
 }
 
 button {
@@ -1091,3 +1092,91 @@ body.light h1 {
   display: flex;
   justify-content: center;
 }
+
+/* PINK THEME */
+
+body.dark-pink p {
+  color: black; 
+}
+
+
+body.dark-pink  .settingsContainer {
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  text-align: center;
+  flex-shrink: 0;
+  font-weight: bold;
+    }
+
+
+    body.dark-pink  h1 {
+      font-size: 70px;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, rgb(255, 255, 255), #ffffff); /* White to Light Gray */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      text-align: center;
+      font-weight: 700;
+      line-height: 1.2;
+      padding-top: 5px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+
+     /* GRAY THEME */
+
+     body.dark-gray .settingsContainer {
+      background-color: transparent;
+      border: 2px solid #000000;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 250px;
+      text-align: center;
+      flex-shrink: 0;
+      font-weight: bold;
+        }
+
+        body.dark-gray  h1 {
+          font-size: 70px;
+          font-family: 'Poppins', sans-serif;
+          background: linear-gradient(to bottom, rgb(61, 61, 61), #3d3d3d); /* White to Light Gray */
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          color: transparent;
+          text-align: center;
+          font-weight: 700;
+          line-height: 1.2;
+          padding-top: 5px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+        }
+
+        
+        
+
+
+        /* BLUE THEME */
+        
+        body.dark-blue .settingsContainer {
+          background-color: transparent;
+          border: 2px solid #000000;
+          border-radius: 8px;
+          padding: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          width: 250px;
+          text-align: center;
+          flex-shrink: 0;
+          font-weight: bold;
+        }
+
+      /* END OF THE THEMES FOR NOW */
