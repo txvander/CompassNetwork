@@ -1094,10 +1094,14 @@ body.light h1 {
 }
 
 /* PINK THEME */
-
 body.dark-pink p {
-  color: black; 
+  color: rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+
 }
+
 
 
 body.dark-pink  .settingsContainer {
