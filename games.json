@@ -63,8 +63,15 @@
     "category": "sports"
   },
   {
-    "title": "Minecraft",
+    "title": "Minecraft 1.5.2",
     "link": "games/minecraft/index.html",
+    "id": "game",
+    "image": "games/minecraft/logo.png",
+    "category": "arcade"
+  },
+  {
+    "title": "Minecraft 1.8.8",
+    "link": "games/MC18/index.html",
     "id": "game",
     "image": "games/minecraft/logo.png",
     "category": "arcade"
