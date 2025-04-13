@@ -1130,6 +1130,14 @@ body.dark-pink  .settingsContainer {
       justify-content: center;
     }
 
+    body.dark-pink p {
+    color: #ffffff !important;
+    }
+
+    body.dark-pink h2 {
+    color: #ffffff !important;
+    }
+
      /* GRAY THEME */
 
      body.dark-gray .settingsContainer {
@@ -1178,5 +1186,16 @@ body.dark-pink  .settingsContainer {
           flex-shrink: 0;
           font-weight: bold;
         }
+         
+
+        body.dark-blue p {
+          color: #ffffff !important;
+        }
+
+          body.dark-blue h2 {
+           color: #ffffff !important;
+          }
+
+        
 
       /* END OF THE THEMES FOR NOW */
