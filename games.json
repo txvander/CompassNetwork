@@ -70,6 +70,13 @@
     "category": "arcade"
   },
   {
+    "title": "Crazy Cattle 3D",
+    "link": "games/crazycattle3d/index.html",
+    "id": "game",
+    "image": "games/crazycattle3d/index.apple-touch-icon.png",
+    "category": "strategy"
+  },
+  {
     "title": "Minecraft 1.8.8",
     "link": "games/MC18/index.html",
     "id": "game",
