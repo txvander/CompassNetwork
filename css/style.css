@@ -93,18 +93,18 @@ h3 {
   margin: 0 100px;
   padding-bottom: 2.3rem;
   text-align: center;
-  flex: 1 1 18%; /* Each item takes up 18% of the row */
-  max-width: 200px; /* Optional: Sets a maximum width for each item */
+  flex: 1 1 10%; 
+  max-width: 85px; 
   }
   
   .credit-item img {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 20%;
   justify-content: center;
   transition: transform .35s ease;
   height: auto;
-  border-radius: 10px; /* Optional: Adds rounded corners to images */
+  border-radius: 10px; 
   }
   
   
@@ -116,14 +116,14 @@ h3 {
   font-size: 27px;
   text-align: center;
   color: #FFFFFF;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   justify-content: center;
   }
   .credit-container {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping if items don't fit in one row */
-  justify-content: space-around; /* Spreads items evenly with space between */
-  gap: 20px; /* Adds space between items */
+  flex-direction: row;
+  justify-content: space-around; 
+  gap: 20px; 
   }
   
   
