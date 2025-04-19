@@ -1,495 +1,527 @@
+
 <!DOCTYPE html>
 <html>
 
-<head>
-<title id="cloakable">Compass - Home</title>
-<link id="themeStylesheet" rel="stylesheet" href="css/style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link id="cloak" rel="icon" type="image/png" href="images/logo1.png">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<script src="/static/uv/uv.bundle.js"></script>
-<script src="/static/uv/uv.config.js"></script>
-<script src="/static/register-sw.js"></script>
-<script src="/static/search.js"></script>
-<script src="/static/index.js"></script>
-<script src="src/js/fs.js"></script>
-<script src="src/js/refresh-page.js"></script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3474596213788513"
-crossorigin="anonymous"></script>
-<meta name="google-adsense-account" content="ca-pub-3474596213788513">
-<meta property="og:title" content="Compass Network" />
-<meta property="og:description" content="We are Compass Network We Have a Fast Proxy Clean Ui And We have lots of Games " />
-<meta property="og:image" content="https://compassnetwork.online/images/logo1.png"/>
-<meta property="og:url" content="https://compassnetwork.online" />
-<meta property="og:type" content="website" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+  <head>
+    <title id="cloakable">Compass - Home</title>
+    <link id="themeStylesheet" rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link id="cloak" rel="icon" type="image/png" href="images/logo1.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="/static/uv/uv.bundle.js"></script>                  
+    <script src="/static/uv/uv.config.js"></script>
+    <script src="/static/register-sw.js"></script>
+    <script src="/static/search.js"></script>
+    <script src="/static/index.js"></script>
+    <script src="src/js/fs.js"></script>
+    <script src="src/js/refresh-page.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3474596213788513"
+     crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-3474596213788513">
+    <meta property="og:title" content="Compass Network" />
+    <meta property="og:description" content="We are Compass Network We Have a Fast Proxy Clean Ui And We have lots of Games  " />
+    <meta property="og:image" content="https://compassnetwork.online/images/logo1.png"/>
+    <meta property="og:url" content="https://compassnetwork.online" />                                                            
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>                                                                                          
+<body>                                                                                                                                                                                                                        
+                                                                                                        
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: auto;
+    }
 
-<style>
-html, body {
-margin: 0;
-padding: 0;
-height: 100%;
-overflow: auto;
-}
+    #vanta-globe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
 
-#vanta-globe {
-width: 100%;
-height: 100%;
-position: absolute;
-top: 0;
-left: 0;
-z-index: -1;
-}
-
-.content {
-position: relative;
-z-index: 1;
-color: white;
-text-align: center;
-font-family: sans-serif;
-padding-top: 20%;
-}
-</style>
-<div id="vanta-globe"></div>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      font-family: sans-serif;
+      padding-top: 20%;
+    }
+  </style>
+  <div id="vanta-globe"></div>
 
 
-<script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+
+ 
+  <script>
 let vantaEffect;
 
 function applyVanta(theme) {
-if (vantaEffect) vantaEffect.destroy();
+  if (vantaEffect) vantaEffect.destroy();
 
-const el = document.getElementById("vanta-globe");
-if (!el) return;
+  const el = document.getElementById("vanta-globe");
+  if (!el) return;
 
-let bgColor, globeColor, globeColor2, textColor, pColor, h1Color;
+  let bgColor, globeColor, globeColor2, textColor, pColor, h1Color;
 
-if (theme === "dark-pink") {
-bgColor = "#FF69B4";
-globeColor = 0xFFFFFF;
-globeColor2 = 0xFFFFFF;
-textColor = "#000";
-pColor = "#000";
-h1Color = "#000";
-} else if (theme === "dark-gray") {
-bgColor = "#808080";
-globeColor = 0xFFFFFF;
-globeColor2 = 0xFFFFFF;
-textColor = "#000";
-pColor = "#000";
-h1Color = "#000";
-} else if (theme === "dark-blue") {
-bgColor = "#0000FF";
-globeColor = 0xFFFFFF;
-globeColor2 = 0xFFFFFF;
-textColor = "#000";
-pColor = "#000";
-h1Color = "#000";
-} else if (theme === "light") {
-bgColor = "#FFFFFF";
-globeColor = 0x000000;
-globeColor2 = 0x000000;
-textColor = "#000";
-pColor = "#000";
-h1Color = "#000";
-} else {
-bgColor = "#000000";
-globeColor = 0xFFFFFF;
-globeColor2 = 0xFFFFFF;
-textColor = "#fff";
-pColor = "#fff";
-h1Color = "#fff";
-}
+  if (theme === "dark-pink") {
+    bgColor = "#FF69B4";
+    globeColor = 0xFFFFFF;
+    globeColor2 = 0xFFFFFF;
+    textColor = "#000";
+    pColor = "#000";
+    h1Color = "#000";
+  } else if (theme === "dark-gray") {
+    bgColor = "#808080";
+    globeColor = 0xFFFFFF;
+    globeColor2 = 0xFFFFFF;
+    textColor = "#000";
+    pColor = "#000";
+    h1Color = "#000";
+  } else if (theme === "dark-blue") {
+    bgColor = "#0000FF";
+    globeColor = 0xFFFFFF;
+    globeColor2 = 0xFFFFFF;
+    textColor = "#000";
+    pColor = "#000";
+    h1Color = "#000";
+  } else if (theme === "light") {
+    bgColor = "#FFFFFF";
+    globeColor = 0x000000;
+    globeColor2 = 0x000000;
+    textColor = "#000";
+    pColor = "#000";
+    h1Color = "#000";
+  } else { 
+    bgColor = "#000000";
+    globeColor = 0xFFFFFF;
+    globeColor2 = 0xFFFFFF;
+    textColor = "#fff";
+    pColor = "#fff";
+    h1Color = "#fff";
+  }
 
-vantaEffect = VANTA.GLOBE({
-el: "#vanta-globe",
-mouseControls: false,
-touchControls: false,
-gyroControls: false,
-minHeight: 200.00,
-minWidth: 200.00,
-scale: 1.00,
-scaleMobile: 1.00,
-color: globeColor,
-color2: globeColor2,
-backgroundColor: bgColor,
-backgroundAlpha: 1.00,
-showDots: false,
-size: 1.00,
-spacing: 15.00,
-maxDistance: 20.00,
-points: 10.00
-});
+  vantaEffect = VANTA.GLOBE({
+    el: "#vanta-globe",
+    mouseControls: false,
+    touchControls: false,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: globeColor,
+    color2: globeColor2,
+    backgroundColor: bgColor,
+    backgroundAlpha: 1.00,
+    showDots: false,
+    size: 1.00,
+    spacing: 15.00,
+    maxDistance: 20.00,
+    points: 10.00
+  });
 
-document.body.style.backgroundColor = bgColor;
-document.body.style.color = textColor;
+  document.body.style.backgroundColor = bgColor;
+  document.body.style.color = textColor;
 
-const paragraphs = document.querySelectorAll('p');
-paragraphs.forEach(p => p.style.color = pColor);
+  const paragraphs = document.querySelectorAll('p');
+  paragraphs.forEach(p => p.style.color = pColor);
 
-const headers = document.querySelectorAll('h1');
-headers.forEach(h1 => h1.style.color = h1Color);
+  const headers = document.querySelectorAll('h1');
+  headers.forEach(h1 => h1.style.color = h1Color);
 }
 
 function setDarkBlueTheme() {
-document.body.classList.remove("light", "dark-pink", "dark-gray", "dark");
-document.body.classList.add("dark-blue");
-localStorage.setItem("theme", "dark-blue");
-applyVanta("dark-blue");
+  document.body.classList.remove("light", "dark-pink", "dark-gray", "dark");
+  document.body.classList.add("dark-blue");
+  localStorage.setItem("theme", "dark-blue");
+  applyVanta("dark-blue");
 }
 
 function setDarkPinkTheme() {
-document.body.classList.remove("light", "dark-gray", "dark-blue", "dark");
-document.body.classList.add("dark-pink");
-localStorage.setItem("theme", "dark-pink");
-applyVanta("dark-pink");
+  document.body.classList.remove("light", "dark-gray", "dark-blue", "dark");
+  document.body.classList.add("dark-pink");
+  localStorage.setItem("theme", "dark-pink");
+  applyVanta("dark-pink");
 }
 
 function setDarkGrayTheme() {
-document.body.classList.remove("light", "dark-pink", "dark-blue", "dark");
-document.body.classList.add("dark-gray");
-localStorage.setItem("theme", "dark-gray");
-applyVanta("dark-gray");
+  document.body.classList.remove("light", "dark-pink", "dark-blue", "dark");
+  document.body.classList.add("dark-gray");
+  localStorage.setItem("theme", "dark-gray");
+  applyVanta("dark-gray");
 }
 
 function setDarkTheme() {
-document.body.classList.remove("light", "dark-pink", "dark-gray", "dark-blue");
-document.body.classList.add("dark");
-localStorage.setItem("theme", "dark");
-applyVanta("dark");
+  document.body.classList.remove("light", "dark-pink", "dark-gray", "dark-blue");
+  document.body.classList.add("dark");
+  localStorage.setItem("theme", "dark");
+  applyVanta("dark");
 }
 
 function setLightTheme() {
-document.body.classList.remove("dark", "dark-pink", "dark-gray", "dark-blue");
-document.body.classList.add("light");
-localStorage.setItem("theme", "light");
-applyVanta("light");
+  document.body.classList.remove("dark", "dark-pink", "dark-gray", "dark-blue");
+  document.body.classList.add("light");
+  localStorage.setItem("theme", "light");
+  applyVanta("light");
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-const savedTheme = localStorage.getItem("theme") || "dark";
-if (savedTheme === "light") {
-setLightTheme();
-} else if (savedTheme === "dark-pink") {
-setDarkPinkTheme();
-} else if (savedTheme === "dark-gray") {
-setDarkGrayTheme();
-} else if (savedTheme === "dark-blue") {
-setDarkBlueTheme();
-} else {
-setDarkTheme();
-}
+  const savedTheme = localStorage.getItem("theme") || "dark";
+  if (savedTheme === "light") {
+    setLightTheme();
+  } else if (savedTheme === "dark-pink") {
+    setDarkPinkTheme();
+  } else if (savedTheme === "dark-gray") {
+    setDarkGrayTheme();
+  } else if (savedTheme === "dark-blue") {
+    setDarkBlueTheme();
+  } else {
+    setDarkTheme();
+  }
 });
 
 
 
-</script>
+  </script>
 
 
-<script src="tabcloak.js"></script>
-<script src="timecounter.js"></script>
-<script src="cookie.js"></script>
+  <script src="tabcloak.js"></script>
+  <script src="timecounter.js"></script>
+  <script src="cookie.js"></script>
 
-<div class="menu">
-<div class="nav-left">
-<img id="nav-logo" src="images/logo1.png" alt="Cloudburst-logo">
-</a>
+    <div class="menu">
+      <div class="nav-left">
+          <img id="nav-logo" src="images/logo1.png" alt="Cloudburst-logo">
+        </a>
+      </div>
+
+      <a href="index.html" class="link">
+        <span class="link-icon">
+        <img src="images/home1.png" alt="index.html" width="25" height="25">
+        </span>
+            <rect width="256" height="256" fill="none"></rect>
+            <polyline
+              points="76.201 132.201 152.201 40.201 216 40 215.799 103.799 123.799 179.799"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></polyline>
+            <line
+              x1="100"
+              y1="156"
+              x2="160"
+              y2="96"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></line>
+            <path
+              d="M82.14214,197.45584,52.201,227.397a8,8,0,0,1-11.31371,0L28.603,215.11268a8,8,0,0,1,0-11.31371l29.94113-29.94112a8,8,0,0,0,0-11.31371L37.65685,141.65685a8,8,0,0,1,0-11.3137l12.6863-12.6863a8,8,0,0,1,11.3137,0l76.6863,76.6863a8,8,0,0,1,0,11.3137l-12.6863,12.6863a8,8,0,0,1-11.3137,0L93.45584,197.45584A8,8,0,0,0,82.14214,197.45584Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></path>
+          </svg>
+        </span>
+        <span class="link-title">Home</span>
+      </a>
+      
+  
+  <a href="games.html" class="link">
+    <span class="link-icon">
+    <img src="images/game1.png" alt="Ai.html" width="25" height="25">
+    </span>
+        <rect width="256" height="256" fill="none"></rect>
+        <polyline
+          points="76.201 132.201 152.201 40.201 216 40 215.799 103.799 123.799 179.799"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></polyline>
+        <line
+          x1="100"
+          y1="156"
+          x2="160"
+          y2="96"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></line>
+        <path
+          d="M82.14214,197.45584,52.201,227.397a8,8,0,0,1-11.31371,0L28.603,215.11268a8,8,0,0,1,0-11.31371l29.94113-29.94112a8,8,0,0,0,0-11.31371L37.65685,141.65685a8,8,0,0,1,0-11.3137l12.6863-12.6863a8,8,0,0,1,11.3137,0l76.6863,76.6863a8,8,0,0,1,0,11.3137l-12.6863,12.6863a8,8,0,0,1-11.3137,0L93.45584,197.45584A8,8,0,0,0,82.14214,197.45584Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+      </svg>
+    </span>
+    <span class="link-title">Games</span>
+  </a>
+
+  <a href="settings.html" class="link">
+    <span class="link-icon">
+    <img src="images/setting1.png" alt="Ai.html" width="25" height="25">
+    </span>
+        <rect width="256" height="256" fill="none"></rect>
+        <polyline
+          points="76.201 132.201 152.201 40.201 216 40 215.799 103.799 123.799 179.799"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></polyline>
+        <line
+          x1="100"
+          y1="156"
+          x2="160"
+          y2="96"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></line>
+        <path
+          d="M82.14214,197.45584,52.201,227.397a8,8,0,0,1-11.31371,0L28.603,215.11268a8,8,0,0,1,0-11.31371l29.94113-29.94112a8,8,0,0,0,0-11.31371L37.65685,141.65685a8,8,0,0,1,0-11.3137l12.6863-12.6863a8,8,0,0,1,11.3137,0l76.6863,76.6863a8,8,0,0,1,0,11.3137l-12.6863,12.6863a8,8,0,0,1-11.3137,0L93.45584,197.45584A8,8,0,0,0,82.14214,197.45584Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+      </svg>
+    </span>
+    <span class="link-title">Settings</span>
+  </a>
+
+  <a href="Ai.html" class="link">
+      <span class="link-icon">
+        <img src="images/ai.png" alt="Ai.html" width="25" height="25">
+        </span>
+        <rect width="256" height="256" fill="none"></rect>
+        <path
+          d="M213.3815,109.61945,133.376,36.88436a8,8,0,0,0-10.76339.00036l-79.9945,72.73477A8,8,0,0,0,40,115.53855V208a8,8,0,0,0,8,8H208a8,8,0,0,0,8-8V115.53887A8,8,0,0,0,213.3815,109.61945Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+      </svg>
+    </span>
+    <span class="link-title">Chat</span>
+  </a>
+
+  <a href="credits.html" class="link">
+    <span class="link-icon">
+      <img src="images/wren.webp" alt="credits" width="25" height="25">
+      </span>
+    
+        <rect width="256" height="256" fill="none"></rect>
+        <path
+          d="M45.42853,176.99811A95.95978,95.95978,0,1,1,79.00228,210.5717l.00023-.001L45.84594,220.044a8,8,0,0,1-9.89-9.89l9.47331-33.15657Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></path>
+        <line
+          x1="96"
+          y1="112"
+          x2="160"
+          y2="112"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></line>
+        <line
+          x1="96"
+          y1="144"
+          x2="160"
+          y2="144"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></line>
+      </svg>
+    </span>
+    <span class="link-title">Credits</span>
+  </a>
+
+  <a href="contact.html" class="link">
+    <span class="link-icon">
+      <img src="images/flip.webp" alt="Games Icon" width="25" height="25">
+    </span>
+        <rect width="256" height="256" fill="none"></rect>
+        <circle
+          cx="116"
+          cy="116"
+          r="84"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></circle>
+        <line
+          x1="175.39356"
+          y1="175.40039"
+          x2="223.99414"
+          y2="224.00098"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="16"
+        ></line>
+      </svg>
+    </span>
+    <span class="link-title">Contact</span>
+  </a>
+  
 </div>
 
-<a href="index.html" class="link">
-<span class="link-icon">
-<img src="images/home1.png" alt="index.html" width="25" height="25">
-</span>
-<rect width="256" height="256" fill="none"></rect>
-<polyline
-points="76.201 132.201 152.201 40.201 216 40 215.799 103.799 123.799 179.799"
-fill="none"
-stroke="currentColor"
-stroke-linecap="round"
-stroke-linejoin="round"
-stroke-width="16"
-></polyline>
-<line
-x1="100"
-y1="156"
-x2="160"
-y2="96"
-fill="none"
-stroke="currentColor"
-stroke-linecap="round"
-stroke-linejoin="round"
-stroke-width="16"
-></line>
-<path
-d="M82.14214,197.45584,52.201,227.397a8,8,0,0,1-11.31371,0L28.603,215.11268a8,8,0,0,1,0-11.31371l29.94113-29.94112a8,8,0,0,0,0-11.31371L37.65685,141.65685a8,8,0,0,1,0-11.3137l12.6863-12.6863a8,8,0,0,1,11.3137,0l76.6863,76.6863a8,8,0,0,1,0,11.3137l-12.6863,12.6863a8,8,0,0,1-11.3137,0L93.45584,197.45584A8,8,0,0,0,82.14214,197.45584Z"
-fill="none"
-stroke="currentColor"
-stroke-linecap="round"
-stroke-linejoin="round"
-stroke-width="16"
-></path>
-</svg>
-</span>
-<span class="link-title">Home</span>
-</a>
-
-
-<a href="games.html" class="link">
-<span class="link-icon">
-<img src="images/game1.png" alt="Ai.html" width="25" height="25">
-</span>
-<rect width="256" height="256" fill="none"></rect>
-<polyline
-points="76.201 132.201 152.201 40.201 216 40 215.799 103.799 123.799 179.799"
-fill="none"
-stroke="currentColor"
-stroke-linecap="round"
-stroke-linejoin="round"
-stroke-width="16"
-></polyline>
-<line
-x1="100"
-y1="156"
-x2="160"
-y2="96"
-fill="none"
-stroke="currentColor"
-stroke-linecap="round"
-stroke-linejoin="round"
-stroke-width="16"
-></line>
-<path
-d="M82.14214,197.45584,52.201,227.397a8,8,0,0,1-11.31371,0L28.603,215.11268a8,8,0,0,1,0-11.31371l29.94113-29.94112a8,8,0,0,0,0-11.31371L37.65685,141.65685a8,8,0,0,1,0-11.3137l12.6863-12.6863a8,8,0,0,1,11.3137,0l76.6863,76.6863a8,8,0,0,1,0,11.3137l-12.6863,12.6863a8,8,0,0,1-11.3137,0L93.45584,197.45584A8,8,0,0,0,82.14214,197.45584Z"
-fill="none"
-stroke="currentColor"
-stroke-linecap="round"
-stroke-linejoin="round"
-stroke-width="16"
-></path>
-</svg>
-</span>
-<span class="link-title">Games</span>
-</a>
-
-<a href="settings.html" class="link">
-<span class="link-icon">
-<img src="images/setting1.png" alt="Ai.html" width="25" height="25">
-</span>
-<rect width="256" height="256" fill="none"></rect>
-<polyline
-points="76.201 132.201 152.201 40.201 216 40 215.799 103.799 123.799 179.799"
-fill="none"
-stroke="currentColor"
-stroke-linecap="round"
-stroke-linejoin="round"
-stroke-width="16"
-></polyline>
-<line
-x1="100"
-y1="156"
-x2="160"
-y2="96"
-fill="none"
-stroke="currentColor"
-stroke-linecap="round"
-stroke-linejoin="round"
-stroke-width="16"
-></line>
-<path
-d="M82.14214,197.45584,52.201,227.397a8,8,0,0,1-11.31371,0L28.603,215.11268a8,8,0,0,1,0-11.31371l29.94113-29.94112a8,8,0,0,0,0-11.31371L37.65685,141.65685a8,8,0,0,1,0-11.3137l12.6863-12.6863a8,8,0,0,1,11.3137,0l76.6863,76.6863a8,8,0,0,1,0,11.3137l-12.6863,12.6863a8,8,0,0,1-11.3137,0L93.45584,197.45584A8,8,0,0,0,82.14214,197.45584Z"
-fill="none"
-stroke="currentColor"
-stroke-linecap="round"
-stroke-linejoin="round"
-stroke-width="16"
-></path>
-</svg>
-</span>
-<span class="link-title">Settings</span>
-</a>
-
-<a href="Ai.html" class="link">
-<span class="link-icon">
-<img src="images/ai.png" alt="Ai.html" width="25" height="25">
-</span>
-<rect width="256" height="256" fill="none"></rect>
-<path
-d="M213.3815,109.61945,133.376,36.88436a8,8,0,0,0-10.76339.00036l-79.9945,72.73477A8,8,0,0,0,40,115.53855V208a8,8,0,0,0,8,8H208a8,8,0,0,0,8-8V115.53887A8,8,0,0,0,213.3815,109.61945Z"
-fill="none"
-stroke="currentColor"
-stroke-linecap="round"
-stroke-linejoin="round"
-stroke-width="16"
-></path>
-</svg>
-</span>
-<span class="link-title">Chat</span>
-</a>
-
-<a href="credits.html" class="link">
-<span class="link-icon">
-<img src="images/wren.webp" alt="credits" width="25" height="25">
-</span>
-
-<rect width="256" height="256" fill="none"></rect>
-<path
-d="M45.42853,176.99811A95.95978,95.95978,0,1,1,79.00228,210.5717l.00023-.001L45.84594,220.044a8,8,0,0,1-9.89-9.89l9.47331-33.15657Z"
-fill="none"
-stroke="currentColor"
-stroke-linecap="round"
-stroke-linejoin="round"
-stroke-width="16"
-></path>
-<line
-x1="96"
-y1="112"
-x2="160"
-y2="112"
-fill="none"
-stroke="currentColor"
-stroke-linecap="round"
-stroke-linejoin="round"
-stroke-width="16"
-></line>
-<line
-x1="96"
-y1="144"
-x2="160"
-y2="144"
-fill="none"
-stroke="currentColor"
-stroke-linecap="round"
-stroke-linejoin="round"
-stroke-width="16"
-></line>
-</svg>
-</span>
-<span class="link-title">Credits</span>
-</a>
-
-<a href="contact.html" class="link">
-<span class="link-icon">
-<img src="images/flip.webp" alt="Games Icon" width="25" height="25">
-</span>
-<rect width="256" height="256" fill="none"></rect>
-<circle
-cx="116"
-cy="116"
-r="84"
-fill="none"
-stroke="currentColor"
-stroke-linecap="round"
-stroke-linejoin="round"
-stroke-width="16"
-></circle>
-<line
-x1="175.39356"
-y1="175.40039"
-x2="223.99414"
-y2="224.00098"
-fill="none"
-stroke="currentColor"
-stroke-linecap="round"
-stroke-linejoin="round"
-stroke-width="16"
-></line>
-</svg>
-</span>
-<span class="link-title">Contact</span>
-</a>
-
-</div>
 
 <center>
-<div id="favorite">
-<h2>Favorites</h2>
-<p id="favp" style="display: none;">No favorites added yet...</p>
-<div id="addfavorite">
+  <div id="favorite">
+  <h2>Favorites</h2>
+  <p id="favp" style="display: none;">No favorites added yet...</p>
+  <div id="addfavorite">
   <p>Add a favorite</p>
   <select id="favoritesDropdown"></select>
   <button id="confirmFavorite" onclick="saveFavorite(); displayFavorites()">Confirm</button> <button onclick="addFavorite()">Cancel</button>
   <script src="favorites.js"></script>
   </div>
-<div id="favorites-container"></div>
-
-
-
-</div>
-</center>
-
+  <div id="favorites-container"></div>
+  
+  
+  
+  </div>
+  </center>
 
 
 
 <h1 style="margin-top: 12.5%;" class="Title">Compass Network</h1>
 
+
+
+
 <center>
-<form id="uv-form" class="form-wrapper">
-<input id="uv-search-engine" value="https://duckduckgo.com/?q=%s" type="hidden">
+  <form id="uv-form" onsubmit="handleSearch(event)" class="form-wrapper">
+    <input id="uv-search-engine" value="https://duckduckgo.com/?q=%s" type="hidden">
+    
+    <div class="search-container">
+    <input id="uv-address" type="text" placeholder="Search or Enter a Url" class="form__input">
+    <button class="magnify-icon" type="submit"></button>
+    </div>
+    <button id="favorites" type="button" onclick="toggleFavorite()"></button>
+    <script>
+    function toggleFavorite() {
+    if (favorite.classList.contains("show")) {
+    favorite.classList.remove("show");
+    } else {
+    favorite.classList.add("show");
+    }
+    }
+    </script>
+    </form>
+  <div id="clock" class="timer">--:--:--</div>
+</center>
 
-<div class="search-container">
-<input id="uv-address" type="text" placeholder="Search or Enter a Url" class="form__input">
-<button class="magnify-icon" type="submit"></button>
-</div>
 
-<button id="favorites" type="button" onclick="toggleFavorite()"></button>
 <script>
 
-function toggleFavorite() {
-if (favorite.classList.contains("show")) {
-favorite.classList.remove("show");
-} else {
-favorite.classList.add("show");
-}
-}
-</script>
+  function toggleFavorite() {
+  if (favorite.classList.contains("show")) {
+  favorite.classList.remove("show");
+  } else {
+  favorite.classList.add("show");
+  }
+  }
+  </script>
 
-</form>
+<script>
+ function isValidUrl(string) {
+    try {
+      new URL(string);
+      return true;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  function isLikelyDomain(input) {
+    return /^([a-z0-9-]+\.)+[a-z]{2,}$/i.test(input);
+  }
+
+  function handleSearch(event) {
+    event.preventDefault();
+
+    const input = document.getElementById("uv-address").value.trim();
+
+    if (!input) return;
+
+    let finalUrl;
+
+    if (isValidUrl(input)) {
+      finalUrl = input.startsWith("http") ? input : `https://${input}`;
+    } else if (isLikelyDomain(input)) {
+      finalUrl = `https://${input}`;
+    } else {
+      
+      finalUrl = `https://duckduckgo.com/?q=${encodeURIComponent(input)}`;
+    }
+
+    window.location.href = `/tabs.html#${encodeURIComponent(finalUrl)}`;
+  }
 
 
-
-<div id="clock" class="timer">--:--:--</div>
+  </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/e4864d748839689c514b96e8faa75ed3/invoke.js"></script>
+  </div>
 </center>
-
-<p></p>
-
-
-
-
-<center>
-<div class="ad-banner">
-<script type="text/javascript">
-atOptions = {
-'key' : 'e4864d748839689c514b96e8faa75ed3',
-'format' : 'iframe',
-'height' : 90,
-'width' : 728,
-'params' : {}
-};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/e4864d748839689c514b96e8faa75ed3/invoke.js"></script>
-</div>
-</center>
+  
+      
+    
 
 
+      
+    
+    <footer>
+      <div class="footer-media-holder">
+        <a class="fa-brands fa-2xl fa-discord fa-logo" href="https://discord.gg/cnetwork"></a>
+        <a class="fa-brands fa-2xl fa-youtube fa-logo" href="https://www.youtube.com/@txvander"></a>
+        <a class="fa-brands fa-2xl fa-x-twitter fa-logo" href="https://x.com/@compassproxy"></a>
+      </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+    </footer>
 
-
-
-
-
-<footer>
-<div class="footer-media-holder">
-<a class="fa-brands fa-2xl fa-discord fa-logo" href="https://discord.gg/cnetwork"></a>
-<a class="fa-brands fa-2xl fa-youtube fa-logo" href="https://www.youtube.com/@txvander"></a>
-<a class="fa-brands fa-2xl fa-x-twitter fa-logo" href="https://x.com/@compassproxy"></a>
-</div>
-</footer>
-
-
-</body>
+                                                                                                                                       
+  </body>
 </html>
+ 
