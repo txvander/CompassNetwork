@@ -1,7 +1,7 @@
 
 # Compass
 
-The best unblocked games website you could find.
+The best Proxy And Game Website You will ever find 
 
 
 ## Staff
