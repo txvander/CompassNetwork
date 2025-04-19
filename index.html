@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link id="cloak" rel="icon" type="image/png" href="images/logo1.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="/static/uv/uv.bundle.js" defer=""></script>                  
-    <script src="/static/uv/uv.config.js" defer=""></script>
-    <script src="/static/register-sw.js" defer=""></script>
-    <script src="/static/search.js" defer=""></script>
-    <script src="/static/index.js" defer=""></script>
+    <script src="/static/uv/uv.bundle.js"></script>                  
+    <script src="/static/uv/uv.config.js"></script>
+    <script src="/static/register-sw.js"></script>
+    <script src="/static/search.js"></script>
+    <script src="/static/index.js"></script>
     <script src="src/js/fs.js"></script>
     <script src="src/js/refresh-page.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3474596213788513"
@@ -414,9 +414,7 @@ window.addEventListener('DOMContentLoaded', () => {
 <h1 style="margin-top: 12.5%;" class="Title">Compass Network</h1>
 
 <center>
-  <form id="uv-form" onsubmit="handleSearch(event)" style="position: relative; display: inline-block;">
-                                                                                                                    
-                                                                                                                                                                              
+  <form id="uv-form" style="position: relative; display: inline-block;">
     <div class="search-container" style="position: relative;">
       <input id="uv-address" type="text" placeholder="Search or Enter a Url" class="form__input" style="width: 500px;">
       <div class="magnify-icon" onclick="handleSearch(event)"></div>
@@ -445,7 +443,6 @@ window.addEventListener('DOMContentLoaded', () => {
       <option value="https://duckduckgo.com/?q=%s">DuckDuckGo</option>
       <option value="https://search.brave.com/search?q=%s">Brave</option>
     </select>
-
   </form>
 
   <div id="clock" class="timer">--:--:--</div>
@@ -453,32 +450,43 @@ window.addEventListener('DOMContentLoaded', () => {
 
 <script>
    function isValidUrl(string) {
-    try {
-      new URL(string);
-      return true;
-    } catch (_) {
-      return false;
-    }
+  try {
+    new URL(string);
+    return true;
+  } catch (_) {
+    return false;
+  }
+}
+
+function handleSearch(event) {
+  event.preventDefault();
+
+  const input = document.getElementById("uv-address").value.trim();
+  const engineTemplate = document.getElementById("uv-search-engine").value;
+
+  if (!input) return;
+
+  let finalUrl;
+
+  if (isValidUrl(input)) {
+    finalUrl = input.startsWith("http") ? input : `https://${input}`;
+  } else {
+    finalUrl = engineTemplate.replace('%s', encodeURIComponent(input));
   }
 
-  function handleSearch(event) {
-    event.preventDefault(); 
+  window.location.href = `/tabs.html#${encodeURIComponent(finalUrl)}`;
+}
 
-    const input = document.getElementById("uv-address").value.trim();
-    const engineTemplate = document.getElementById("uv-search-engine").value;
+// Hook into the form submission
+document.getElementById("uv-form").addEventListener("submit", handleSearch);
 
-    if (!input) return;
-
-    let finalUrl;
-
-    if (isValidUrl(input)) {
-      finalUrl = input.startsWith("http") ? input : `https://${input}`;
-    } else {
-      finalUrl = engineTemplate.replace('%s', encodeURIComponent(input));
-    }
-
-    window.location.href = `/tabs.html#${encodeURIComponent(finalUrl)}`;
+// Optional: Support for Enter key in input
+document.getElementById("uv-address").addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    handleSearch(event);
   }
+});
+
 </script>
 
  
