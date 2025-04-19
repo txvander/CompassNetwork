@@ -897,6 +897,24 @@ align-items: center;
 gap: 15px;
 }
 
+#back-btn, #forward-btn, #refresh-btn {
+  background-color: black;
+  color: white;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white !important;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+
+
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
 /*MOBILE SUPPORT*/
 @media only screen and (max-width: 768px) {
 .Title {
