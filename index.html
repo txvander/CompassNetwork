@@ -461,6 +461,10 @@ function isValidUrl(string) {
   }
 }
 
+function isLikelyDomain(input) {
+  return /^([a-z0-9-]+\.)+[a-z]{2,}$/i.test(input);
+}
+
 function handleSearch(event) {
   event.preventDefault();
 
@@ -473,12 +477,15 @@ function handleSearch(event) {
 
   if (isValidUrl(input)) {
     finalUrl = input.startsWith("http") ? input : `https://${input}`;
+  } else if (isLikelyDomain(input)) {
+    finalUrl = `https://${input}`;
   } else {
     finalUrl = engineTemplate.replace('%s', encodeURIComponent(input));
   }
 
   window.location.href = `/tabs.html#${encodeURIComponent(finalUrl)}`;
 }
+
 
   </script>
   <script type="text/javascript" src="//www.highperformanceformat.com/e4864d748839689c514b96e8faa75ed3/invoke.js"></script>

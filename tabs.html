@@ -188,7 +188,7 @@
 
 
   <script>
- "use strict";
+"use strict";
 
 let tabCount = 0;
 let currentTabId = null;
@@ -271,11 +271,27 @@ function closeTab(event, tabId) {
 
 document.getElementById("search-input").addEventListener("keydown", function (e) {
   if (e.key === "Enter" && currentTabId) {
-    const url = this.value.trim();
+    const rawInput = this.value.trim();
     const iframe = document.getElementById(currentTabId);
-    if (url !== "") {
-      iframe.src = encodeUV(url);
-      tabURLs[currentTabId] = url;
+
+    if (rawInput !== "") {
+      const encoded = encodeUV(rawInput);
+      iframe.src = encoded;
+
+      let finalUrl;
+      try {
+        const parsed = new URL(rawInput);
+        finalUrl = parsed.href;
+      } catch {
+        if (/^([a-z0-9-]+\.)+[a-z]{2,}$/i.test(rawInput)) {
+          finalUrl = "https://" + rawInput;
+        } else {
+          finalUrl = `https://duckduckgo.com/?q=${encodeURIComponent(rawInput)}`;
+        }
+      }
+
+      tabURLs[currentTabId] = finalUrl;
+      document.getElementById("search-input").value = finalUrl;
     }
   }
 });

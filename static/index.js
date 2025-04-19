@@ -4,44 +4,31 @@ const form = document.getElementById("uv-form");
 const address = document.getElementById("uv-address");
 const searchEngine = document.getElementById("uv-search-engine");
 
-// Check if input is a valid URL object
-function isValidUrl(string) {
-  try {
-    new URL(string);
-    return true;
-  } catch (_) {
-    return false;
-  }
-}
-
-// Check if input looks like a domain (e.g., github.com)
+// Detect if input looks like a domain
 function isLikelyDomain(input) {
-  return /^([a-z0-9-]+\.)+[a-z]{2,}$/i.test(input);
+  return /^([a-z0-9-]+\.)+[a-z]{2,}$/i.test(input.trim());
 }
 
-// Check if elements are found before adding listener
 if (!form || !address || !searchEngine) {
-  console.error("Form elements not found! Please make sure the HTML is correct.");
+  console.error("Form elements not found! Check your HTML.");
 } else {
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const input = address.value.trim();
+    const rawInput = address.value.trim();
+    const input = rawInput.toLowerCase();
     const engineTemplate = searchEngine.value;
-    let finalUrl;
+    let finalUrl = "";
 
-    if (isValidUrl(input)) {
-      // User typed a full URL
-      finalUrl = input.startsWith("http") ? input : `https://${input}`;
+    if (input.startsWith("http://") || input.startsWith("https://")) {
+      finalUrl = input;
     } else if (isLikelyDomain(input)) {
-      // User typed something like "youtube.com"
-      finalUrl = `https://${input}`;
+      finalUrl = "https://" + input;
     } else {
-      // Otherwise, treat it as a search query
-      finalUrl = engineTemplate.replace('%s', encodeURIComponent(input));
+      finalUrl = engineTemplate.replace("%s", encodeURIComponent(rawInput));
     }
 
-    // Navigate to /tabs.html with the URL in the hash
+    // Go to tabs.html with final URL
     window.location.href = `/tabs.html#${encodeURIComponent(finalUrl)}`;
   });
 }
