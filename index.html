@@ -17,15 +17,15 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3474596213788513"
      crossorigin="anonymous"></script>
     <meta name="google-adsense-account" content="ca-pub-3474596213788513">
-    <meta property="og:title" content="Compass Network - Home" />
-    <meta property="of:description" content="Compass Network - Creating Concise Entertainment." />
-    <meta property="og:image" content="Cloudburst-logo" />
+    <meta property="og:title" content="Compass Network" />
+    <meta property="og:description" content="We are Compass Network that allows you access to the internet, play games, and more!" />
+    <meta property="og:image" content="https://compassnetwork.online/images/logo1.png"/>
     <meta property="og:url" content="https://compassnetwork.online" />
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-<body>
-  
+  </head>                                                                                          
+<body>                                                                                                                                                               
+                                                                                                        
   <style>
     html, body {
       margin: 0;
@@ -406,26 +406,81 @@ window.addEventListener('DOMContentLoaded', () => {
   
 </div>
 
-  
+
+
+
 
 
 <h1 style="margin-top: 12.5%;" class="Title">Compass Network</h1>
 
-    <center>
-      <form id="uv-form">
+<center>
+  <form id="uv-form" onsubmit="handleSearch(event)" style="position: relative; display: inline-block;">
+                                                                                                                    
+                                                                                                                                                                              
+    <div class="search-container" style="position: relative;">
+      <input id="uv-address" type="text" placeholder="Search or Enter a Url" class="form__input" style="width: 500px;">
+      <div class="magnify-icon" onclick="handleSearch(event)"></div>
+    </div>
 
-        <input id="uv-search-engine" value="https://duckduckgo.com/?q=%s" type="hidden">
-          <div class="search-container">
-            <input id="uv-address" type="text" placeholder="Search or Enter a Url" class="form__input">
-            <div class="magnify-icon"></div>
-          </div>
-      </form>
-      <div id="clock" class="timer">--:--:--</div>
-  </center>
-<p></p>
-  
- 
-  
+    <select id="uv-search-engine"
+      class="form__select"
+      style="
+        position: absolute;
+        right: -140px; 
+        top: 0;
+        height: 40px;
+        background-color: black;
+        color: white;
+        border: 2px solid white !important;
+        border-radius: 10px;
+        border: none;
+        padding: 5px 10px;
+        margin-top: 43px;
+        font-family: 'Poppins', sans-serif;
+        border-color: #FFFFFF;
+        height: 44px;
+      ">
+      <option value="https://www.google.com/search?q=%s" selected>Google</option>
+      <option value="https://www.bing.com/search?q=%s">Bing</option>
+      <option value="https://duckduckgo.com/?q=%s">DuckDuckGo</option>
+      <option value="https://search.brave.com/search?q=%s">Brave</option>
+    </select>
+
+  </form>
+
+  <div id="clock" class="timer">--:--:--</div>
+</center>
+
+<script>
+   function isValidUrl(string) {
+    try {
+      new URL(string);
+      return true;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  function handleSearch(event) {
+    event.preventDefault(); 
+
+    const input = document.getElementById("uv-address").value.trim();
+    const engineTemplate = document.getElementById("uv-search-engine").value;
+
+    if (!input) return;
+
+    let finalUrl;
+
+    if (isValidUrl(input)) {
+      finalUrl = input.startsWith("http") ? input : `https://${input}`;
+    } else {
+      finalUrl = engineTemplate.replace('%s', encodeURIComponent(input));
+    }
+
+    window.location.href = `/tabs.html#${encodeURIComponent(finalUrl)}`;
+  }
+</script>
+
  
    <center>    
    <div class="ad-banner">

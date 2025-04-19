@@ -640,7 +640,7 @@ position: absolute;
 
 #uv-address {
     background-color: black;
-    border: 1.5px #ffffff solid;
+    border: 2px solid white !important;
     border-radius: 15px;
     padding: 12px;
     text-align: center;
@@ -978,7 +978,17 @@ position: absolute;
         gap: 40px;
     
   }
+  .form__select {
+    padding: 6px 10px;
+    border-radius: 8px;
+    background-color: black;
+    border: 2px solid white !important;
+    color: white;
+    border: none;
+    font-size: 14px;
+  }
 
+  
 button {
   background-color: #111;
   color: white;
