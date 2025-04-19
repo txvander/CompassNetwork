@@ -188,10 +188,11 @@
 
 
   <script>
-  
-  let tabCount = 0;
+ "use strict";
+
+let tabCount = 0;
 let currentTabId = null;
-const tabURLs = {}; 
+const tabURLs = {};
 
 const encodeUV = (input) => {
   try {
@@ -209,7 +210,6 @@ function newTab() {
   tabCount++;
   const tabId = `tab-${tabCount}`;
   currentTabId = tabId;
-
 
   document.getElementById("search-input").value = "";
 
@@ -232,7 +232,7 @@ function newTab() {
   Array.from(document.getElementById("tab-content").children).forEach(i => i.hidden = true);
   document.getElementById("tab-content").appendChild(iframe);
 
-  tabURLs[tabId] = ""; 
+  tabURLs[tabId] = "";
 }
 
 function switchTab(tabId) {
@@ -245,7 +245,6 @@ function switchTab(tabId) {
     i.hidden = (i.id !== tabId);
   });
 
- 
   document.getElementById("search-input").value = tabURLs[tabId] || "";
 }
 
@@ -270,25 +269,22 @@ function closeTab(event, tabId) {
   }
 }
 
-
 document.getElementById("search-input").addEventListener("keydown", function (e) {
   if (e.key === "Enter" && currentTabId) {
     const url = this.value.trim();
     const iframe = document.getElementById(currentTabId);
     if (url !== "") {
       iframe.src = encodeUV(url);
-      tabURLs[currentTabId] = url; 
+      tabURLs[currentTabId] = url;
     }
   }
 });
-
 
 const plusBtn = document.createElement("button");
 plusBtn.id = "new-tab-btn";
 plusBtn.innerText = "+";
 plusBtn.onclick = () => newTab();
 document.getElementById("tab-bar").appendChild(plusBtn);
-
 
 function goBack() {
   const iframe = document.getElementById(currentTabId);
@@ -303,7 +299,6 @@ function refreshPage() {
   if (iframe) iframe.contentWindow.location.reload();
 }
 
-
 window.onload = () => {
   const query = decodeURIComponent(window.location.hash.slice(1));
   newTab();
@@ -314,7 +309,6 @@ window.onload = () => {
     document.getElementById("search-input").value = query;
   }
 };
-
 
 
   </script>

@@ -414,7 +414,9 @@ window.addEventListener('DOMContentLoaded', () => {
 <h1 style="margin-top: 12.5%;" class="Title">Compass Network</h1>
 
 <center>
-  <form id="uv-form" style="position: relative; display: inline-block;">
+  <form id="uv-form" onsubmit="handleSearch(event)" style="position: relative; display: inline-block;">
+                                                                                                                    
+                                                                                                                                                                              
     <div class="search-container" style="position: relative;">
       <input id="uv-address" type="text" placeholder="Search or Enter a Url" class="form__input" style="width: 500px;">
       <div class="magnify-icon" onclick="handleSearch(event)"></div>
@@ -443,13 +445,14 @@ window.addEventListener('DOMContentLoaded', () => {
       <option value="https://duckduckgo.com/?q=%s">DuckDuckGo</option>
       <option value="https://search.brave.com/search?q=%s">Brave</option>
     </select>
+
   </form>
 
   <div id="clock" class="timer">--:--:--</div>
-</center>
+</center> 
 
 <script>
-   function isValidUrl(string) {
+function isValidUrl(string) {
   try {
     new URL(string);
     return true;
@@ -477,29 +480,6 @@ function handleSearch(event) {
   window.location.href = `/tabs.html#${encodeURIComponent(finalUrl)}`;
 }
 
-// Hook into the form submission
-document.getElementById("uv-form").addEventListener("submit", handleSearch);
-
-// Optional: Support for Enter key in input
-document.getElementById("uv-address").addEventListener("keydown", function (event) {
-  if (event.key === "Enter") {
-    handleSearch(event);
-  }
-});
-
-</script>
-
- 
-   <center>    
-   <div class="ad-banner">
-    <script type="text/javascript">
-      atOptions = {
-          'key' : 'e4864d748839689c514b96e8faa75ed3',
-          'format' : 'iframe',
-          'height' : 90,
-          'width' : 728,
-          'params' : {}
-      };
   </script>
   <script type="text/javascript" src="//www.highperformanceformat.com/e4864d748839689c514b96e8faa75ed3/invoke.js"></script>
   </div>

@@ -1,33 +1,29 @@
 "use strict";
 
-// Wait for the DOM to fully load
-window.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("uv-form");
-  const address = document.getElementById("uv-address");
-  const searchEngine = document.getElementById("uv-search-engine");
+const form = document.getElementById("uv-form");
+const address = document.getElementById("uv-address");
+const searchEngine = document.getElementById("uv-search-engine");
 
-  // Check if the form and elements exist
-  if (!form || !address || !searchEngine) {
-    console.error("Form elements not found! Please make sure the HTML is correct.");
-    return;
+// Check if input is a valid URL object
+function isValidUrl(string) {
+  try {
+    new URL(string);
+    return true;
+  } catch (_) {
+    return false;
   }
+}
 
-  // Check if input is a valid URL
-  function isValidUrl(string) {
-    try {
-      new URL(string);
-      return true;
-    } catch (_) {
-      return false;
-    }
-  }
+// Check if input looks like a domain (e.g., github.com)
+function isLikelyDomain(input) {
+  return /^([a-z0-9-]+\.)+[a-z]{2,}$/i.test(input);
+}
 
-  function isLikelyDomain(input) {
-    return /^([a-z0-9-]+\.)+[a-z]{2,}$/i.test(input);
-  }
-
-  // Handle form submit
-  form.addEventListener("submit", (event) => {
+// Check if elements are found before adding listener
+if (!form || !address || !searchEngine) {
+  console.error("Form elements not found! Please make sure the HTML is correct.");
+} else {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const input = address.value.trim();
@@ -35,14 +31,17 @@ window.addEventListener("DOMContentLoaded", () => {
     let finalUrl;
 
     if (isValidUrl(input)) {
+      // User typed a full URL
       finalUrl = input.startsWith("http") ? input : `https://${input}`;
     } else if (isLikelyDomain(input)) {
+      // User typed something like "youtube.com"
       finalUrl = `https://${input}`;
     } else {
+      // Otherwise, treat it as a search query
       finalUrl = engineTemplate.replace('%s', encodeURIComponent(input));
     }
 
-    // Redirect to tabs.html with encoded URL in the hash
+    // Navigate to /tabs.html with the URL in the hash
     window.location.href = `/tabs.html#${encodeURIComponent(finalUrl)}`;
   });
-});
+}
