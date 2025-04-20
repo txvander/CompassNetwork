@@ -858,13 +858,14 @@ margin-top: 100px;
   left: 50px;
   font-size: 20px;
   box-shadow: none;
-  background-color: black;
+  background: none;
   border-style: none;
-  border: 2px solid white;
 }
 
 .favorite-block button:hover {
-  background-color: black;
+  box-shadow: none;
+  background: none;
+  border-style: none;
   color: red;
   box-shadow: none;
 }
