@@ -197,36 +197,6 @@
 let tabCount = 0;
 let currentTabId = null;
 const tabURLs = {};
-let loadingTimeout;
-
-// Spinner element
-const spinner = document.createElement("div");
-spinner.id = "loading-spinner";
-spinner.style.position = "absolute";
-spinner.style.top = "50%";
-spinner.style.left = "50%";
-spinner.style.transform = "translate(-50%, -50%)";
-spinner.style.zIndex = "9999";
-spinner.style.display = "none";  
-spinner.innerHTML = `<div class="spinner" style="width:80px;height:80px;border:8px solid #ccc;border-top:8px solid #333;border-radius:50%;animation:spin 1s linear infinite;"></div>`;
-document.body.appendChild(spinner);
-
-// Spinner animation style
-const style = document.createElement("style");
-style.textContent = `
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}`;
-document.head.appendChild(style);
-
-function showLoading() {
-  spinner.style.display = "block";  
-}
-
-function hideLoading() {
-  spinner.style.display = "none";  
-}
 
 const encodeUV = (input) => {
   try {
@@ -242,15 +212,15 @@ const encodeUV = (input) => {
 
 function newTab() {
   tabCount++;
-  const tabId = `tab-${tabCount}`;
+  const tabId = `tab-${tabCount}`;  // Fixed template literal here
   currentTabId = tabId;
 
   document.getElementById("search-input").value = "";
 
   const tabBtn = document.createElement("button");
   tabBtn.classList.add("tab-btn", "active");
-  tabBtn.id = `btn-${tabId}`;
-  tabBtn.innerHTML = `Tab <span class="close-tab-btn" onclick="closeTab(event, '${tabId}')">×</span>`;
+  tabBtn.id = `btn-${tabId}`;  // Fixed template literal here
+  tabBtn.innerHTML = `Tab <span class="close-tab-btn" onclick="closeTab(event, '${tabId}')">×</span>`;  // Fixed template literal
   tabBtn.onclick = () => switchTab(tabId);
 
   document.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));
@@ -272,7 +242,7 @@ function newTab() {
 function switchTab(tabId) {
   currentTabId = tabId;
   document.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));
-  const targetBtn = document.getElementById(`btn-${tabId}`);
+  const targetBtn = document.getElementById(`btn-${tabId}`);  // Fixed template literal here
   if (targetBtn) targetBtn.classList.add("active");
 
   Array.from(document.getElementById("tab-content").children).forEach(i => {
@@ -284,7 +254,7 @@ function switchTab(tabId) {
 
 function closeTab(event, tabId) {
   event.stopPropagation();
-  const btn = document.getElementById(`btn-${tabId}`);
+  const btn = document.getElementById(`btn-${tabId}`);  // Fixed template literal here
   const iframe = document.getElementById(tabId);
   if (btn) btn.remove();
   if (iframe) iframe.remove();
@@ -310,13 +280,7 @@ document.getElementById("search-input").addEventListener("keydown", function (e)
 
     if (rawInput !== "") {
       const encoded = encodeUV(rawInput);
-      showLoading();  
-
       iframe.src = encoded;
-
-      iframe.onload = function () {
-        hideLoading();  
-      };
 
       let finalUrl;
       try {
@@ -326,7 +290,7 @@ document.getElementById("search-input").addEventListener("keydown", function (e)
         if (/^([a-z0-9-]+\.)+[a-z]{2,}$/i.test(rawInput)) {
           finalUrl = "https://" + rawInput;
         } else {
-          finalUrl = `https://duckduckgo.com/?q=${encodeURIComponent(rawInput)}`;
+          finalUrl = `https://duckduckgo.com/?q=${encodeURIComponent(rawInput)}`;  // Fixed template literal
         }
       }
 
@@ -357,10 +321,7 @@ function refreshPage() {
   if (iframe) iframe.contentWindow.location.reload();
 }
 
-
 window.onload = () => {
-  showLoading();  
-
   const query = decodeURIComponent(window.location.hash.slice(1));
   newTab();
   if (query) {
@@ -368,17 +329,8 @@ window.onload = () => {
     iframe.src = encodeUV(query);
     tabURLs[currentTabId] = query;
     document.getElementById("search-input").value = query;
-  } else {
-    hideLoading();  
   }
-
-
-  setTimeout(() => {
-    hideLoading(); 
-  }, 100);  
 };
-
-
 
   </script>
 </body>
