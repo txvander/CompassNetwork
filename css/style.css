@@ -661,8 +661,8 @@ display: inline-block;
 display: flex;
 align-items: center;
 justify-content: center;
-gap: 10px; /* spacing between search bar and favorites */
-flex-wrap: wrap; /* allows wrapping if screen is too narrow */
+gap: 10px; 
+flex-wrap: wrap; 
 }
 
 .search-container {
@@ -679,7 +679,7 @@ font-family: 'Poppins', sans-serif;
 outline: none;
 transition: hover .2s;
 width: 400px;
-padding-right: 35px; /* Adjusted for icon size */
+padding-right: 35px; 
 margin-top: 40px;
 font-weight: bold;
 color: #ffffff;
@@ -741,7 +741,7 @@ background-image: url("../images/star.png");
 
 #favorite {
 width: 25%;
-background-color: #000000;
+background-color: black;
 height: 30%;
 display: block;
 position: fixed;
@@ -768,7 +768,7 @@ width: 300px;
 height: 175px;
 opacity: 0;
 pointer-events: none;
-background-color: #000000;
+background-color: black;
 border-radius: 15px;
 border-style: solid;
 border-color: white;
@@ -791,7 +791,7 @@ display: inline-block;
 }
 
 .favorite-blockadd {
-background-color: #000;
+ background-color: #000;
 height: 100px;
 width: 100px;
 border: 2px solid white;
@@ -848,8 +848,8 @@ margin-top: 100px;
 }
 
 #favorites-container::-webkit-scrollbar {
-  width: 0;  /* Remove scrollbar space */
-  background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 0;  
+  background: transparent;  
 }
 
 .favorite-block button {
@@ -858,12 +858,13 @@ margin-top: 100px;
   left: 50px;
   font-size: 20px;
   box-shadow: none;
-  background-color: #00000000;
+  background-color: black;
   border-style: none;
+  border: 2px solid white;
 }
 
 .favorite-block button:hover {
-  background-color: #00000000;
+  background-color: black;
   color: red;
   box-shadow: none;
 }

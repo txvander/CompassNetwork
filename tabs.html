@@ -197,6 +197,36 @@
 let tabCount = 0;
 let currentTabId = null;
 const tabURLs = {};
+let loadingTimeout;
+
+// Spinner element
+const spinner = document.createElement("div");
+spinner.id = "loading-spinner";
+spinner.style.position = "absolute";
+spinner.style.top = "50%";
+spinner.style.left = "50%";
+spinner.style.transform = "translate(-50%, -50%)";
+spinner.style.zIndex = "9999";
+spinner.style.display = "none";  // Initially hidden
+spinner.innerHTML = `<div class="spinner" style="width:80px;height:80px;border:8px solid #ccc;border-top:8px solid #333;border-radius:50%;animation:spin 1s linear infinite;"></div>`;
+document.body.appendChild(spinner);
+
+// Spinner animation style
+const style = document.createElement("style");
+style.textContent = `
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}`;
+document.head.appendChild(style);
+
+function showLoading() {
+  spinner.style.display = "block";  // Show spinner
+}
+
+function hideLoading() {
+  spinner.style.display = "none";  // Hide spinner
+}
 
 const encodeUV = (input) => {
   try {
@@ -280,7 +310,13 @@ document.getElementById("search-input").addEventListener("keydown", function (e)
 
     if (rawInput !== "") {
       const encoded = encodeUV(rawInput);
+      showLoading();  // Show loading spinner
+
       iframe.src = encoded;
+
+      iframe.onload = function () {
+        hideLoading();  // Hide loading spinner as soon as iframe content is fully loaded
+      };
 
       let finalUrl;
       try {
@@ -310,16 +346,21 @@ function goBack() {
   const iframe = document.getElementById(currentTabId);
   if (iframe && iframe.contentWindow.history) iframe.contentWindow.history.back();
 }
+
 function goForward() {
   const iframe = document.getElementById(currentTabId);
   if (iframe && iframe.contentWindow.history) iframe.contentWindow.history.forward();
 }
+
 function refreshPage() {
   const iframe = document.getElementById(currentTabId);
   if (iframe) iframe.contentWindow.location.reload();
 }
 
+// Ensuring the spinner disappears when the page starts being visible
 window.onload = () => {
+  showLoading();  // Show the loading spinner immediately
+
   const query = decodeURIComponent(window.location.hash.slice(1));
   newTab();
   if (query) {
@@ -327,8 +368,16 @@ window.onload = () => {
     iframe.src = encodeUV(query);
     tabURLs[currentTabId] = query;
     document.getElementById("search-input").value = query;
+  } else {
+    hideLoading();  // Immediately hide the spinner if no query exists
   }
+
+  // Once the page is fully rendered and becomes visible, hide the spinner
+  setTimeout(() => {
+    hideLoading(); // Hide the spinner after the page becomes visible
+  }, 100);  // Delay slightly to ensure it happens when the page is rendered
 };
+
 
 
   </script>
