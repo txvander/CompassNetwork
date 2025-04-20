@@ -207,7 +207,7 @@ spinner.style.top = "50%";
 spinner.style.left = "50%";
 spinner.style.transform = "translate(-50%, -50%)";
 spinner.style.zIndex = "9999";
-spinner.style.display = "none";  // Initially hidden
+spinner.style.display = "none";  
 spinner.innerHTML = `<div class="spinner" style="width:80px;height:80px;border:8px solid #ccc;border-top:8px solid #333;border-radius:50%;animation:spin 1s linear infinite;"></div>`;
 document.body.appendChild(spinner);
 
@@ -221,11 +221,11 @@ style.textContent = `
 document.head.appendChild(style);
 
 function showLoading() {
-  spinner.style.display = "block";  // Show spinner
+  spinner.style.display = "block";  
 }
 
 function hideLoading() {
-  spinner.style.display = "none";  // Hide spinner
+  spinner.style.display = "none";  
 }
 
 const encodeUV = (input) => {
@@ -310,12 +310,12 @@ document.getElementById("search-input").addEventListener("keydown", function (e)
 
     if (rawInput !== "") {
       const encoded = encodeUV(rawInput);
-      showLoading();  // Show loading spinner
+      showLoading();  
 
       iframe.src = encoded;
 
       iframe.onload = function () {
-        hideLoading();  // Hide loading spinner as soon as iframe content is fully loaded
+        hideLoading();  
       };
 
       let finalUrl;
@@ -357,9 +357,9 @@ function refreshPage() {
   if (iframe) iframe.contentWindow.location.reload();
 }
 
-// Ensuring the spinner disappears when the page starts being visible
+
 window.onload = () => {
-  showLoading();  // Show the loading spinner immediately
+  showLoading();  
 
   const query = decodeURIComponent(window.location.hash.slice(1));
   newTab();
@@ -369,13 +369,13 @@ window.onload = () => {
     tabURLs[currentTabId] = query;
     document.getElementById("search-input").value = query;
   } else {
-    hideLoading();  // Immediately hide the spinner if no query exists
+    hideLoading();  
   }
 
-  // Once the page is fully rendered and becomes visible, hide the spinner
+
   setTimeout(() => {
-    hideLoading(); // Hide the spinner after the page becomes visible
-  }, 100);  // Delay slightly to ensure it happens when the page is rendered
+    hideLoading(); 
+  }, 100);  
 };
 
 
