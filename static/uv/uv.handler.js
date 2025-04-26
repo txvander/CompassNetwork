@@ -190,7 +190,7 @@ async function __uvHook(window, config = {}, bare = '/bare/') {
         event.data.value = __uv.sourceUrl(event.data.value);
     });
 
-    // XMLHttpRequest
+    
     client.xhr.on('open', event => {
         event.data.input = __uv.rewriteUrl(event.data.input);
     });
@@ -200,7 +200,7 @@ async function __uvHook(window, config = {}, bare = '/bare/') {
     });
 
 
-    // Workers
+
     client.workers.on('worker', event => {
         event.data.url = __uv.rewriteUrl(event.data.url);
     });
@@ -231,7 +231,7 @@ async function __uvHook(window, config = {}, bare = '/bare/') {
         event.data.url = __uv.rewriteUrl(event.data.url);
     });
 
-    // Cookies
+  
     client.document.on('getCookie', event => {
         event.data.value = __uv.cookieStr;
     });
