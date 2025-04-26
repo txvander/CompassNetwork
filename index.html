@@ -427,7 +427,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-<h1 style="margin-top: 12.5%;" class="Title">Compass Network</h1>
+  <h1 style="margin-top: 12.5%;" class="Title" id="typewriter"></h1>
 
 
 
@@ -437,7 +437,7 @@ window.addEventListener('DOMContentLoaded', () => {
     <input id="uv-search-engine" value="https://duckduckgo.com/?q=%s" type="hidden">
     
     <div class="search-container">
-    <input id="uv-address" type="text" placeholder="Search or Enter a Url" class="form__input">
+    <input id="uv-address" type="text" placeholder="Search The Web Freely" class="form__input">
     <button class="magnify-icon" type="submit"></button>
     </div>
     <button id="favorites" type="button" onclick="toggleFavorite()"></button>
@@ -453,6 +453,24 @@ window.addEventListener('DOMContentLoaded', () => {
     </form>
   <div id="clock" class="timer">--:--:--</div>
 </center>
+
+<script>
+  const text = "Compass Network";
+  const typingSpeed = 100; 
+  let index = 0;
+  const titleElement = document.getElementById("typewriter");
+
+  function typeEffect() {
+    if (index < text.length) {
+      titleElement.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeEffect, typingSpeed);
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", typeEffect);
+</script>
+
 
 
 <script>
