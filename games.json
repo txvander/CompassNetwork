@@ -1,1001 +1,998 @@
-[
-  {
-    "title": "1v1.lol",
-    "link": "games/1v1lol/index.html",
-    "id": "game",
-    "image": "games/1v1lol/splash.png",
-    "category": "shooter"
-  },
-  {
-    "title": "Funny shooter",
-    "link": "games/funnyshooter/index.html",
-    "id": "game",
-    "image": "games/funnyshooter/icon.jpeg",
-    "category": "shooter"
-  },
-  {
-    "title": "10 Mins till dawn",
-    "link": "games/10-minutes-till-dawn/index.html",
-    "id": "game",
-    "image": "games/10-minutes-till-dawn/splash.png",
-    "category": "shooter"
-  },
-  {
-    "title": "Retrobowl",
-    "link": "games/retrobowl/",
-    "id": "game",
-    "image": "images/retrobowl.ico",
-    "category": "sports"
-  },
-  {
-    "title": "Sprinter",
-    "link": "games/sprinter/",
-    "id": "game",
-    "image": "images/sprinter.jpeg",
-    "category": "arcade"
-  },
-  {
-    "title": "Burrito Bison",
-    "link": "games/burritobison/index.html",
-    "id": "game",
-    "image": "games/burritobison/logo.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Chess",
-    "link": "games/chess/index.html",
-    "id": "game",
-    "image": "games/chess/icon.png",
-    "category": "strategy"
-  },
-  {
-    "title": "Krunker",
-    "link": "games/krunker/index.html",
-    "id": "game",
-    "image": "games/krunker/img/krunker-io.jpg",
-    "category": "shooter"
-  },
-  {
-    "title": "College Retrobowl",
-    "link": "games/retrobowlcollege/index.html",
-    "id": "game",
-    "image": "games/retrobowlcollege/unnamed.png",
-    "category": "sports"
-  },
-  {
-    "title": "Minecraft 1.5.2",
-    "link": "games/minecraft/index.html",
-    "id": "game",
-    "image": "games/minecraft/logo.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Crazy Cattle 3D",
-    "link": "games/crazycattle3d/index.html",
-    "id": "game",
-    "image": "games/crazycattle3d/index.apple-touch-icon.png",
-    "category": "strategy"
-  },
-  {
-    "title": "Minecraft 1.8.8",
-    "link": "games/MC18/index.html",
-    "id": "game",
-    "image": "games/minecraft/logo.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Funny shooter 2",
-    "link": "games/funnyshooter2/index.html",
-    "id": "game",
-    "image": "games/funnyshooter2/splash.jpeg",
-    "category": "shooter"
-  },
-  {
-    "title": "Idle breakout",
-    "link": "games/idle-breakout/index.html",
-    "id": "game",
-    "image": "games/idle-breakout/img/thumbnail.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Rocket league",
-    "link": "games/rocketleague/index.html",
-    "id": "game",
-    "image": "games/rocketleague/splash.webp",
-    "category": "sports"
-  },
-  {
-    "title": "BitLife",
-    "link": "games/bitlife/index.html",
-    "id": "game",
-    "image": "games/bitlife/bitlife.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Jetpack joyride",
-    "link": "games/jetpackjoyride/index.html",
-    "id": "game",
-    "image": "games/jetpackjoyride/logo.jpeg",
-    "category": "arcade"
-  },
-  {
-    "title": "Age of war",
-    "link": "games/ageofwar/index.html",
-    "id": "game",
-    "image": "games/ageofwar/warofage.jpg",
-    "category": "strategy"
-  },
-  {
-    "title": "Cookie clicker",
-    "link": "games/cookie-clicker/index.html",
-    "id": "game",
-    "image": "games/cookie-clicker/cookie1.jpeg",
-    "category": "arcade"
-  },
-  {
-    "title": "60S Burger run",
-    "link": "games/60sburgerrun/index.html",
-    "id": "game",
-    "image": "games/60sburgerrun/icon.png",
-    "category": "arcade"
-  },
-  {
-    "title": "2048 Cupcakes",
-    "link": "games/cupcake2048/index.html",
-    "id": "game",
-    "image": "games/cupcake2048/favicon.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Baldis Basics",
-    "link": "games/baldis-basics/index.html",
-    "id": "game",
-    "image": "games/baldis-basics/splash.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Tetris",
-    "link": "games/tetris/index.html",
-    "id": "game",
-    "image": "games/tetris/icon.png",
-    "category": "strategy"
-  },
-  {
-    "title": "Boxing Random",
-    "link": "games/boxingrandom/index.html",
-    "id": "game",
-    "image": "games/boxingrandom/cover.jpg",
-    "category": "sports"
-  },
-  {
-    "title": "Stickman Hook",
-    "link": "games/stickman-hook/index.html",
-    "id": "game",
-    "image": "games/stickman-hook/icon.jpg",
-    "category": "arcade"
-  },
-  {
-    "title": "Stickman Golf",
-    "link": "games/stickmangolf/index.html",
-    "id": "game",
-    "image": "games/stickmangolf/splash.png",
-    "category": "sports"
-  },
-  {
-    "title": "Monkey Mart",
-    "link": "games/monkeymart/index.html",
-    "id": "game",
-    "image": "games/monkeymart/unnamed.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Rooftop snipers",
-    "link": "games/rooftopsnipers/index.html",
-    "id": "game",
-    "image": "games/rooftopsnipers/logo.png",
-    "category": "shooter"
-  },
-  {
-    "title": "Getaway shootout",
-    "link": "games/getaway-shootout/index.html",
-    "id": "game",
-    "image": "games/getaway-shootout/index.jpg",
-    "category": "shooter"
-  },
-  {
-    "title": "Yohoho",
-    "link": "games/yohoho/index.html",
-    "id": "game",
-    "image": "games/yohoho/cover.svg",
-    "category": "strategy"
-  },
-  {
-    "title": "Crossy Road",
-    "link": "games/crossyroad/",
-    "id": "game",
-    "image": "images/crossyroad.png",
-    "category": "arcade"
-  },
-  {
-    "title": "ADOFAI",
-    "link": "games/a-dance-of-fire-and-ice/",
-    "id": "game",
-    "image": "images/splash.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Awesome Tanks 2",
-    "link": "games/awesometanks2/",
-    "id": "game",
-    "image": "images/awesome-tanks-2.png",
-    "category": "shooter"
-  },
-  {
-    "title": "2048",
-    "link": "games/2048/index.html",
-    "id": "game",
-    "image": "images/2048.png",
-    "category": "strategy"
-  },
-  {
-    "title": "Aul",
-    "link": "games/achievementunlocked/index.html",
-    "id": "game",
-    "image": "images/achievementunlocked.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Backrooms",
-    "link": "games/backrooms/",
-    "id": "game",
-    "image": "images/backroom.jpg",
-    "category": "arcade"
-  },
-  {
-    "title": "Bad Ice Cream 2",
-    "link": "games/bad-ice-cream-2/",
-    "id": "game",
-    "image": "images/bad-ice-cream-2.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Bad Ice Cream 3",
-    "link": "games/bad-ice-cream-3/",
-    "id": "game",
-    "image": "images/bad-ice-cream-3.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Basket Random",
-    "link": "games/basket-random/",
-    "id": "game",
-    "image": "images/brandom.jpeg",
-    "category": "sports"
-  },
-  {
-    "title": "Basketball Stars",
-    "link": "games/basketball-stars/",
-    "id": "game",
-    "image": "images/basketball-stars.png",
-    "category": "sports"
-  },
-  {
-    "title": "Subway Surfers NY",
-    "link": "games/subway-surfers-ny/",
-    "id": "game",
-    "image": "images/NewYorkIcon.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Cubefield",
-    "link": "games/cubefield/",
-    "id": "game",
-    "image": "images/cubefield.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Drive Mad",
-    "link": "games/drive-mad/",
-    "id": "game",
-    "image": "images/drivemad.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Drift boss",
-    "link": "games/drift-boss/index.html",
-    "id": "game",
-    "image": "games/drift-boss/icon.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Gun Mayhem 2",
-    "link": "games/gun-mayhem-2/",
-    "id": "game",
-    "image": "images/Gun-Mayhem-2.png",
-    "category": "shooter"
-  },
-  {
-    "title": "Chill Radio",
-    "link": "games/chill-radio/",
-    "id": "game",
-    "image": "images/icon.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Moto X3M",
-    "link": "games/moto-x3m/",
-    "id": "game",
-    "image": "images/moto-x3m.jpg",
-    "category": "sports"
-  },
-  {
-    "title": "0v0",
-    "link": "games/ovo/",
-    "id": "game",
-    "image": "images/ovo.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Run",
-    "link": "games/run/",
-    "id": "game",
-    "image": "images/run.jpeg",
-    "category": "arcade"
-  },
-  {
-    "title": "Run 2",
-    "link": "games/run2/",
-    "id": "game",
-    "image": "images/Run 2.jpg",
-    "category": "arcade"
-  },
-  {
-    "title": "Moto X3M Pool",
-    "link": "games/motox3m-pool/index.html",
-    "id": "game",
-    "image": "games/motox3m-pool/splash.jpg",
-    "category": "sports"
-  },
-  {
-    "title": "Moto X3M Spooky",
-    "link": "games/motox3m-spooky/index.html",
-    "id": "game",
-    "image": "games/motox3m-spooky/splash.jpeg",
-    "category": "sports"
-  },
-  {
-    "title": "Moto X3M Winter",
-    "link": "games/motox3m-winter/index.html",
-    "id": "game",
-    "image": "games/motox3m-winter/download.jpeg",
-    "category": "sports"
-  },
-  {
-    "title": "Vex",
-    "link": "games/vex/index.html",
-    "id": "game",
-    "image": "games/vex/icon.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Vex 2",
-    "link": "games/vex2/index.html",
-    "id": "game",
-    "image": "games/vex2/icon.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Vex 3",
-    "link": "games/vex3/index.html",
-    "id": "game",
-    "image": "games/vex3/icon.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Vex 4",
-    "link": "games/vex4/index.html",
-    "id": "game",
-    "image": "games/vex4/vex4.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Vex 5",
-    "link": "games/vex5/index.html",
-    "id": "game",
-    "image": "games/vex5/icon.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Vex 6",
-    "link": "games/vex6/index.html",
-    "id": "game",
-    "image": "games/vex6/icon.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Run 3",
-    "link": "games/run3/index.html",
-    "id": "game",
-    "image": "games/run3/icon.jpeg",
-    "category": "arcade"
-  },
-  {
-    "title": "Slope",
-    "link": "games/slope/",
-    "id": "game",
-    "image": "images/slope-game-logo1.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Flappy Bird",
-    "link": "games/flappybird/",
-    "id": "game",
-    "image": "images/flappy.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Tunnel Rush",
-    "link": "games/tunnelrush/",
-    "id": "game",
-    "image": "images/tunnel.jpg",
-    "category": "arcade"
-  },
-  {
-    "title": "Basketbros",
-    "link": "games/basketbros/index.html",
-    "id": "game",
-    "image": "games/basketbros/thumb.jpg",
-    "category": "sports"
-  },
-  {
-    "title": "Drift Hunters",
-    "link": "games/drifthunters/",
-    "id": "game",
-    "image": "images/drifthunt.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Doge Miner",
-    "link": "games/dogeminer/",
-    "id": "game",
-    "image": "images/doge.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Cluster Rush",
-    "link": "games/cluster-rush/",
-    "id": "game",
-    "image": "images/cluster.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Fireboy and Watergirl",
-    "link": "games/fireboywatergirl/",
-    "id": "game",
-    "image": "images/fbwg.jpeg",
-    "category": "arcade"
-  },
-  {
-    "title": "N-Gon",
-    "link": "games/n-gon/",
-    "id": "game",
-    "image": "images/ngon.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Tiny Fishing",
-    "link": "games/tiny-fishing/",
-    "id": "game",
-    "image": "images/fish.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Bacon May Die",
-    "link": "games/bacon-may-die/",
-    "id": "game",
-    "image": "games/bacon-may-die/splash.png",
-    "category": "shooter"
-  },
-  {
-    "title": "Backrooms 2D",
-    "link": "games/backrooms2d/backrooms2d.html",
-    "id": "game",
-    "image": "games/backrooms2d/splash.jpeg",
-    "category": "arcade"
-  },
-  {
-    "title": "Ball Dodge",
-    "link": "games/balldodge/balldodge.html",
-    "id": "game",
-    "image": "games/balldodge/splash.jpeg",
-    "category": "arcade"
-  },
-  {
-    "title": "Papa's Burgeria",
-    "link": "games/papasburgeria/",
-    "id": "game",
-    "image": "images/papaburger.jpg",
-    "category": "arcade"
-  },
-  {
-    "title": "HexGL",
-    "link": "games/HexGL/",
-    "id": "game",
-    "image": "images/hexgl.jpg",
-    "category": "arcade"
-  },
-  {
-    "title": "ARP",
-    "link": "games/amazing-rope-police/",
-    "id": "game",
-    "image": "images/amazing.jpeg",
-    "category": "arcade"
-  },
-  {
-    "title": "CSGO Case Clicker",
-    "link": "games/csgo-clicker/",
-    "id": "game",
-    "image": "images/csgo.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Volley Random",
-    "link": "games/volley-random/",
-    "id": "game",
-    "image": "images/volley.png",
-    "category": "sports"
-  },
-  {
-    "title": "Paper.IO 2",
-    "link": "games/paperio2/",
-    "id": "game",
-    "image": "images/paperio2.png",
-    "category": "arcade"
-  },
-  {
-    "title": "There Is No Game",
-    "link": "games/there-is-no-game/",
-    "id": "game",
-    "image": "images/nogame.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Temple Run",
-    "link": "games/temple-run-2/",
-    "id": "game",
-    "image": "images/temple-run.png",
-    "category": "arcade"
-  },
-  {
-    "title": "A Dark Room",
-    "link": "games/adarkroom/",
-    "id": "game",
-    "image": "images/adr.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Death Run 3D",
-    "link": "games/death-run-3d/",
-    "id": "game",
-    "image": "images/death.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Soccer Random",
-    "link": "games/soccer-random/",
-    "id": "game",
-    "image": "images/soccer.png",
-    "category": "sports"
-  },
-  {
-    "title": "WHG",
-    "link": "games/worlds-hardest-game/",
-    "id": "game",
-    "image": "images/whg.jpg",
-    "category": "arcade"
-  },
-  {
-    "title": "WHG 2",
-    "link": "games/worlds-hardest-game-2/",
-    "id": "game",
-    "image": "images/whg2.jpg",
-    "category": "arcade"
-  },
-  {
-    "title": "Superhot",
-    "link": "games/superhot/",
-    "id": "game",
-    "image": "images/hot.jpg",
-    "category": "shooter"
-  },
-  {
-    "title": "Slope 2",
-    "link": "games/slope-2/",
-    "id": "game",
-    "image": "images/slope2.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Time Shooter",
-    "link": "games/timeshooter1/",
-    "id": "game",
-    "image": "images/ts1.png",
-    "category": "shooter"
-  },
-  {
-    "title": "Time Shooter 2",
-    "link": "games/timeshooter2/",
-    "id": "game",
-    "image": "images/ts2.jpg",
-    "category": "shooter"
-  },
-  {
-    "title": "Fnaf One",
-    "link": "games/fnaf/",
-    "id": "game",
-    "image": "images/fnaf.jpg",
-    "category": "arcade"
-  },
-  {
-    "title": "Fnaf Two",
-    "link": "games/fnaf2/",
-    "id": "game",
-    "image": "images/fnaf2.webp",
-    "category": "arcade"
-  },
-  {
-    "title": "Dogeminer 2",
-    "link": "games/Dogeminer2/",
-    "id": "game",
-    "image": "images/download.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Hole.io",
-    "link": "games/holeio/",
-    "id": "game",
-    "image": "images/holeio.png",
-    "category": "arcade"
-  },
-  {
-    "title": "bloxors",
-    "link": "games/bloxors/",
-    "id": "game",
-    "image": "images/bloxors.jpg",
-    "category": "strategy"
-  },
-  {
-    "title": "thebattle",
-    "link": "games/thebattle/",
-    "id": "game",
-    "image": "images/thebattle.jpeg",
-    "category": "arcade"
-  },
-  {
-    "title": "tosstheturtle",
-    "link": "games/tosstheturtle/",
-    "id": "game",
-    "image": "images/turtle.png",
-    "category": "arcade"
-  },
-  {
-    "title": "thisistheonlylevel",
-    "link": "games/thisistheonlylevel/",
-    "id": "game",
-    "image": "images/level.png",
-    "category": "arcade"
-  },
-  {
-    "title": "learntofly",
-    "link": "games/learntofly/",
-    "id": "game",
-    "image": "images/fly.jpg",
-    "category": "arcade"
-  },
-  {
-    "title": "stormthehouse2",
-    "link": "games/stormthehouse2/",
-    "id": "game",
-    "image": "images/house.jpg",
-    "category": "shooter"
-  },
-  {
-    "title": "Duck of life",
-    "link": "games/Duck-of-life/",
-    "id": "game",
-    "image": "images/duck1.jpeg",
-    "category": "arcade"
-  },
-  {
-    "title": "Duck of life 2",
-    "link": "games/Duck-of-life2/",
-    "id": "game",
-    "image": "images/duck2.jpeg",
-    "category": "arcade"
-  },
-  {
-    "title": "Duck of life 3",
-    "link": "games/Duck-of-life3/",
-    "id": "game",
-    "image": "images/duck3.jpeg",
-    "category": "arcade"
-  },
-  {
-    "title": "Geometry dash",
-    "link": "games/Geometrydash/",
-    "id": "game",
-    "image": "images/geometry.jpeg",
-    "category": "arcade"
-  },
-  {
-    "title": "learntofly2",
-    "link": "games/learntofly2/",
-    "id": "game",
-    "image": "images/fly2.jpeg",
-    "category": "arcade"
-  },
-  {
-    "title": "hill-climb-racing",
-    "link": "games/hill-climb-racing/",
-    "id": "game",
-    "image": "images/climb.jpeg",
-    "category": "arcade"
-  },
-  {
-    "title": "chrome dino",
-    "link": "games/chrome-dino/",
-    "id": "game",
-    "image": "images/chrome.webp",
-    "category": "arcade"
-  },
-  {
-    "title": "Doodle jump",
-    "link": "games/doodle-jump/",
-    "id": "game",
-    "image": "images/jump.jpeg",
-    "category": "arcade"
-  },
-  {
-    "title": "1v1 space",
-    "link": "games/1v1space/",
-    "id": "game",
-    "image": "images/splash.png",
-    "category": "shooter"
-  },
-  {
-    "title": "Blockblast",
-    "link": "games/blockblast/",
-    "id": "game",
-    "image": "images/block.webp",
-    "category": "strategy"
-  },
-  {
-    "title": "colorswitch",
-    "link": "games/color-switch/",
-    "id": "game",
-    "image": "images/colorswitch.png",
-    "category": "arcade"
-  },
-  {
-    "title": "bad piggies",
-    "link": "games/bad-piggies/",
-    "id": "game",
-    "image": "images/badpiggies.png",
-    "category": "strategy"
-  },
-  {
-    "title": "bike champ",
-    "link": "games/bikechamp/",
-    "id": "game",
-    "image": "images/bike.png",
-    "category": "arcade"
-  },
-  {
-    "title": "bike champ 2",
-    "link": "games/bikechamp2/",
-    "id": "game",
-    "image": "images/bike2.jpg",
-    "category": "arcade"
-  },
-  {
-    "title": "banjo kazooie",
-    "link": "games/banjo-kazooie/",
-    "id": "game",
-    "image": "images/banjokazooie.png",
-    "category": "arcade"
-  },
-  {
-    "title": "fnaf three",
-    "link": "games/fnaf3/",
-    "id": "game",
-    "image": "images/fnaf3.webp",
-    "category": "arcade"
-  },
-  {
-    "title": "fnaf four",
-    "link": "games/fnaf4/",
-    "id": "game",
-    "image": "images/fnaf4.webp",
-    "category": "arcade"
-  },
-  {
-    "title": "circlo",
-    "link": "games/circlo/",
-    "id": "game",
-    "image": "images/circlo.png",
-    "category": "arcade"
-  },
-  {
-    "title": "fbawg2",
-    "link": "games/fireboyandwatergirl2/",
-    "id": "game",
-    "image":"images/fireboyandwatergirl2.jpeg",
-    "category": "arcade"
-  },
-  {
-    "title": "fruit ninja",
-    "link": "games/fruitninja/",
-    "id": "game",
-    "image": "images/fruit.jpg",
-    "category": "arcade"
-  },
-  {
-    "title": "paper mario",
-    "link": "games/papermario",
-    "id": "game",
-    "image": "images/papermario.png",
-    "category": "arcade"
-  },
-  {
-    "title": "pong",
-    "link": "games/pong/",
-    "id": "game",
-    "image": "images/pong.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Boxing physics2",
-    "link": "games/boxingphysics2/",
-    "id": "game",
-    "image": "images/boxing.png",
-    "category": "sports"
-  },
-  {
-    "title": "gta 1",
-    "link": "games/gta1/",
-    "id": "game",
-    "image": "images/gta.png",
-    "category": "arcade"
-  },
-  {
-    "title": "gta 2",
-    "link": "games/gta2/",
-    "id": "game",
-    "image": "images/gta2.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Doom 64",
-    "link": "games/doom64/",
-    "id": "game",
-    "image": "images/doom64.png",
-    "category": "shooter"
-  },
-  {
-    "title": "1on1 Soccer",
-    "link": "games/1on1-soccer/",
-    "id": "game",
-    "image": "images/soccer.jpg",
-    "category": "sports"
-  },
-  {
-    "title": "Block zapper 3",
-    "link": "games/block-zappers/",
-    "id": "game",
-    "image": "images/block3.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Duck of life 5",
-    "link": "games/duck-of-life5/",
-    "id": "game",
-    "image": "images/ducklife5.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Duck of life 6",
-    "link": "games/duck-of-life6/",
-    "id": "game",
-    "image": "images/ducklife6.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Donkeykong 64",
-    "link": "games/donkeykong64/",
-    "id": "game",
-    "image": "images/donkeykong64.png",
-    "category": "arcade"
-  },
-  {
-    "title": "Snow rider",
-    "link": "games/snowrider/",
-    "id": "game",
-    "image": "images/snow.png",
-    "category": "sports"
-  },
-  {
-    "title": "Turbo racing 3",
-    "link": "games/turboracing3/",
-    "id": "game",
-    "image": "images/racing.png",
-    "category": "sports"
-  },
-  {
-    "title": "Cell machine",
-    "link": "games/cell-machine/",
-    "id": "game",
-    "image": "images/cellmachine.png",
-    "category": "strategy"
-  },
-  {
-    "title": "1defense",
-    "link": "games/1defense/",
-    "id": "game",
-    "image": "images/defense.png",
-    "category": "strategy"
-  },
-  {
-    "title": "Polytrack",
-    "link": "games/polytrack/",
-    "id": "game",
-    "image": "images/poly.jpg",
-    "category": "arcade"
-  },
-  {
-    "title":"Connect 3",
-    "link":"games/connect-3/",
-    "id":"game",
-    "image":"images/connect3.png",
-    "category":"strategy"
-    },
-    {
-    "title":"Cars simulator",
-    "link":"games/cars-simulator/",
-    "id":"game",
-    "image":"images/car.png",
-    "category":"sports"
-    },
-    {
-    "title":"Angry sharks",
-    "link":"games/angry-sharks/",
-    "id":"game",
-    "image":"images/shark.png",
-    "category":"strategy"
-    },
-    {
-    "title":"1hobo",
-    "link":"games/1hobo/",
-    "id":"game",
-    "image":"images/hobo.png",
-    "category":"strategy"
-    },
-    {
-    "title":"2hobo",
-    "link":"games/2hobo/",
-    "id":"game",
-    "image":"images/hobo2.png",
-    "category":"strategy"
-    },
-    {
-    "title":"2flash",
-    "link":"games/2flash/",
-    "id":"game",
-    "image":"images/flash2.png",
-    "category":"strategy"
-    }
-   
-   
-  
-     
-]
 
+[
+  
+	{
+		"title": "0v0",
+		"link": "games/ovo/",
+		"id": "game",
+		"image": "images/ovo.png",
+		"category": "arcade"
+	},
+	{
+		"title": "10 Mins till dawn",
+		"link": "games/10-minutes-till-dawn/index.html",
+		"id": "game",
+		"image": "games/10-minutes-till-dawn/splash.png",
+		"category": "shooter"
+	},
+	{
+		"title": "1 on 1 Soccer",
+		"link": "games/1on1-soccer/",
+		"id": "game",
+		"image": "images/soccer.jpg",
+		"category": "sports"
+	},
+	{
+		"title": "1v1 space",
+		"link": "games/1v1space/",
+		"id": "game",
+		"image": "images/splash.png",
+		"category": "shooter"
+	},
+	{
+		"title": "1v1.lol",
+		"link": "games/1v1lol/index.html",
+		"id": "game",
+		"image": "games/1v1lol/splash.png",
+		"category": "shooter"
+	},
+	{
+		"title": "2048",
+		"link": "games/2048/index.html",
+		"id": "game",
+		"image": "images/2048.png",
+		"category": "strategy"
+	},
+	{
+		"title": "2048 Cupcakes",
+		"link": "games/cupcake2048/index.html",
+		"id": "game",
+		"image": "games/cupcake2048/favicon.png",
+		"category": "arcade"
+	},
+	{
+		"title": "60S Burger run",
+		"link": "games/60sburgerrun/index.html",
+		"id": "game",
+		"image": "games/60sburgerrun/icon.png",
+		"category": "arcade"
+	},
+	{
+		"title": "A Dark Room",
+		"link": "games/adarkroom/",
+		"id": "game",
+		"image": "images/adr.png",
+		"category": "arcade"
+	},
+	{
+		"title": "ADOFAI",
+		"link": "games/a-dance-of-fire-and-ice/",
+		"id": "game",
+		"image": "images/adofai.png",
+		"category": "arcade"
+	},
+	{
+		"title": "ARP",
+		"link": "games/amazing-rope-police/",
+		"id": "game",
+		"image": "images/amazing.jpeg",
+		"category": "arcade"
+	},
+	{
+		"title": "Age of war",
+		"link": "games/ageofwar/index.html",
+		"id": "game",
+		"image": "games/ageofwar/warofage.jpg",
+		"category": "strategy"
+	},
+	{
+		"title": "Angry sharks",
+		"link": "games/angry-sharks/",
+		"id": "game",
+		"image": "images/shark.png",
+		"category": "strategy"
+	},
+	{
+		"title": "Aul",
+		"link": "games/achievementunlocked/index.html",
+		"id": "game",
+		"image": "images/achievementunlocked.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Awesome Tanks 2",
+		"link": "games/awesometanks2/",
+		"id": "game",
+		"image": "images/awesome-tanks-2.png",
+		"category": "shooter"
+	},
+	{
+		"title": "Backrooms",
+		"link": "games/backrooms/",
+		"id": "game",
+		"image": "images/backroom.jpg",
+		"category": "arcade"
+	},
+	{
+		"title": "Backrooms 2D",
+		"link": "games/backrooms2d/backrooms2d.html",
+		"id": "game",
+		"image": "games/backrooms2d/splash.jpeg",
+		"category": "arcade"
+	},
+	{
+		"title": "Bacon May Die",
+		"link": "games/bacon-may-die/",
+		"id": "game",
+		"image": "games/bacon-may-die/splash.png",
+		"category": "shooter"
+	},
+	{
+		"title": "Bad Ice Cream 2",
+		"link": "games/bad-ice-cream-2/",
+		"id": "game",
+		"image": "images/bad-ice-cream-2.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Bad Ice Cream 3",
+		"link": "games/bad-ice-cream-3/",
+		"id": "game",
+		"image": "images/bad-ice-cream-3.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Bad piggies",
+		"link": "games/bad-piggies/",
+		"id": "game",
+		"image": "images/badpiggies.png",
+		"category": "strategy"
+	},
+	{
+		"title": "Baldis Basics",
+		"link": "games/baldis-basics/index.html",
+		"id": "game",
+		"image": "games/baldis-basics/splash.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Ball Dodge",
+		"link": "games/balldodge/balldodge.html",
+		"id": "game",
+		"image": "games/balldodge/splash.jpeg",
+		"category": "arcade"
+	},
+	{
+		"title": "Banjo kazooie",
+		"link": "games/banjo-kazooie/",
+		"id": "game",
+		"image": "images/banjokazooie.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Basket Random",
+		"link": "games/basket-random/",
+		"id": "game",
+		"image": "images/brandom.jpeg",
+		"category": "sports"
+	},
+	{
+		"title": "Basketball Stars",
+		"link": "games/basketball-stars/",
+		"id": "game",
+		"image": "images/basketball-stars.png",
+		"category": "sports"
+	},
+	{
+		"title": "Basketbros",
+		"link": "games/basketbros/index.html",
+		"id": "game",
+		"image": "games/basketbros/thumb.jpg",
+		"category": "sports"
+	},
+	{
+		"title": "Bike champ",
+		"link": "games/bikechamp/",
+		"id": "game",
+		"image": "images/bike.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Bike champ 2",
+		"link": "games/bikechamp2/",
+		"id": "game",
+		"image": "images/bike2.jpg",
+		"category": "arcade"
+	},
+	{
+		"title": "BitLife",
+		"link": "games/bitlife/index.html",
+		"id": "game",
+		"image": "games/bitlife/bitlife.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Block zapper 3",
+		"link": "games/block-zappers/",
+		"id": "game",
+		"image": "images/block3.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Blockblast",
+		"link": "games/blockblast/",
+		"id": "game",
+		"image": "images/block.webp",
+		"category": "strategy"
+	},
+	{
+		"title": "Bloxors",
+		"link": "games/bloxors/",
+		"id": "game",
+		"image": "images/bloxors.jpg",
+		"category": "strategy"
+	},
+	{
+		"title": "Boxing Random",
+		"link": "games/boxingrandom/index.html",
+		"id": "game",
+		"image": "games/boxingrandom/cover.jpg",
+		"category": "sports"
+	},
+	{
+		"title": "Boxing physics2",
+		"link": "games/boxingphysics2/",
+		"id": "game",
+		"image": "images/boxing.png",
+		"category": "sports"
+	},
+	{
+		"title": "Burrito Bison",
+		"link": "games/burritobison/index.html",
+		"id": "game",
+		"image": "games/burritobison/logo.png",
+		"category": "arcade"
+	},
+	{
+		"title": "CSGO Case Clicker",
+		"link": "games/csgo-clicker/",
+		"id": "game",
+		"image": "images/csgo.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Cars simulator",
+		"link": "games/cars-simulator/",
+		"id": "game",
+		"image": "images/car.png",
+		"category": "sports"
+	},
+	{
+		"title": "Cell machine",
+		"link": "games/cell-machine/",
+		"id": "game",
+		"image": "images/cellmachine.png",
+		"category": "strategy"
+	},
+	{
+		"title": "Chess",
+		"link": "games/chess/index.html",
+		"id": "game",
+		"image": "games/chess/icon.png",
+		"category": "strategy"
+	},
+	{
+		"title": "Chill Radio",
+		"link": "games/chill-radio/",
+		"id": "game",
+		"image": "images/icon.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Chrome dino",
+		"link": "games/chrome-dino/",
+		"id": "game",
+		"image": "images/chrome.webp",
+		"category": "arcade"
+	},
+	{
+		"title": "Circlo",
+		"link": "games/circlo/",
+		"id": "game",
+		"image": "images/circlo.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Cluster Rush",
+		"link": "games/cluster-rush/",
+		"id": "game",
+		"image": "images/cluster.png",
+		"category": "arcade"
+	},
+	{
+		"title": "College Retrobowl",
+		"link": "games/retrobowlcollege/index.html",
+		"id": "game",
+		"image": "games/retrobowlcollege/unnamed.png",
+		"category": "sports"
+	},
+	{
+		"title": "Colorswitch",
+		"link": "games/color-switch/",
+		"id": "game",
+		"image": "images/colorswitch.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Connect 3",
+		"link": "games/connect-3/",
+		"id": "game",
+		"image": "images/connect3.png",
+		"category": "strategy"
+	},
+	{
+		"title": "Cookie clicker",
+		"link": "games/cookie-clicker/index.html",
+		"id": "game",
+		"image": "games/cookie-clicker/cookie1.jpeg",
+		"category": "arcade"
+	},
+	{
+		"title": "Crazy Cattle 3D",
+		"link": "games/crazycattle3d/index.html",
+		"id": "game",
+		"image": "games/crazycattle3d/index.apple-touch-icon.png",
+		"category": "strategy"
+	},
+	{
+		"title": "Crossy Road",
+		"link": "games/crossyroad/",
+		"id": "game",
+		"image": "images/crossyroad.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Cubefield",
+		"link": "games/cubefield/",
+		"id": "game",
+		"image": "images/cubefield.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Death Run 3D",
+		"link": "games/death-run-3d/",
+		"id": "game",
+		"image": "images/death.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Doge Miner",
+		"link": "games/dogeminer/",
+		"id": "game",
+		"image": "images/doge.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Dogeminer 2",
+		"link": "games/Dogeminer2/",
+		"id": "game",
+		"image": "images/download.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Donkeykong 64",
+		"link": "games/donkeykong64/",
+		"id": "game",
+		"image": "images/donkeykong64.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Doodle jump",
+		"link": "games/doodle-jump/",
+		"id": "game",
+		"image": "images/jump.jpeg",
+		"category": "arcade"
+	},
+	{
+		"title": "Doom 64",
+		"link": "games/doom64/",
+		"id": "game",
+		"image": "images/doom64.png",
+		"category": "shooter"
+	},
+	{
+		"title": "Drift Hunters",
+		"link": "games/drifthunters/",
+		"id": "game",
+		"image": "images/drifthunt.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Drift boss",
+		"link": "games/drift-boss/index.html",
+		"id": "game",
+		"image": "games/drift-boss/icon.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Drive Mad",
+		"link": "games/drive-mad/",
+		"id": "game",
+		"image": "images/drivemad.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Duck of life",
+		"link": "games/Duck-of-life/",
+		"id": "game",
+		"image": "images/duck1.jpeg",
+		"category": "arcade"
+	},
+	{
+		"title": "Duck of life 2",
+		"link": "games/Duck-of-life2/",
+		"id": "game",
+		"image": "images/duck2.jpeg",
+		"category": "arcade"
+	},
+	{
+		"title": "Duck of life 3",
+		"link": "games/Duck-of-life3/",
+		"id": "game",
+		"image": "images/duck3.jpeg",
+		"category": "arcade"
+	},
+	{
+		"title": "Duck of life 5",
+		"link": "games/duck-of-life5/",
+		"id": "game",
+		"image": "images/ducklife5.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Duck of life 6",
+		"link": "games/duck-of-life6/",
+		"id": "game",
+		"image": "images/ducklife6.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Fbawg2",
+		"link": "games/fireboyandwatergirl2/",
+		"id": "game",
+		"image": "images/fireboyandwatergirl2.jpeg",
+		"category": "arcade"
+	},
+	{
+		"title": "Fireboy and Watergirl",
+		"link": "games/fireboywatergirl/",
+		"id": "game",
+		"image": "images/fbwg.jpeg",
+		"category": "arcade"
+	},
+	{
+		"title": "Flappy Bird",
+		"link": "games/flappybird/",
+		"id": "game",
+		"image": "images/flappy.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Flash 2",
+		"link": "games/2flash/",
+		"id": "game",
+		"image": "images/flash2.png",
+		"category": "strategy"
+	},
+	{
+		"title": "Fnaf One",
+		"link": "games/fnaf/",
+		"id": "game",
+		"image": "images/fnaf.jpg",
+		"category": "arcade"
+	},
+	{
+		"title": "Fnaf Two",
+		"link": "games/fnaf2/",
+		"id": "game",
+		"image": "images/fnaf2.webp",
+		"category": "arcade"
+	},
+	{
+		"title": "Fnaf four",
+		"link": "games/fnaf4/",
+		"id": "game",
+		"image": "images/fnaf4.webp",
+		"category": "arcade"
+	},
+	{
+		"title": "Fnaf three",
+		"link": "games/fnaf3/",
+		"id": "game",
+		"image": "images/fnaf3.webp",
+		"category": "arcade"
+	},
+	{
+		"title": "Fruit ninja",
+		"link": "games/fruitninja/",
+		"id": "game",
+		"image": "images/fruit.jpg",
+		"category": "arcade"
+	},
+	{
+		"title": "Funny shooter",
+		"link": "games/funnyshooter/index.html",
+		"id": "game",
+		"image": "games/funnyshooter/icon.jpeg",
+		"category": "shooter"
+	},
+	{
+		"title": "Funny shooter 2",
+		"link": "games/funnyshooter2/index.html",
+		"id": "game",
+		"image": "games/funnyshooter2/splash.jpeg",
+		"category": "shooter"
+	},
+	{
+		"title": "GTA 1",
+		"link": "games/gta1/",
+		"id": "game",
+		"image": "images/gta.png",
+		"category": "arcade"
+	},
+	{
+		"title": "GTA 2",
+		"link": "games/gta2/",
+		"id": "game",
+		"image": "images/gta2.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Geometry dash",
+		"link": "games/Geometrydash/",
+		"id": "game",
+		"image": "images/geometry.jpeg",
+		"category": "arcade"
+	},
+	{
+		"title": "Getaway shootout",
+		"link": "games/getaway-shootout/index.html",
+		"id": "game",
+		"image": "games/getaway-shootout/index.jpg",
+		"category": "shooter"
+	},
+	{
+		"title": "Gun Mayhem 2",
+		"link": "games/gun-mayhem-2/",
+		"id": "game",
+		"image": "images/Gun-Mayhem-2.png",
+		"category": "shooter"
+	},
+	{
+		"title": "HexGL",
+		"link": "games/HexGL/",
+		"id": "game",
+		"image": "images/hexgl.jpg",
+		"category": "arcade"
+	},
+	{
+		"title": "Hill climb racing",
+		"link": "games/hill-climb-racing/",
+		"id": "game",
+		"image": "images/climb.jpeg",
+		"category": "arcade"
+	},
+	{
+		"title": "Hobo",
+		"link": "games/1hobo/",
+		"id": "game",
+		"image": "images/hobo.png",
+		"category": "strategy"
+	},
+	{
+		"title": "Hobo 2",
+		"link": "games/2hobo/",
+		"id": "game",
+		"image": "images/hobo2.png",
+		"category": "strategy"
+	},
+	{
+		"title": "Hole.io",
+		"link": "games/holeio/",
+		"id": "game",
+		"image": "images/holeio.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Idle breakout",
+		"link": "games/idle-breakout/index.html",
+		"id": "game",
+		"image": "games/idle-breakout/img/thumbnail.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Jetpack joyride",
+		"link": "games/jetpackjoyride/index.html",
+		"id": "game",
+		"image": "games/jetpackjoyride/logo.jpeg",
+		"category": "arcade"
+	},
+	{
+		"title": "Krunker",
+		"link": "games/krunker/index.html",
+		"id": "game",
+		"image": "games/krunker/img/krunker-io.jpg",
+		"category": "shooter"
+	},
+	{
+		"title": "Learntofly",
+		"link": "games/learntofly/",
+		"id": "game",
+		"image": "images/fly.jpg",
+		"category": "arcade"
+	},
+	{
+		"title": "Learntofly2",
+		"link": "games/learntofly2/",
+		"id": "game",
+		"image": "images/fly2.jpeg",
+		"category": "arcade"
+	},
+	{
+		"title": "MC Tower Defense",
+		"link": "games/1defense/",
+		"id": "game",
+		"image": "images/defense.png",
+		"category": "strategy"
+	},
+	{
+		"title": "Minecraft 1.5.2",
+		"link": "games/minecraft/index.html",
+		"id": "game",
+		"image": "games/minecraft/logo.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Minecraft 1.8.8",
+		"link": "games/MC18/index.html",
+		"id": "game",
+		"image": "games/minecraft/logo.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Monkey Mart",
+		"link": "games/monkeymart/index.html",
+		"id": "game",
+		"image": "games/monkeymart/unnamed.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Moto X3M",
+		"link": "games/moto-x3m/",
+		"id": "game",
+		"image": "images/moto-x3m.jpg",
+		"category": "sports"
+	},
+	{
+		"title": "Moto X3M Pool",
+		"link": "games/motox3m-pool/index.html",
+		"id": "game",
+		"image": "games/motox3m-pool/splash.jpg",
+		"category": "sports"
+	},
+	{
+		"title": "Moto X3M Spooky",
+		"link": "games/motox3m-spooky/index.html",
+		"id": "game",
+		"image": "games/motox3m-spooky/splash.jpeg",
+		"category": "sports"
+	},
+	{
+		"title": "Moto X3M Winter",
+		"link": "games/motox3m-winter/index.html",
+		"id": "game",
+		"image": "games/motox3m-winter/download.jpeg",
+		"category": "sports"
+	},
+	{
+		"title": "N-Gon",
+		"link": "games/n-gon/",
+		"id": "game",
+		"image": "images/ngon.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Papa's Burgeria",
+		"link": "games/papasburgeria/",
+		"id": "game",
+		"image": "images/papaburger.jpg",
+		"category": "arcade"
+	},
+	{
+		"title": "Paper mario",
+		"link": "games/papermario",
+		"id": "game",
+		"image": "images/papermario.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Paper.IO 2",
+		"link": "games/paperio2/",
+		"id": "game",
+		"image": "images/paperio2.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Polytrack",
+		"link": "games/polytrack/",
+		"id": "game",
+		"image": "images/poly.jpg",
+		"category": "arcade"
+	},
+	{
+		"title": "Pong",
+		"link": "games/pong/",
+		"id": "game",
+		"image": "images/pong.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Retrobowl",
+		"link": "games/retrobowl/",
+		"id": "game",
+		"image": "images/retrobowl.ico",
+		"category": "sports"
+	},
+	{
+		"title": "Rocket league",
+		"link": "games/rocketleague/index.html",
+		"id": "game",
+		"image": "games/rocketleague/splash.webp",
+		"category": "sports"
+	},
+	{
+		"title": "Rooftop snipers",
+		"link": "games/rooftopsnipers/index.html",
+		"id": "game",
+		"image": "games/rooftopsnipers/logo.png",
+		"category": "shooter"
+	},
+	{
+		"title": "Run",
+		"link": "games/run/",
+		"id": "game",
+		"image": "images/run.jpeg",
+		"category": "arcade"
+	},
+	{
+		"title": "Run 2",
+		"link": "games/run2/",
+		"id": "game",
+		"image": "images/Run 2.jpg",
+		"category": "arcade"
+	},
+	{
+		"title": "Run 3",
+		"link": "games/run3/index.html",
+		"id": "game",
+		"image": "games/run3/icon.jpeg",
+		"category": "arcade"
+	},
+	{
+		"title": "Slope",
+		"link": "games/slope/",
+		"id": "game",
+		"image": "images/slope-game-logo1.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Slope 2",
+		"link": "games/slope-2/",
+		"id": "game",
+		"image": "images/slope2.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Snow rider",
+		"link": "games/snowrider/",
+		"id": "game",
+		"image": "images/snow.png",
+		"category": "sports"
+	},
+	{
+		"title": "Soccer Random",
+		"link": "games/soccer-random/",
+		"id": "game",
+		"image": "images/soccer.png",
+		"category": "sports"
+	},
+	{
+		"title": "Sprinter",
+		"link": "games/sprinter/",
+		"id": "game",
+		"image": "images/sprinter.jpeg",
+		"category": "arcade"
+	},
+	{
+		"title": "Stickman Golf",
+		"link": "games/stickmangolf/index.html",
+		"id": "game",
+		"image": "games/stickmangolf/splash.png",
+		"category": "sports"
+	},
+	{
+		"title": "Stickman Hook",
+		"link": "games/stickman-hook/index.html",
+		"id": "game",
+		"image": "games/stickman-hook/icon.jpg",
+		"category": "arcade"
+	},
+	{
+		"title": "Stormthehouse2",
+		"link": "games/stormthehouse2/",
+		"id": "game",
+		"image": "images/house.jpg",
+		"category": "shooter"
+	},
+	{
+		"title": "Subway Surfers NY",
+		"link": "games/subway-surfers-ny/",
+		"id": "game",
+		"image": "images/NewYorkIcon.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Superhot",
+		"link": "games/superhot/",
+		"id": "game",
+		"image": "images/hot.jpg",
+		"category": "shooter"
+	},
+	{
+		"title": "Temple Run",
+		"link": "games/temple-run-2/",
+		"id": "game",
+		"image": "images/temple-run.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Tetris",
+		"link": "games/tetris/index.html",
+		"id": "game",
+		"image": "games/tetris/icon.png",
+		"category": "strategy"
+	},
+	{
+		"title": "Thebattle",
+		"link": "games/thebattle/",
+		"id": "game",
+		"image": "images/thebattle.jpeg",
+		"category": "arcade"
+	},
+	{
+		"title": "There Is No Game",
+		"link": "games/there-is-no-game/",
+		"id": "game",
+		"image": "images/nogame.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Thisistheonlylevel",
+		"link": "games/thisistheonlylevel/",
+		"id": "game",
+		"image": "images/level.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Time Shooter",
+		"link": "games/timeshooter1/",
+		"id": "game",
+		"image": "images/ts1.png",
+		"category": "shooter"
+	},
+	{
+		"title": "Time Shooter 2",
+		"link": "games/timeshooter2/",
+		"id": "game",
+		"image": "images/ts2.jpg",
+		"category": "shooter"
+	},
+	{
+		"title": "Tiny Fishing",
+		"link": "games/tiny-fishing/",
+		"id": "game",
+		"image": "images/fish.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Tosstheturtle",
+		"link": "games/tosstheturtle/",
+		"id": "game",
+		"image": "images/turtle.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Tunnel Rush",
+		"link": "games/tunnelrush/",
+		"id": "game",
+		"image": "images/tunnel.jpg",
+		"category": "arcade"
+	},
+	{
+		"title": "Turbo racing 3",
+		"link": "games/turboracing3/",
+		"id": "game",
+		"image": "images/racing.png",
+		"category": "sports"
+	},
+	{
+		"title": "Vex",
+		"link": "games/vex/index.html",
+		"id": "game",
+		"image": "games/vex/icon.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Vex 2",
+		"link": "games/vex2/index.html",
+		"id": "game",
+		"image": "games/vex2/icon.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Vex 3",
+		"link": "games/vex3/index.html",
+		"id": "game",
+		"image": "games/vex3/icon.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Vex 4",
+		"link": "games/vex4/index.html",
+		"id": "game",
+		"image": "games/vex4/vex4.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Vex 5",
+		"link": "games/vex5/index.html",
+		"id": "game",
+		"image": "games/vex5/icon.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Vex 6",
+		"link": "games/vex6/index.html",
+		"id": "game",
+		"image": "games/vex6/icon.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Volley Random",
+		"link": "games/volley-random/",
+		"id": "game",
+		"image": "images/volley.png",
+		"category": "sports"
+	},
+	{
+		"title": "WHG",
+		"link": "games/worlds-hardest-game/",
+		"id": "game",
+		"image": "images/whg.jpg",
+		"category": "arcade"
+	},
+	{
+		"title": "WHG 2",
+		"link": "games/worlds-hardest-game-2/",
+		"id": "game",
+		"image": "images/whg2.jpg",
+		"category": "arcade"
+	},
+	{
+		"title": "Yohoho",
+		"link": "games/yohoho/index.html",
+		"id": "game",
+		"image": "games/yohoho/cover.svg",
+		"category": "strategy"
+	}
+]
