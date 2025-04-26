@@ -1,17 +1,17 @@
 "use strict";
+
 /**
- * Distributed with Ultraviolet and compatible with most configurations.
+ * The default service worker script, in this case, using the Ultraviolet setup.
  */
 const stockSW = "/static/uv-sw.js";
 
 /**
- * List of hostnames that are allowed to run serviceworkers on http:
+ * List of hostnames that are allowed to run service workers on http:
  */
 const swAllowedHostnames = ["localhost", "127.0.0.1"];
 
 /**
- * Global util
- * Used in 404.html and index.html
+ * Register service worker
  */
 async function registerSW() {
   if (
@@ -25,6 +25,11 @@ async function registerSW() {
 
   // Ultraviolet has a stock `sw.js` script.
   await navigator.serviceWorker.register(stockSW, {
-    scope: __uv$config.prefix,
+    scope: __uv$config.prefix
   });
 }
+
+// Call the registerSW function to register the service worker
+registerSW().catch((error) => {
+  console.error("Service Worker registration failed: ", error);
+});
