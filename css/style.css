@@ -889,7 +889,7 @@ margin-top: 100px;
 }
 
 .shortcut {
-  background: rgba(0, 0, 0, 0.1);
+  background: black;
   padding: 10px 15px;
   border-radius: 12px;
   text-align: center;
@@ -898,11 +898,10 @@ margin-top: 100px;
   color: white;
   min-width: 100px;
   border: 2px solid white;
-  transition: transform 0.3s ease, background 0.3s ease;
+  transition: transform 0.3s ease;
 }
 .shortcut:hover {
   transform: scale(1.1); 
-  background: rgba(0, 0, 0, 0.2); 
 }
 
 
@@ -947,6 +946,7 @@ margin-top: 100px;
   background-color: black;
   color: white;
   border: 2px solid white;
+  font-weight: bold;
 }
 
 .add-button {
@@ -1298,7 +1298,7 @@ color: white;
 }
 /* DARK THEME */
 .settingsContainer {
-  background-color: rgba(0, 0, 0, 0.8); /* 0.8 means 80% opaque, 20% transparent */
+  background-color: rgba(0, 0, 0, 0.8); 
   border: 2px solid #fff;
   border-radius: 8px;
   padding: 10px;
@@ -1354,15 +1354,18 @@ box-shadow: 0 0 20px white, 0 0 30px white;
 
 /* LIGHT THEME */
 body.light .settingsContainer {
-background-color: #ffffff;
-border: 2px solid #000;
-color: black;
-box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
-font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border: 2px solid #000000;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  text-align: center;
+  flex-shrink: 0;
+  font-weight: bold;
+  margin-top: 20px;
 }
-body.light #clock {
-color: black; /* Change the clock color to black for the light theme */
-}
+
 
 button {
 background-color: #111;
@@ -1474,15 +1477,16 @@ text-align: center;
 
 
 body.dark-pink .settingsContainer {
-background-color: black;
-border: 2px solid #ffffff;
-border-radius: 8px;
-padding: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-width: 250px;
-text-align: center;
-flex-shrink: 0;
-font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.8); 
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  text-align: center;
+  flex-shrink: 0;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 
@@ -1514,16 +1518,17 @@ color: #ffffff !important;
 /* GRAY THEME */
 
 body.dark-gray .settingsContainer {
-background-color: black;
-border: 2px solid #ffffff;
-border-radius: 8px;
-padding: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-width: 250px;
-text-align: center;
-flex-shrink: 0;
-font-weight: bold;
-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.8); 
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  text-align: center;
+  flex-shrink: 0;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #ffffff;
 }
 
 body.dark-gray h1 {
@@ -1551,15 +1556,16 @@ color: #ffffff !important;
 
 /* BLUE THEME */
 body.dark-blue .settingsContainer {
-background-color: black;
-border: 2px solid #ffffff;
-border-radius: 8px;
-padding: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-width: 250px;
-text-align: center;
-flex-shrink: 0;
-font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.8); 
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  text-align: center;
+  flex-shrink: 0;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 
