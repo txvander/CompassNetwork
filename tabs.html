@@ -244,10 +244,10 @@ function newTab() {
   tabBtn.classList.add("tab-btn", "active");
   tabBtn.id = `btn-${tabId}`;  // Fixed template literal here
   tabBtn.innerHTML = `
-  <img src="images/logo1.png" class="tab-icon" alt="icon">
-  New Tab 
-  <span class="close-tab-btn" onclick="closeTab(event, '${tabId}')">×</span>
-`;
+    <img src="images/logo1.png" class="tab-icon" alt="icon">
+    New Tab 
+    <span class="close-tab-btn" onclick="closeTab(event, '${tabId}')">×</span>
+  `;
   tabBtn.onclick = () => switchTab(tabId);
 
   document.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));

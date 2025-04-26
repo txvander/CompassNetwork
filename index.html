@@ -432,28 +432,40 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-<center>
-  <form id="uv-form" onsubmit="handleSearch(event)" class="form-wrapper">
-    <input id="uv-search-engine" value="https://duckduckgo.com/?q=%s" type="hidden">
+ 
+  
+  <center>
+    <form id="uv-form" onsubmit="handleSearch(event)" class="form-wrapper">
+      <input id="uv-search-engine" value="https://duckduckgo.com/?q=%s" type="hidden">
     
-    <div class="search-container">
-    <input id="uv-address" type="text" placeholder="Search The Web Freely" class="form__input">
-    <button class="magnify-icon" type="submit"></button>
-    </div>
-    <button id="favorites" type="button" onclick="toggleFavorite()"></button>
-    <script>
-    function toggleFavorite() {
-    if (favorite.classList.contains("show")) {
-    favorite.classList.remove("show");
-    } else {
-    favorite.classList.add("show");
-    }
-    }
-    </script>
+      <div class="search-container">
+        <input id="uv-address" type="text" placeholder="Search The Web Freely" class="form__input">
+        <button class="magnify-icon" type="submit"></button>
+      </div>
+      <button id="favorites" type="button" onclick="toggleFavorite()"></button>
     </form>
-  <div id="clock" class="timer">--:--:--</div>
-</center>
+  </center>
+  
 
+<div id="shortcuts-area" style="margin-top: 20px; text-align: center;">
+  <div id="shortcuts-container" class="shortcuts"></div>
+  <button id="addShortcutBtn" class="add-shortcut" style="margin-top: 30px; height: 3em;">+</button>
+</div>
+
+
+<div id="addShortcutModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModalBtn" class="close">&times;</span>
+    <h2>Add a Shortcut</h2>
+    <input type="text" id="shortcut-name" placeholder="Name" class="modal-input">
+    <input type="text" id="shortcut-url" placeholder="Website (example.com)" class="modal-input">
+    <button id="saveShortcutBtn" class="add-button">Add</button>
+  </div>
+</div>
+
+<script src="shortcut.js"></script>
+
+  
 <script>
   const text = "Compass Network";
   const typingSpeed = 100; 
