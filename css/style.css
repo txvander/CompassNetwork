@@ -929,12 +929,18 @@ margin-top: 100px;
   border: 2px solid white;
 }
 
+
 .close {
   position: absolute;
   top: 10px; right: 15px;
   font-size: 24px;
   cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease; 
+}
 
+.close:hover {
+  color: #858585; 
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .modal-input {
@@ -1005,6 +1011,9 @@ width: 150px;
 border: 2px solid white;
 }
 
+.context-menu:hover {
+  background-color: #333333; 
+}
 .menu-item {
 padding: 8px 12px;
 cursor: pointer;
@@ -1033,6 +1042,7 @@ cursor: pointer;
 outline: none;
 font-family: 'Poppins', sans-serif;
 margin-top: 15px;
+font-weight: bold;
 }
 #searchContainer {
 display: flex;
