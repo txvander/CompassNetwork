@@ -1050,6 +1050,107 @@ margin-left: 80px;
 }
 
 
+
+
+.settingsContainer {
+  background-color: rgba(0, 0, 0, 0.8); 
+  border: 2px solid #fff;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 50px;
+  text-align: center;
+  flex-shrink: 0;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+.settingsRow {
+display: flex;
+justify-content: center;
+flex-direction: column;
+gap: 40px;
+
+}
+
+
+p {
+  color: rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+  font-size: 70%;
+  text-align: center;
+  margin-left: 70px;
+  }
+  
+
+#uv-address {
+  background-color: black;
+  border: 2px solid white !important;
+  border-radius: 15px;
+  padding: 12px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  transition: hover .2s;
+  width: 200px;
+  padding-right: 35px; 
+  margin-top: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  transition: width 0.3s ease; 
+  margin-left: 55px;
+  }
+
+
+  
+  .add-shortcut {
+    margin-left: 70px;
+  
+  }
+  
+  #favorites {
+    margin-top: 40px;
+    font-size: 1.4rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/star.png");
+    margin-left: 70px;
+    }
+
+    #categorySelect {
+      padding: 10px;
+      border-radius: 10px;
+      border: 2px solid white;
+      border-style: solid;
+      background-color:black;
+      color: #ffffff;
+      cursor: pointer;
+      outline: none;
+      font-family: 'Poppins', sans-serif;
+      margin-top: 15px;
+      font-weight: bold;
+      width: 8.5em ;
+      margin-right: 10px;
+      }
+      #searchContainer {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      }
+
+  
+    
+  
+  
+
+
 .menu {
 float: left;
 position: fixed;
