@@ -597,6 +597,7 @@ transform: scale(1.05);
 .game a {
 font-size: 60%;
 
+
 }
 
 .games {
@@ -620,7 +621,7 @@ max-width: 1200px;
 .game img {
 width: 100%;
 border-radius: 10px;
-margin-bottom: -10px;
+margin-bottom: -15px;
 min-width: 100%;
 object-fit: cover;
 height: 150px;
@@ -697,39 +698,28 @@ margin-left: 55px;
 
 .magnify-icon {
 position: absolute;
-top: 66%;
-right: 12px;
+top: 69%;
+right: 10px;
 transform: translateY(-50%);
-width: 14px;
-height: 14px;
-border: 2px solid #fff;
-border-radius: 50%;
 box-sizing: border-box;
 background: none;
-padding: 0;
+color: #00000000;
+background-color: #00000000;
+border: none;
+box-shadow: none;
+width: 5px;
 cursor: pointer;
 outline: none;
-border-color: white;
+
 }
-
-.magnify-icon::before {
-content: '';
-position: absolute;
-bottom: -4px;
-right: -4px;
-width: 2px;
-height: 8px;
-background-color: #fff;
-transform: rotate(-45deg);
+.magnify-icon:hover{
+  background: none;
+  box-shadow: none;
+  border:none;
 }
-
-
-.magnify-icon:hover,
 #favorites:hover {
-color: inherit;
-opacity: 1;
 box-shadow: none;
-border-color: #fff;
+border:none;
 }
 
 

@@ -73,12 +73,11 @@ body {
   cursor: pointer;
   color: #ffffff;
   font-size: 20px;
-  transition: color 0.3s ease-in-out; 
+  transition: 0.1s ease-in-out; 
 }
 
 .close-tab-btn:hover {
-  color: #ff0000;
-
+  filter: brightness(0) saturate(100%) invert(17%) sepia(97%) saturate(7474%) hue-rotate(0deg) brightness(103%) contrast(103%);
 }
 
 #new-tab-btn {
@@ -246,7 +245,7 @@ function newTab() {
   tabBtn.innerHTML = `
     <img src="images/logo1.png" class="tab-icon" alt="icon">
     New Tab 
-    <span class="close-tab-btn" onclick="closeTab(event, '${tabId}')">×</span>
+    <span class="close-tab-btn" onclick="closeTab(event, '${tabId}')"><img src="images/x.png" width="25px" alt="×"></span>
   `;
   tabBtn.onclick = () => switchTab(tabId);
 
