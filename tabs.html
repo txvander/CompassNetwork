@@ -54,7 +54,7 @@ body {
   width: 170px;
   white-space: nowrap;
   font-weight: bold;
-}                                                                                           
+}
 
 .tab-btn:hover {
   transform: translateY(-2px); 
@@ -192,6 +192,51 @@ body {
   border-radius: 4px;
 }
 
+
+#fullscreen-btn {
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 6px;
+  width: 43px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#fullscreen-btn:hover {
+  transform: scale(1.2);
+}
+
+
+
+#home-btn {
+  text-decoration: none; 
+}
+
+#home-btn button {
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 6px;
+  width: 43px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#home-btn button:hover {
+  transform: scale(1.2);
+}
+
+
+
   </style>
 </head>
 <body>
@@ -201,19 +246,39 @@ body {
 
     </div>
   </div>
-  
+
   <div id="search-container">
+    <a href="index.html" id="home-btn">
+      <button>
+        <img src="images/house.png" width="25px" alt="Home">
+      </button>
+    </a>
+  
+    <button id="fullscreen-btn">
+      <img src="images/fullscreen.png" width="25px" alt="Fullscreen">
+    </button>
+  
     <input id="search-input" type="text" placeholder="Search or enter URL...">
-    <button id="back-btn" onclick="goBack()"><img src="images/left.png" width="25px" alt="←"></button>
-    <button id="forward-btn" onclick="goForward()"><img src="images/right.png" width="25px" alt="→"></button>
-    <button id="refresh-btn" onclick="refreshPage()"><img src="images/refresh.png" width="25px" alt="↻"></button>
+    
+    <button id="back-btn" onclick="goBack()">
+      <img src="images/left.png" width="25px" alt="←">
+    </button>
+    <button id="forward-btn" onclick="goForward()">
+      <img src="images/right.png" width="25px" alt="→">
+    </button>
+    <button id="refresh-btn" onclick="refreshPage()">
+      <img src="images/refresh.png" width="25px" alt="↻">
+    </button>
   </div>
   
   <div id="tab-content"></div>
+                                                                         
   
 
 
   <script>
+
+
 "use strict";
 
 let tabCount = 0;
@@ -357,6 +422,25 @@ window.onload = () => {
     document.getElementById("search-input").value = query;
   }
 };
+
+document.getElementById("fullscreen-btn").addEventListener("click", () => {
+  const iframe = document.getElementById(currentTabId);
+  
+  if (iframe) {
+    if (!document.fullscreenElement) {
+      iframe.requestFullscreen().catch(err => {
+        console.log("Error attempting to enable fullscreen:", err);
+      });
+    } else {
+      document.exitFullscreen().catch(err => {
+        console.log("Error attempting to exit fullscreen:", err);
+      });
+    }
+  }
+});
+
+
+
 
   </script>
 </body>
