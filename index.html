@@ -71,6 +71,7 @@ function applyVanta(theme) {
 
   let bgColor, globeColor, globeColor2, textColor, pColor, h1Color;
 
+
   if (theme === "dark-pink") {
     bgColor = "#FF69B4";
     globeColor = 0xFFFFFF;
@@ -100,7 +101,7 @@ function applyVanta(theme) {
     pColor = "#000";
     h1Color = "#000";
   } else { 
-    bgColor = "#000000";
+    bgColor = "#000000"; 
     globeColor = 0xFFFFFF;
     globeColor2 = 0xFFFFFF;
     textColor = "#fff";
@@ -138,25 +139,103 @@ function applyVanta(theme) {
   headers.forEach(h1 => h1.style.color = h1Color);
 }
 
+
+function updateStarIconForTheme() {
+  const isLight = document.body.classList.contains('light');  
+  
+  const favoritesButton = document.getElementById('favorites');
+  if (favoritesButton) {
+ 
+    if (isLight) {
+      favoritesButton.style.backgroundImage = 'url("../images/star1.png")';
+    } else {
+
+      favoritesButton.style.backgroundImage = 'url("../images/star.png")';
+    }
+  }
+}
+                                                                                                             
+
+function updateIconsForTheme() {
+  const isLight = document.body.classList.contains('light'); 
+  const isDarkPink = document.body.classList.contains('dark-pink');
+  const isDarkBlue = document.body.classList.contains('dark-blue');
+  const isDarkGray = document.body.classList.contains('dark-gray');
+
+
+  const iconPaths = {
+    discord: {
+      light: 'images/discord2.png',
+      dark: 'images/discord3.png',
+      darkPink: 'images/discord3.png',
+      darkBlue: 'images/discord3.png',
+      darkGray: 'images/discord2.png',
+    },
+    youtube: {
+      light: 'images/youtube2.png',
+      dark: 'images/yt3.png',
+      darkPink: 'images/yt4.png',
+      darkBlue: 'images/yt4.png',
+      darkGray: 'images/youtube2.png',
+    },
+    twitter: {
+      light: 'images/twitter2.png',
+      dark: 'images/tw4.png',
+      darkPink: 'images/tw4.png',
+      darkBlue: 'images/tw4.png',
+      darkGray: 'images/twitter2.png',
+    }
+  };
+
+ 
+  document.querySelectorAll('.footer-icon').forEach(img => {
+    if (img.classList.contains('discord-icon')) {
+      img.src = isLight ? iconPaths.discord.light :
+                isDarkPink ? iconPaths.discord.darkPink :
+                isDarkBlue ? iconPaths.discord.darkBlue :
+                isDarkGray ? iconPaths.discord.darkGray :
+                iconPaths.discord.dark;
+    } else if (img.classList.contains('youtube-icon')) {
+      img.src = isLight ? iconPaths.youtube.light :
+                isDarkPink ? iconPaths.youtube.darkPink :
+                isDarkBlue ? iconPaths.youtube.darkBlue :
+                isDarkGray ? iconPaths.youtube.darkGray :
+                iconPaths.youtube.dark;
+    } else if (img.classList.contains('twitter-icon')) {
+      img.src = isLight ? iconPaths.twitter.light :
+                isDarkPink ? iconPaths.twitter.darkPink :
+                isDarkBlue ? iconPaths.twitter.darkBlue :
+                isDarkGray ? iconPaths.twitter.darkGray :
+                iconPaths.twitter.dark;
+    }
+  });
+}
+
 function setDarkBlueTheme() {
-  document.body.classList.remove("light", "dark-pink", "dark-gray", "dark");
+  document.body.classList.remove("light", "dark-pink", "dark-gray");
   document.body.classList.add("dark-blue");
   localStorage.setItem("theme", "dark-blue");
   applyVanta("dark-blue");
+  updateIconsForTheme();
+  updateStarIconForTheme(); 
 }
 
 function setDarkPinkTheme() {
-  document.body.classList.remove("light", "dark-gray", "dark-blue", "dark");
+  document.body.classList.remove("light", "dark-gray", "dark-blue");
   document.body.classList.add("dark-pink");
   localStorage.setItem("theme", "dark-pink");
   applyVanta("dark-pink");
+  updateIconsForTheme(); 
+  updateStarIconForTheme(); 
 }
 
 function setDarkGrayTheme() {
-  document.body.classList.remove("light", "dark-pink", "dark-blue", "dark");
+  document.body.classList.remove("light", "dark-pink", "dark-blue");
   document.body.classList.add("dark-gray");
   localStorage.setItem("theme", "dark-gray");
   applyVanta("dark-gray");
+  updateIconsForTheme(); 
+  updateStarIconForTheme(); 
 }
 
 function setDarkTheme() {
@@ -164,6 +243,8 @@ function setDarkTheme() {
   document.body.classList.add("dark");
   localStorage.setItem("theme", "dark");
   applyVanta("dark");
+  updateIconsForTheme(); 
+  updateStarIconForTheme(); 
 }
 
 function setLightTheme() {
@@ -171,6 +252,8 @@ function setLightTheme() {
   document.body.classList.add("light");
   localStorage.setItem("theme", "light");
   applyVanta("light");
+  updateIconsForTheme(); 
+  updateStarIconForTheme(); 
 }
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -187,6 +270,7 @@ window.addEventListener('DOMContentLoaded', () => {
     setDarkTheme();
   }
 });
+
 
 
 
@@ -433,25 +517,25 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
  
-  
   <center>
     <form id="uv-form" onsubmit="handleSearch(event)" class="form-wrapper">
       <input id="uv-search-engine" value="https://duckduckgo.com/?q=%s" type="hidden">
     
       <div class="search-container">
         <input id="uv-address" type="text" placeholder="Search The Web Freely" class="form__input">
-        <button class="magnify-icon" type="submit"><img src="images/search.png" width="25px" alt=""></button>
+        <img src="images/search.png" width="25px" height="25px" alt="" class="magnify-icon">
       </div>
       <button id="favorites" type="button" onclick="toggleFavorite()"></button>
     </form>                                 
   </center>
+  
   
 
 <div id="shortcuts-area" style="margin-top: 20px; text-align: center;">
   <div id="shortcuts-container" class="shortcuts"></div>
   <button id="addShortcutBtn" class="add-shortcut" style="margin-top: 30px; height: 3em;"><img src="images/plus.png" style="margin-top: 2px;"></button>
 </div>
-
+                                         
 
 <div id="addShortcutModal" class="modal">
   <div class="modal-content">
@@ -539,19 +623,24 @@ window.addEventListener('DOMContentLoaded', () => {
   
       
     
+<footer>
+  <div class="footer-media-holder">
+    <a href="https://discord.gg/cnetwork" target="_blank">
+      <img src="images/discord3.png" alt="Discord" class="footer-icon discord-icon">
+    </a>
+    <a href="https://www.youtube.com/@txvander" target="_blank">
+      <img src="images/yt3.png" alt="YouTube" class="footer-icon youtube-icon">
+    </a>
+    <a href="https://x.com/@compassproxy" target="_blank">
+      <img src="images/tw3.png" alt="Twitter" class="footer-icon twitter-icon">
+    </a>
+  </div>
+</footer>
 
 
-      
-    
-    <footer>
-      <div class="footer-media-holder">
-        <a class="fa-brands fa-2xl fa-discord fa-logo" href="https://discord.gg/cnetwork"></a>
-        <a class="fa-brands fa-2xl fa-youtube fa-logo" href="https://www.youtube.com/@txvander"></a>
-        <a class="fa-brands fa-2xl fa-x-twitter fa-logo" href="https://x.com/@compassproxy"></a>
-      </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-    </footer>
 
                                                                                                                                        
   </body>
 </html>
  
+                                                                                                   
