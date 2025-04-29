@@ -447,33 +447,6 @@ z-index: 1000; /* optional, ensures it's above other elements */
 }
 
 
-.fa-logo {
-float: right;
-text-align: center;
-margin-top: 12px;
-margin-right: 20px;
-text-decoration: none;
-font-size: 2.1rem;
-transition: 0.3s ease-in-out;
-color: #ffffff;
-}
-.fa-brands {
-height: 2.5rem;
-width: 2.5rem;
-
-}
-.fa-discord:hover {
-color:#7289da;
-text-shadow: 0 0 20px ;
-}
-.fa-youtube:hover {
-color:#CD201F;
-text-shadow: 0 0 20px ;
-}
-.fa-x-twitter:hover{
-color: #ffffff;
-text-shadow: 0 0 20px;
-}
 
 
 .game {
