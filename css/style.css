@@ -451,23 +451,29 @@ z-index: 1000; /* optional, ensures it's above other elements */
 
 .game {
 background-color: black;
-border-radius: 10px;
+border-radius: 15px;
 display: inline-block;
-height: 200px;
-width: 150px;
+height: 220px;
+width: 190px;
 margin: 10px;
-transition: .5s;
+transition: .3s;
 border: 2px solid white;
 gap: 30px;
 margin-top: 30px;
-transition: transform 0.3s ease;
+
 box-shadow: 0 0 8px rgba(255, 255, 255, 0.7); /* tight white glow */
+filter: brightness(0.9);
+
+
 }
 
 .game:hover {
   transform: translateY(-15px);
+  filter: brightness(1);
 
 }
+
+
 
 
 .game a {
@@ -497,12 +503,12 @@ max-width: 1200px;
 }
 
 .game img {
-width: 100%;
-border-radius: 5px;
+width: 190px;
+border-radius: 14px;
 margin-bottom: -15px;
 min-width: 100%;
 object-fit: cover;
-height: 150px;
+height: 190px;
 
 }
 

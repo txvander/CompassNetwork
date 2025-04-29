@@ -65,14 +65,14 @@
 		"category": "arcade"
 	},
 	{
-		"title": "ADOFAI",
+		"title": "A Dance of Fire and Ice",
 		"link": "games/a-dance-of-fire-and-ice/",
 		"id": "game",
 		"image": "images/adofai.png",
 		"category": "arcade"
 	},
 	{
-		"title": "ARP",
+		"title": "Amazing Rope Police",
 		"link": "games/amazing-rope-police/",
 		"id": "game",
 		"image": "images/amazing.jpeg",
@@ -93,7 +93,7 @@
 		"category": "strategy"
 	},
 	{
-		"title": "Aul",
+		"title": "Achievement Unlocked",
 		"link": "games/achievementunlocked/index.html",
 		"id": "game",
 		"image": "images/achievementunlocked.png",
@@ -457,17 +457,17 @@
 		"category": "arcade"
 	},
 	{
-		"title": "Fbawg2",
-		"link": "games/fireboyandwatergirl2/",
-		"id": "game",
-		"image": "images/fireboyandwatergirl2.jpeg",
-		"category": "arcade"
-	},
-	{
 		"title": "Fireboy and Watergirl",
 		"link": "games/fireboywatergirl/",
 		"id": "game",
 		"image": "images/fbwg.jpeg",
+		"category": "arcade"
+	},
+	{
+		"title": "Fireboy and Watergirl 2",
+		"link": "games/fireboyandwatergirl2/",
+		"id": "game",
+		"image": "images/fireboyandwatergirl2.jpeg",
 		"category": "arcade"
 	},
 	{

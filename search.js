@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             function renderSearchResults(searchTerm = '', category = 'all') {
                 searchResults.innerHTML = '';
 
+
                 const filteredResults = mockData.filter(item => {
                     const itemCategory = String(item.category).trim().toLowerCase();  // Convert to string, trim, and lowercase
                     const selectedCategory = String(category).trim().toLowerCase();  // Convert to string, trim, and lowercase
@@ -24,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
 
                 if (filteredResults.length === 0) {
-                    searchResults.innerHTML = '<p>No games found.</p>';
+                    searchResults.innerHTML = '<p>No games were found. Request some from our <a href="https://discord.gg/cnetwork" style="text-decoration:underline">Discord server</a>!</p>';
                     return;
                 }
 
