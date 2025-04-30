@@ -345,8 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   <script src="tabcloak.js"></script>
-  <script src="timecounter.js"></script>
-  <script src="cookie.js"></script>
+
 
     <div class="menu">
       <div class="nav-left">
@@ -636,54 +635,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-<script>
-
-  function toggleFavorite() {
-  if (favorite.classList.contains("show")) {
-  favorite.classList.remove("show");
-  } else {
-  favorite.classList.add("show");
-  }
-  }
-  </script>
-
-<script>
- function isValidUrl(string) {
-    try {
-      new URL(string);
-      return true;
-    } catch (_) {
-      return false;
-    }
-  }
-
-  function isLikelyDomain(input) {
-    return /^([a-z0-9-]+\.)+[a-z]{2,}$/i.test(input);
-  }
-
-  function handleSearch(event) {
-    event.preventDefault();
-
-    const input = document.getElementById("uv-address").value.trim();
-
-    if (!input) return;
-
-    let finalUrl;
-
-    if (isValidUrl(input)) {
-      finalUrl = input.startsWith("http") ? input : `https://${input}`;
-    } else if (isLikelyDomain(input)) {
-      finalUrl = `https://${input}`;
-    } else {
-      
-      finalUrl = `https://duckduckgo.com/?q=${encodeURIComponent(input)}`;
-    }
-
-    window.location.href = `/tabs.html#${encodeURIComponent(finalUrl)}`;
-  }
-
-
-  </script>
+<script src="proxy.js"></script>
   <script type="text/javascript" src="//www.highperformanceformat.com/e4864d748839689c514b96e8faa75ed3/invoke.js"></script>
   </div>
 </center>
