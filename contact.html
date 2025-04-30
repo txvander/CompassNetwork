@@ -90,7 +90,7 @@ function applyVanta(theme) {
     textColor = "#000";
     pColor = "#000";
     h1Color = "#000";
-  } else { 
+  } else {
     bgColor = "#000000";
     globeColor = 0xFFFFFF;
     globeColor2 = 0xFFFFFF;
@@ -119,6 +119,7 @@ function applyVanta(theme) {
     points: 10.00
   });
 
+  document.body.style.backgroundImage = '';
   document.body.style.backgroundColor = bgColor;
   document.body.style.color = textColor;
 
@@ -129,55 +130,70 @@ function applyVanta(theme) {
   headers.forEach(h1 => h1.style.color = h1Color);
 }
 
-function setDarkBlueTheme() {
-  document.body.classList.remove("light", "dark-pink", "dark-gray", "dark");
-  document.body.classList.add("dark-blue");
-  localStorage.setItem("theme", "dark-blue");
-  applyVanta("dark-blue");
+function applyCustomBackground(url) {
+  if (vantaEffect) vantaEffect.destroy();
+  document.body.style.backgroundImage = `url('${url}')`;
+  document.body.style.backgroundSize = 'cover';
+  document.body.style.backgroundPosition = 'center';
+  document.body.style.backgroundRepeat = 'no-repeat';
+  document.body.style.backgroundColor = 'transparent';
 }
 
-function setDarkPinkTheme() {
-  document.body.classList.remove("light", "dark-gray", "dark-blue", "dark");
-  document.body.classList.add("dark-pink");
-  localStorage.setItem("theme", "dark-pink");
-  applyVanta("dark-pink");
+function setTheme(theme) {
+  document.body.className = theme;
+  localStorage.setItem("theme", theme);
+  applyVanta(theme);
 }
 
-function setDarkGrayTheme() {
-  document.body.classList.remove("light", "dark-pink", "dark-blue", "dark");
-  document.body.classList.add("dark-gray");
-  localStorage.setItem("theme", "dark-gray");
-  applyVanta("dark-gray");
-}
+document.addEventListener('DOMContentLoaded', () => {
+  const input = document.getElementById('backgroundUrl');
+  const saveBtn = document.getElementById('saveBackground');
+  const removeBtn = document.getElementById('removeBackground');
 
-function setDarkTheme() {
-  document.body.classList.remove("light", "dark-pink", "dark-gray", "dark-blue");
-  document.body.classList.add("dark");
-  localStorage.setItem("theme", "dark");
-  applyVanta("dark");
-}
-
-function setLightTheme() {
-  document.body.classList.remove("dark", "dark-pink", "dark-gray", "dark-blue");
-  document.body.classList.add("light");
-  localStorage.setItem("theme", "light");
-  applyVanta("light");
-}
-
-window.addEventListener('DOMContentLoaded', () => {
-  const savedTheme = localStorage.getItem("theme") || "dark";
-  if (savedTheme === "light") {
-    setLightTheme();
-  } else if (savedTheme === "dark-pink") {
-    setDarkPinkTheme();
-  } else if (savedTheme === "dark-gray") {
-    setDarkGrayTheme();
-  } else if (savedTheme === "dark-blue") {
-    setDarkBlueTheme();
-  } else {
-    setDarkTheme();
+  if (saveBtn && input) {
+    saveBtn.addEventListener('click', () => {
+      const url = input.value.trim();
+      if (url) {
+        localStorage.setItem('customBackground', url);
+        applyCustomBackground(url);
+      }
+    });
   }
+
+  if (removeBtn && input) {
+    removeBtn.addEventListener('click', () => {
+      localStorage.removeItem('customBackground');
+      input.value = '';
+      setTheme("dark"); 
+    });
+  }
+
+  const savedUrl = localStorage.getItem("customBackground");
+  if (savedUrl) {
+    applyCustomBackground(savedUrl);
+    if (input) input.value = savedUrl;
+  } else {
+    const savedTheme = localStorage.getItem("theme") || "dark";
+    setTheme(savedTheme);
+  }
+
+  const themeButtons = document.querySelectorAll('.btn-theme');
+  themeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const label = button.textContent.toLowerCase();
+      let theme;
+      if (label === "pink") theme = "dark-pink";
+      else if (label === "gray") theme = "dark-gray";
+      else if (label === "blue") theme = "dark-blue";
+      else theme = label; 
+
+      localStorage.removeItem("customBackground");
+      setTheme(theme);
+    });
+  });
 });
+
+
 
 
       </script>

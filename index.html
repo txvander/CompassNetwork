@@ -64,214 +64,280 @@
 let vantaEffect;
 
 function applyVanta(theme) {
-  if (vantaEffect) vantaEffect.destroy();
+    if (vantaEffect) vantaEffect.destroy();
 
-  const el = document.getElementById("vanta-globe");
-  if (!el) return;
+    const el = document.getElementById("vanta-globe");
+    if (!el) return;
 
-  let bgColor, globeColor, globeColor2, textColor, pColor, h1Color;
+    let bgColor, globeColor, globeColor2, textColor, pColor, h1Color;
 
+    if (theme === "dark-pink") {
+        bgColor = "#FF69B4";
+        globeColor = 0xFFFFFF;
+        globeColor2 = 0xFFFFFF;
+        textColor = "#000";
+        pColor = "#000";
+        h1Color = "#000";
+    } else if (theme === "dark-gray") {
+        bgColor = "#808080";
+        globeColor = 0xFFFFFF;
+        globeColor2 = 0xFFFFFF;
+        textColor = "#000";
+        pColor = "#000";
+        h1Color = "#000";
+    } else if (theme === "dark-blue") {
+        bgColor = "#0000FF";
+        globeColor = 0xFFFFFF;
+        globeColor2 = 0xFFFFFF;
+        textColor = "#000";
+        pColor = "#000";
+        h1Color = "#000";
+    } else if (theme === "light") {
+        bgColor = "#FFFFFF";
+        globeColor = 0x000000;
+        globeColor2 = 0x000000;
+        textColor = "#000";
+        pColor = "#000";
+        h1Color = "#000";
+    } else {
+        bgColor = "#000000";
+        globeColor = 0xFFFFFF;
+        globeColor2 = 0xFFFFFF;
+        textColor = "#fff";
+        pColor = "#fff";
+        h1Color = "#fff";
+    }
 
-  if (theme === "dark-pink") {
-    bgColor = "#FF69B4";
-    globeColor = 0xFFFFFF;
-    globeColor2 = 0xFFFFFF;
-    textColor = "#000";
-    pColor = "#000";
-    h1Color = "#000";
-  } else if (theme === "dark-gray") {
-    bgColor = "#808080";
-    globeColor = 0xFFFFFF;
-    globeColor2 = 0xFFFFFF;
-    textColor = "#000";
-    pColor = "#000";
-    h1Color = "#000";
-  } else if (theme === "dark-blue") {
-    bgColor = "#0000FF";
-    globeColor = 0xFFFFFF;
-    globeColor2 = 0xFFFFFF;
-    textColor = "#000";
-    pColor = "#000";
-    h1Color = "#000";
-  } else if (theme === "light") {
-    bgColor = "#FFFFFF";
-    globeColor = 0x000000;
-    globeColor2 = 0x000000;
-    textColor = "#000";
-    pColor = "#000";
-    h1Color = "#000";
-  } else { 
-    bgColor = "#000000"; 
-    globeColor = 0xFFFFFF;
-    globeColor2 = 0xFFFFFF;
-    textColor = "#fff";
-    pColor = "#fff";
-    h1Color = "#fff";
-  }
+    vantaEffect = VANTA.GLOBE({
+        el: "#vanta-globe",
+        mouseControls: false,
+        touchControls: false,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: globeColor,
+        color2: globeColor2,
+        backgroundColor: bgColor,
+        backgroundAlpha: 1.00,
+        showDots: false,
+        size: 1.00,
+        spacing: 15.00,
+        maxDistance: 20.00,
+        points: 10.00
+    });
 
-  vantaEffect = VANTA.GLOBE({
-    el: "#vanta-globe",
-    mouseControls: false,
-    touchControls: false,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    scale: 1.00,
-    scaleMobile: 1.00,
-    color: globeColor,
-    color2: globeColor2,
-    backgroundColor: bgColor,
-    backgroundAlpha: 1.00,
-    showDots: false,
-    size: 1.00,
-    spacing: 15.00,
-    maxDistance: 20.00,
-    points: 10.00
-  });
+    document.body.style.backgroundColor = bgColor;
+    document.body.style.color = textColor;
 
-  document.body.style.backgroundColor = bgColor;
-  document.body.style.color = textColor;
+    const paragraphs = document.querySelectorAll('p');
+    paragraphs.forEach(p => p.style.color = pColor);
 
-  const paragraphs = document.querySelectorAll('p');
-  paragraphs.forEach(p => p.style.color = pColor);
-
-  const headers = document.querySelectorAll('h1');
-  headers.forEach(h1 => h1.style.color = h1Color);
+    const headers = document.querySelectorAll('h1');
+    headers.forEach(h1 => h1.style.color = h1Color);
 }
 
+function applyCustomBackground(url) {
+    if (vantaEffect) vantaEffect.destroy();
+
+   
+    const img = new Image();
+    img.src = url;
+
+
+    img.onload = () => {
+        
+        document.body.style.backgroundImage = `url('${url}')`;
+        document.body.style.backgroundSize = 'cover'; 
+        document.body.style.backgroundPosition = 'center';
+        document.body.style.backgroundRepeat = 'no-repeat'; 
+        document.body.style.backgroundColor = 'transparent';
+        document.body.style.backgroundAttachment = 'fixed'; 
+
+
+        document.body.style.filter = 'none';
+
+        
+        document.body.style.imageRendering = 'auto'; 
+
+        document.body.classList.add('custom-background');
+
+        
+        const style = document.createElement('style');
+        style.innerHTML = `
+    body.custom-background .footer-logo-holder {
+    overflow: hidden;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+}
+
+body.custom-background .footer-logo {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+body.custom-background .footer-media-holder {
+    height: fit-content;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    gap: 10px; 
+}
+
+body.custom-background .footer-icon {
+    width: 2.5em;
+    height: 2.5rem;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+body.custom-background .footer-icon:hover {
+    transform: scale(1.2); 
+}
+
+        `;
+        document.head.appendChild(style);
+
+       
+        updateIconsForTheme();
+        updateStarIconForTheme();
+    };
+
+    img.onerror = () => {
+        console.error("Failed to load background image.");
+    };
+}
+
+function resetCustomBackground() {
+    document.body.classList.remove('custom-background');
+    const styleTags = document.head.querySelectorAll('style');
+    styleTags.forEach(tag => tag.remove());
+}
 
 function updateStarIconForTheme() {
-  const isLight = document.body.classList.contains('light');  
-  
-  const favoritesButton = document.getElementById('favorites');
-  if (favoritesButton) {
- 
-    if (isLight) {
-      favoritesButton.style.backgroundImage = 'url("../images/star1.png")';
-    } else {
-
-      favoritesButton.style.backgroundImage = 'url("../images/star.png")';
+    const isLight = document.body.classList.contains('light');
+    const favoritesButton = document.getElementById('favorites');
+    if (favoritesButton) {
+        if (isLight) {
+            favoritesButton.style.backgroundImage = 'url("../images/star1.png")';
+        } else {
+            favoritesButton.style.backgroundImage = 'url("../images/star.png")';
+        }
     }
-  }
 }
-                                                                                                             
 
 function updateIconsForTheme() {
-  const isLight = document.body.classList.contains('light'); 
-  const isDarkPink = document.body.classList.contains('dark-pink');
-  const isDarkBlue = document.body.classList.contains('dark-blue');
-  const isDarkGray = document.body.classList.contains('dark-gray');
+    const isLight = document.body.classList.contains('light');
+    const isDarkPink = document.body.classList.contains('dark-pink');
+    const isDarkBlue = document.body.classList.contains('dark-blue');
+    const isDarkGray = document.body.classList.contains('dark-gray');
 
+    const iconPaths = {
+        discord: {
+            light: 'images/discord2.png',
+            dark: 'images/discord3.png',
+            darkPink: 'images/discord3.png',
+            darkBlue: 'images/discord3.png',
+            darkGray: 'images/discord2.png',
+        },
+        youtube: {
+            light: 'images/youtube2.png',
+            dark: 'images/yt3.png',
+            darkPink: 'images/yt3.png',
+            darkBlue: 'images/yt3.png',
+            darkGray: 'images/youtube2.png',
+        },
+        twitter: {
+            light: 'images/twitter2.png',
+            dark: 'images/tw4.png',
+            darkPink: 'images/tw4.png',
+            darkBlue: 'images/tw4.png',
+            darkGray: 'images/twitter2.png',
+        }
+    };
 
-  const iconPaths = {
-    discord: {
-      light: 'images/discord2.png',
-      dark: 'images/discord3.png',
-      darkPink: 'images/discord3.png',
-      darkBlue: 'images/discord3.png',
-      darkGray: 'images/discord2.png',
-    },
-    youtube: {
-      light: 'images/youtube2.png',
-      dark: 'images/yt3.png',
-      darkPink: 'images/yt4.png',
-      darkBlue: 'images/yt4.png',
-      darkGray: 'images/youtube2.png',
-    },
-    twitter: {
-      light: 'images/twitter2.png',
-      dark: 'images/tw4.png',
-      darkPink: 'images/tw4.png',
-      darkBlue: 'images/tw4.png',
-      darkGray: 'images/twitter2.png',
+    document.querySelectorAll('.footer-icon').forEach(img => {
+        const type = img.dataset.iconType;
+        if (!type || !iconPaths[type]) return;
+
+        let theme = 'dark';
+        if (isLight) theme = 'light';
+        else if (isDarkPink) theme = 'darkPink';
+        else if (isDarkBlue) theme = 'darkBlue';
+        else if (isDarkGray) theme = 'darkGray';
+
+        img.src = iconPaths[type][theme];
+    });
+}
+
+function setTheme(theme) {
+    document.body.className = theme;
+    localStorage.setItem("theme", theme);
+    applyVanta(theme);
+    updateIconsForTheme();
+    updateStarIconForTheme();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const input = document.getElementById('backgroundUrl');
+    const saveBtn = document.getElementById('saveBackground');
+    const removeBtn = document.getElementById('removeBackground');
+
+    if (saveBtn && input) {
+        saveBtn.addEventListener('click', () => {
+            const url = input.value.trim();
+            if (url) {
+                localStorage.setItem('customBackground', url);
+                applyCustomBackground(url);
+            }
+        });
     }
-  };
 
- 
-  document.querySelectorAll('.footer-icon').forEach(img => {
-    if (img.classList.contains('discord-icon')) {
-      img.src = isLight ? iconPaths.discord.light :
-                isDarkPink ? iconPaths.discord.darkPink :
-                isDarkBlue ? iconPaths.discord.darkBlue :
-                isDarkGray ? iconPaths.discord.darkGray :
-                iconPaths.discord.dark;
-    } else if (img.classList.contains('youtube-icon')) {
-      img.src = isLight ? iconPaths.youtube.light :
-                isDarkPink ? iconPaths.youtube.darkPink :
-                isDarkBlue ? iconPaths.youtube.darkBlue :
-                isDarkGray ? iconPaths.youtube.darkGray :
-                iconPaths.youtube.dark;
-    } else if (img.classList.contains('twitter-icon')) {
-      img.src = isLight ? iconPaths.twitter.light :
-                isDarkPink ? iconPaths.twitter.darkPink :
-                isDarkBlue ? iconPaths.twitter.darkBlue :
-                isDarkGray ? iconPaths.twitter.darkGray :
-                iconPaths.twitter.dark;
+    
+    if (removeBtn && input) {
+        removeBtn.addEventListener('click', () => {
+            localStorage.removeItem('customBackground');
+            input.value = '';
+            setTheme("dark"); 
+        });
     }
-  });
-}
 
-function setDarkBlueTheme() {
-  document.body.classList.remove("light", "dark-pink", "dark-gray");
-  document.body.classList.add("dark-blue");
-  localStorage.setItem("theme", "dark-blue");
-  applyVanta("dark-blue");
-  updateIconsForTheme();
-  updateStarIconForTheme(); 
-}
+    const savedUrl = localStorage.getItem("customBackground");
+    if (savedUrl) {
+        applyCustomBackground(savedUrl);
+        if (input) input.value = savedUrl;
+    } else {
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        setTheme(savedTheme);
+    }
 
-function setDarkPinkTheme() {
-  document.body.classList.remove("light", "dark-gray", "dark-blue");
-  document.body.classList.add("dark-pink");
-  localStorage.setItem("theme", "dark-pink");
-  applyVanta("dark-pink");
-  updateIconsForTheme(); 
-  updateStarIconForTheme(); 
-}
+    const themeButtons = document.querySelectorAll('.btn-theme');
+    themeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const label = button.textContent.toLowerCase();
+            let theme;
+            if (label === "pink") theme = "dark-pink";
+            else if (label === "gray") theme = "dark-gray";
+            else if (label === "blue") theme = "dark-blue";
+            else theme = label;
 
-function setDarkGrayTheme() {
-  document.body.classList.remove("light", "dark-pink", "dark-blue");
-  document.body.classList.add("dark-gray");
-  localStorage.setItem("theme", "dark-gray");
-  applyVanta("dark-gray");
-  updateIconsForTheme(); 
-  updateStarIconForTheme(); 
-}
-
-function setDarkTheme() {
-  document.body.classList.remove("light", "dark-pink", "dark-gray", "dark-blue");
-  document.body.classList.add("dark");
-  localStorage.setItem("theme", "dark");
-  applyVanta("dark");
-  updateIconsForTheme(); 
-  updateStarIconForTheme(); 
-}
-
-function setLightTheme() {
-  document.body.classList.remove("dark", "dark-pink", "dark-gray", "dark-blue");
-  document.body.classList.add("light");
-  localStorage.setItem("theme", "light");
-  applyVanta("light");
-  updateIconsForTheme(); 
-  updateStarIconForTheme(); 
-}
-
-window.addEventListener('DOMContentLoaded', () => {
-  const savedTheme = localStorage.getItem("theme") || "dark";
-  if (savedTheme === "light") {
-    setLightTheme();
-  } else if (savedTheme === "dark-pink") {
-    setDarkPinkTheme();
-  } else if (savedTheme === "dark-gray") {
-    setDarkGrayTheme();
-  } else if (savedTheme === "dark-blue") {
-    setDarkBlueTheme();
-  } else {
-    setDarkTheme();
-  }
+            localStorage.removeItem("customBackground");
+            setTheme(theme);
+        });
+    });
 });
-
-
 
 
   </script>
@@ -622,17 +688,16 @@ window.addEventListener('DOMContentLoaded', () => {
 </center>
   
       
-    
 <footer>
   <div class="footer-media-holder">
     <a href="https://discord.gg/cnetwork" target="_blank">
-      <img src="images/discord3.png" alt="Discord" class="footer-icon discord-icon">
+      <img data-icon-type="discord" alt="Discord" class="footer-icon discord-icon">
     </a>
     <a href="https://www.youtube.com/@txvander" target="_blank">
-      <img src="images/yt3.png" alt="YouTube" class="footer-icon youtube-icon">
+      <img data-icon-type="youtube" alt="YouTube" class="footer-icon youtube-icon">
     </a>
     <a href="https://x.com/@compassproxy" target="_blank">
-      <img src="images/tw4.png" alt="Twitter" class="footer-icon twitter-icon">
+      <img data-icon-type="twitter" alt="Twitter" class="footer-icon twitter-icon">
     </a>
   </div>
 </footer>
