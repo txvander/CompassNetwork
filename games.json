@@ -1,6 +1,4 @@
-
 [
-  
 	{
 		"title": "0v0",
 		"link": "games/ovo/",
@@ -9,18 +7,18 @@
 		"category": "arcade"
 	},
 	{
-		"title": "10 Mins till dawn",
-		"link": "games/10-minutes-till-dawn/index.html",
-		"id": "game",
-		"image": "games/10-minutes-till-dawn/splash.png",
-		"category": "shooter"
-	},
-	{
 		"title": "1 on 1 Soccer",
 		"link": "games/1on1-soccer/",
 		"id": "game",
 		"image": "images/soccer.jpg",
 		"category": "sports"
+	},
+	{
+		"title": "10 Mins till dawn",
+		"link": "games/10-minutes-till-dawn/index.html",
+		"id": "game",
+		"image": "games/10-minutes-till-dawn/splash.png",
+		"category": "shooter"
 	},
 	{
 		"title": "1v1 space",
@@ -58,13 +56,6 @@
 		"category": "arcade"
 	},
 	{
-		"title": "A Dark Room",
-		"link": "games/adarkroom/",
-		"id": "game",
-		"image": "images/adr.png",
-		"category": "arcade"
-	},
-	{
 		"title": "A Dance of Fire and Ice",
 		"link": "games/a-dance-of-fire-and-ice/",
 		"id": "game",
@@ -72,10 +63,17 @@
 		"category": "arcade"
 	},
 	{
-		"title": "Amazing Rope Police",
-		"link": "games/amazing-rope-police/",
+		"title": "A Dark Room",
+		"link": "games/adarkroom/",
 		"id": "game",
-		"image": "images/amazing.jpeg",
+		"image": "images/adr.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Achievement Unlocked",
+		"link": "games/achievementunlocked/index.html",
+		"id": "game",
+		"image": "images/achievementunlocked.png",
 		"category": "arcade"
 	},
 	{
@@ -86,18 +84,18 @@
 		"category": "strategy"
 	},
 	{
+		"title": "Amazing Rope Police",
+		"link": "games/amazing-rope-police/",
+		"id": "game",
+		"image": "images/amazing.jpeg",
+		"category": "arcade"
+	},
+	{
 		"title": "Angry sharks",
 		"link": "games/angry-sharks/",
 		"id": "game",
 		"image": "images/shark.png",
 		"category": "strategy"
-	},
-	{
-		"title": "Achievement Unlocked",
-		"link": "games/achievementunlocked/index.html",
-		"id": "game",
-		"image": "images/achievementunlocked.png",
-		"category": "arcade"
 	},
 	{
 		"title": "Awesome Tanks 2",
@@ -223,6 +221,41 @@
 		"link": "games/blockblast/",
 		"id": "game",
 		"image": "images/block.webp",
+		"category": "strategy"
+	},
+	{
+		"title": "Bloons TD",
+		"link": "games/btd/",
+		"id": "game",
+		"image": "games/btd/logo.webp",
+		"category": "strategy"
+	},
+	{
+		"title": "Bloons TD 2",
+		"link": "games/btd2/",
+		"id": "game",
+		"image": "games/btd2/logo.webp",
+		"category": "strategy"
+	},
+	{
+		"title": "Bloons TD 3",
+		"link": "games/btd3/",
+		"id": "game",
+		"image": "games/btd3/icon.png",
+		"category": "strategy"
+	},
+	{
+		"title": "Bloons TD 4",
+		"link": "games/btd4/",
+		"id": "game",
+		"image": "games/btd4/logo.jpg",
+		"category": "strategy"
+	},
+	{
+		"title": "Bloons TD 5",
+		"link": "games/btd5/",
+		"id": "game",
+		"image": "games/btd5/wogo.png",
 		"category": "strategy"
 	},
 	{
@@ -356,6 +389,27 @@
 		"link": "games/cubefield/",
 		"id": "game",
 		"image": "images/cubefield.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Dadish",
+		"link": "games/dadish",
+		"id": "game",
+		"image": "games/dadish/favicon.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Dadish 2",
+		"link": "games/dadish2/",
+		"id": "game",
+		"image": "games/dadish2/favicon.png",
+		"category": "arcade"
+	},
+	{
+		"title": "Dadish 3",
+		"link": "games/dadish3/",
+		"id": "game",
+		"image": "games/dadish3/splash.png",
 		"category": "arcade"
 	},
 	{
