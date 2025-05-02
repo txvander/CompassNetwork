@@ -59,6 +59,13 @@ function addFavorite() {
   }
 }
 
+function toggleFavorite() {
+  if (favorite.classList.contains("show")) {
+  favorite.classList.remove("show");
+  } else {
+  favorite.classList.add("show");
+  }
+  }
 
 function displayFavorites() {
   const favoritesContainer = document.getElementById('favorites-container');
