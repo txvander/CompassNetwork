@@ -426,24 +426,24 @@ if (themeSelect) themeSelect.value = savedTheme;
           </select>
         </div>
 
-      
-       
         <div class="settingsContainer">
-          <h2>About Blank</h2>
-          <p>Does not work yet</p>
-          <div class="button">
-            <button id="launchBlank">About:Blank</button>
-          </div>
+        <h2>About Blank</h2>
+        <p>Makes the page look like about:blank</p>
+        <div class="button">
+          <button id="aboutBlankBtn">About:Blank</button>
         </div>
+      </div>
+    
+      <script>
+        document.getElementById('aboutBlankBtn').addEventListener('click', () => {
+          if (typeof fakeAboutBlank === 'function') {
+            fakeAboutBlank();
+          }
+        });
+      </script>
+
+<script src="blank.js"></script>
         
-        <div class="settingsContainer">
-          <h2>Save Data</h2>
-          <p>Does Not Work Yet</p>
-          <div class="button">
-            <button id="">Save Data</button>
-            <button id="">Import Data</button>
-          </div>
-        </div>
         
 
         <div class="settingsContainer">

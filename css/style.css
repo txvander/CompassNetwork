@@ -409,33 +409,60 @@ padding: 60px;
 
 
 .footer-logo-holder {
-overflow: hidden;
-width: 100%;
-height: fit-content;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-justify-content: flex-end;
-position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
 }
 
 .footer-logo {
-width: 1.8rem;
-height: 1.8rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .footer-media-holder {
-height: fit-content;
-width: auto;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-background-size: cover;
-position: absolute;
-bottom: 0;
-left: 0;
-padding-left: 20px;
-padding-bottom: 10px;
+  height: fit-content;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.footer-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  color: white; 
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+
+
+
+.discord-icon:hover {
+  color: #5865F2;
+  filter: drop-shadow(0 0 4px #5865F2) drop-shadow(0 0 8px #5865F2); /* Reduced glow */
+}
+
+
+.youtube-icon:hover {
+  color: #FF0000;
+  filter: drop-shadow(0 0 4px #FF0000) drop-shadow(0 0 8px #FF0000); /* Reduced glow */
+}
+
+
+.twitter-icon:hover {
+  color: #1DA1F2;
+  filter: drop-shadow(0 0 4px #1DA1F2) drop-shadow(0 0 8px #1DA1F2); /* Reduced glow */
 }
 
 .ad-banner {
@@ -1424,6 +1451,34 @@ color: black;
 
 
 /* LIGHT THEME */
+
+body.light.footer-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  color: rgb(0, 0, 0); 
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+
+
+
+body.light .discord-icon:hover {
+  color: #5865F2;
+  filter: drop-shadow(0 0 4px #5865F2) drop-shadow(0 0 8px #5865F2); /* Reduced glow */
+}
+
+
+body.light .youtube-icon:hover {
+  color: #FF0000;
+  filter: drop-shadow(0 0 4px #FF0000) drop-shadow(0 0 8px #FF0000); /* Reduced glow */
+}
+
+
+body.light .twitter-icon:hover {
+  color: #1DA1F2;
+  filter: drop-shadow(0 0 4px #1DA1F2) drop-shadow(0 0 8px #1DA1F2); /* Reduced glow */
+}
+
 
 body.light select {
   padding: 8px 12px;
