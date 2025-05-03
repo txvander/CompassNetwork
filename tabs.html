@@ -279,6 +279,8 @@ body {
 </head>
 <body>
   
+<script src="proxy.js"></script>
+
   <div id="top-bar">
     <div id="tab-bar">
 
@@ -474,13 +476,13 @@ window.onload = () => {
     newTab();
 
     const iframe = document.getElementById(currentTabId);
-    document.getElementById("loading-spinner").style.display = "flex"; // Show spinner
+    document.getElementById("loading-spinner").style.display = "flex"; 
     iframe.src = encodeUV(query);
     tabURLs[currentTabId] = query;
     document.getElementById("search-input").value = query;
 
     iframe.onload = () => {
-      document.getElementById("loading-spinner").style.display = "none"; // Hide spinner
+      document.getElementById("loading-spinner").style.display = "none"; 
       const title = iframe.contentDocument.title || query;
       const tabBtn = document.getElementById(`btn-${currentTabId}`);
       if (tabBtn) {
