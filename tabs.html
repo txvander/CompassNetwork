@@ -32,7 +32,6 @@ body {
   overflow-x: auto;
   align-items: center;
 }
-
 .tab-btn {
   background-color: black;
   color: #ffffff;
@@ -41,20 +40,32 @@ body {
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: bold;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Align content to the left */
+  justify-content: flex-start; 
   border: 2px solid white;
   gap: 10px;
   margin-top: 15px;
   position: relative;
-  width: 170px;
-  white-space: nowrap;
-  font-weight: bold;
+  min-width: 170px;
+  max-width: 400px;  
+  overflow: hidden; 
+  flex-shrink: 0; 
 }
+
+.tab-title {
+  white-space: nowrap;    
+  overflow: hidden;       
+  text-overflow: ellipsis;
+  display: inline-block;  
+  max-width: 100%;        
+  padding-right: 10px;     
+}
+
+
 
 .tab-btn:hover {
   transform: translateY(-2px); 
@@ -235,6 +246,33 @@ body {
   transform: scale(1.2);
 }
 
+#loading-spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 15, 0.75); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 8px solid #ffffff;
+  border-top: 8px solid #000000;
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 
   </style>
@@ -274,10 +312,12 @@ body {
   <div id="tab-content"></div>
                                                                          
   
-
+  <div id="loading-spinner">
+    <div class="spinner"></div>
+  </div>
+  
 
   <script>
-
 
 "use strict";
 
@@ -299,17 +339,17 @@ const encodeUV = (input) => {
 
 function newTab() {
   tabCount++;
-  const tabId = `tab-${tabCount}`;  // Fixed template literal here
+  const tabId = `tab-${tabCount}`;
   currentTabId = tabId;
 
   document.getElementById("search-input").value = "";
 
   const tabBtn = document.createElement("button");
   tabBtn.classList.add("tab-btn", "active");
-  tabBtn.id = `btn-${tabId}`;  // Fixed template literal here
+  tabBtn.id = `btn-${tabId}`;
   tabBtn.innerHTML = `
     <img src="images/logo1.png" class="tab-icon" alt="icon">
-    New Tab 
+    <span class="tab-title">New Tab</span>
     <span class="close-tab-btn" onclick="closeTab(event, '${tabId}')"><img src="images/x.png" width="25px" alt="×"></span>
   `;
   tabBtn.onclick = () => switchTab(tabId);
@@ -333,7 +373,7 @@ function newTab() {
 function switchTab(tabId) {
   currentTabId = tabId;
   document.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));
-  const targetBtn = document.getElementById(`btn-${tabId}`);  // Fixed template literal here
+  const targetBtn = document.getElementById(`btn-${tabId}`);
   if (targetBtn) targetBtn.classList.add("active");
 
   Array.from(document.getElementById("tab-content").children).forEach(i => {
@@ -345,7 +385,7 @@ function switchTab(tabId) {
 
 function closeTab(event, tabId) {
   event.stopPropagation();
-  const btn = document.getElementById(`btn-${tabId}`);  // Fixed template literal here
+  const btn = document.getElementById(`btn-${tabId}`);
   const iframe = document.getElementById(tabId);
   if (btn) btn.remove();
   if (iframe) iframe.remove();
@@ -371,6 +411,7 @@ document.getElementById("search-input").addEventListener("keydown", function (e)
 
     if (rawInput !== "") {
       const encoded = encodeUV(rawInput);
+      document.getElementById("loading-spinner").style.display = "flex"; // Show spinner
       iframe.src = encoded;
 
       let finalUrl;
@@ -381,12 +422,27 @@ document.getElementById("search-input").addEventListener("keydown", function (e)
         if (/^([a-z0-9-]+\.)+[a-z]{2,}$/i.test(rawInput)) {
           finalUrl = "https://" + rawInput;
         } else {
-          finalUrl = `https://duckduckgo.com/?q=${encodeURIComponent(rawInput)}`;  // Fixed template literal
+          finalUrl = `https://duckduckgo.com/?q=${encodeURIComponent(rawInput)}`;
         }
       }
 
       tabURLs[currentTabId] = finalUrl;
       document.getElementById("search-input").value = finalUrl;
+
+      iframe.onload = () => {
+        document.getElementById("loading-spinner").style.display = "none"; // Hide spinner
+        const title = iframe.contentDocument.title || finalUrl;
+        const tabBtn = document.getElementById(`btn-${currentTabId}`);
+        if (tabBtn) {
+          const titleSpan = tabBtn.querySelector('.tab-title');
+          if (titleSpan) titleSpan.textContent = title;
+
+          const titleLength = title.length * 8;
+          const minWidth = 170;
+          const maxWidth = 400;
+          tabBtn.style.width = `${Math.min(Math.max(minWidth, titleLength), maxWidth)}px`;
+        }
+      };
     }
   }
 });
@@ -414,18 +470,34 @@ function refreshPage() {
 
 window.onload = () => {
   const query = decodeURIComponent(window.location.hash.slice(1));
-  newTab();
   if (query) {
+    newTab();
+
     const iframe = document.getElementById(currentTabId);
+    document.getElementById("loading-spinner").style.display = "flex"; // Show spinner
     iframe.src = encodeUV(query);
     tabURLs[currentTabId] = query;
     document.getElementById("search-input").value = query;
+
+    iframe.onload = () => {
+      document.getElementById("loading-spinner").style.display = "none"; // Hide spinner
+      const title = iframe.contentDocument.title || query;
+      const tabBtn = document.getElementById(`btn-${currentTabId}`);
+      if (tabBtn) {
+        const titleSpan = tabBtn.querySelector('.tab-title');
+        if (titleSpan) titleSpan.textContent = title;
+
+        const titleLength = title.length * 8;
+        const minWidth = 170;
+        const maxWidth = 400;
+        tabBtn.style.width = `${Math.min(Math.max(minWidth, titleLength), maxWidth)}px`;
+      }
+    };
   }
 };
 
 document.getElementById("fullscreen-btn").addEventListener("click", () => {
   const iframe = document.getElementById(currentTabId);
-  
   if (iframe) {
     if (!document.fullscreenElement) {
       iframe.requestFullscreen().catch(err => {
