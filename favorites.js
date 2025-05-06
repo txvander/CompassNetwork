@@ -25,6 +25,7 @@ async function fetchDataAndPopulateDropdown() {
   }
 }
 
+
 fetchDataAndPopulateDropdown();
 
 // Handle confirm click

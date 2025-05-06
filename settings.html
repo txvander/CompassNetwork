@@ -10,6 +10,7 @@
       crossorigin="anonymous"></script>
       <meta name="google-adsense-account" content="ca-pub-3474596213788513">    
     </head>
+    
     <body>
       <style>
         html, body {
@@ -466,7 +467,15 @@ if (themeSelect) themeSelect.value = savedTheme;
       
 
                     
-
+      <script>
+        function isMobile() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      }
+      
+      if (isMobile()) {
+        window.location.href = "mobile.html";
+      }
+      </script>
 
         
         <script>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head lang="em">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="/static/uv/uv.bundle.js"></script>                  
@@ -405,6 +406,21 @@ function closeTab(event, tabId) {
     }
   }
 }
+
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+if (isMobile()) {
+document.getElementById("tab-bar").style.display = "none";
+document.getElementById("search-input").style.display = "none";
+document.getElementById("back-btn").style.display = "none";
+document.getElementById("forward-btn").style.display = "none";
+document.getElementById("refresh-btn").style.display = "none";
+document.getElementById("fullscreen-btn").style.display = "none";
+document.getElementById("home-btn").style.display = "none";
+}
+
 
 document.getElementById("search-input").addEventListener("keydown", function (e) {
   if (e.key === "Enter" && currentTabId) {
