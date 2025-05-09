@@ -6,7 +6,7 @@ The best Proxy And Game Website You will ever find
 
 ## Staff
 - CEO & FOUNDER - [@txvander](https://x.com/txvander)
-- COO - [@NextGenGaming](https://github.com/diddy-p)
+- COO - [@Oilerman](https://github.com/oilerman111)
 - CCO -[@TheKingBallen](https://github.com/your-local-indian)
 - CFO - [@Citraw](https://github.com/cyancitra)
 - CMO - [@NotEnoughJack](https://github.com/NotEnoughJack)
