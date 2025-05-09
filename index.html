@@ -598,7 +598,15 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <script src="shortcut.js"></script>
-                                                                                                                
+<script>
+  function isMobile() {
+  return /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+if (isMobile()) {
+  window.location.href = "mobile.html";
+}
+</script>                                                                                                          
   
 <script>
   const text = "Compass Network";
