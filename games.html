@@ -196,6 +196,18 @@ document.addEventListener('DOMContentLoaded', () => {
       </script>
 <script src="tabcloak.js"></script>
 
+<script>
+  function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+if (isMobile()) {
+
+  window.location.href = "mobile.html";
+}
+
+</script>
+
 
 <div class="menu">
   <div class="nav-left">

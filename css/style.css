@@ -959,6 +959,10 @@ align-items: center;
 gap: 15px;
 }
 
+.mobile-only-text {
+  display: none;
+}
+
 
 
 /*MOBILE SUPPORT*/
@@ -966,6 +970,10 @@ gap: 15px;
 .Title {
 font-size: 30px;
 margin-left: 80px;
+}
+
+.mobile-only-text {
+  display: block;
 }
 
 
@@ -983,12 +991,14 @@ margin-left: 80px;
   font-weight: bold;
   margin-top: 20px;
   margin-left: 60px;
+  
 }
 
 .settingsRow {
 display: flex;
 justify-content: center;
 flex-direction: column;
+width: 100;
 gap: 40px;
 
 }
