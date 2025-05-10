@@ -417,23 +417,15 @@ if (isMobile()) {
           <option value="strategy">Strategy Games</option>
           <option value="arcade">Arcade Games</option>
         </select>
-      </div>
-
-     
-      
-      
+      </div> 
       <div class="games" id="games">
         <div id="searchResults"></div>
       </div>
-      
       <script type="text/html" id="searchResultTemplate">
-        <div class="{{id}}">
-          <a  href="{{link}}"><img id="gameimg" loading="lazy" src="{{image}}"/><h2>{{title}}</h2></a>
-        </div>
-          </script>
-
-    
-      </div>
+            <div class="{{id}}">
+              <a  href="{{link}}"><img id="gameimg" loading="lazy" src="{{image}}"/><h2>{{title}}</h2></a>
+            </div>
+      </script>
   </div>
 
     
