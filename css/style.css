@@ -501,13 +501,14 @@ transition: .3s;
 border: 2px solid white;
 gap: 30px;
 margin-top: 30px;
-animation: fadeInUp 0.3s ease forwards;
 opacity: 0; 
 box-shadow: 0 0 8px rgba(255, 255, 255, 0.7); /* tight white glow */
 filter: brightness(0.9);
 
 
 }
+
+
 
 .game:hover {
   transform: translateY(-15px);
@@ -558,11 +559,9 @@ height: 190px;
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(10px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -570,6 +569,9 @@ height: 190px;
   animation: fadeInUp 0.3s ease forwards;
   opacity: 0; 
 }
+
+
+
 
 
 
