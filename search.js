@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.getElementById('searchInput');
     const categorySelect = document.getElementById('categorySelect');
     const searchResults = document.getElementById('searchResults');
@@ -11,16 +11,18 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             const mockData = data;
 
+            function renderTemplate(template, data) {
+                return template.replace(/{{(.*?)}}/g, (match, key) => data[key.trim()] || '');
+            }
+
             function renderSearchResults(searchTerm = '', category = 'all') {
                 searchResults.innerHTML = '';
 
-
                 const filteredResults = mockData.filter(item => {
-                    const itemCategory = String(item.category).trim().toLowerCase();  // Convert to string, trim, and lowercase
-                    const selectedCategory = String(category).trim().toLowerCase();  // Convert to string, trim, and lowercase
+                    const itemCategory = String(item.category).trim().toLowerCase();
+                    const selectedCategory = String(category).trim().toLowerCase();
                     const matchesSearch = item.title.toLowerCase().includes(searchTerm.toLowerCase());
                     const matchesCategory = category === 'all' || itemCategory === selectedCategory;
-
                     return matchesSearch && matchesCategory;
                 });
 
@@ -29,29 +31,42 @@ document.addEventListener('DOMContentLoaded', function() {
                     return;
                 }
 
-                filteredResults.forEach(result => {
+                filteredResults.forEach((result, index) => {
                     const renderedTemplate = renderTemplate(searchResultTemplate, result);
-                    searchResults.innerHTML += renderedTemplate;
+
+                    const wrapper = document.createElement('div');
+                    wrapper.innerHTML = renderedTemplate;
+                    const resultElement = wrapper.firstElementChild;
+
+                    resultElement.classList.add('fade-in');
+                    resultElement.style.animationDelay = `${index * 20}ms`;
+
+                    searchResults.appendChild(resultElement);
                 });
             }
 
-            function renderTemplate(template, data) {
-                return template.replace(/{{(.*?)}}/g, (match, key) => data[key.trim()] || '');
+            function debounce(fn, delay) {
+                let timeout;
+                return function (...args) {
+                    clearTimeout(timeout);
+                    timeout = setTimeout(() => fn.apply(this, args), delay);
+                };
             }
 
-            // Run search when page loads
+            const debouncedSearch = debounce(() => {
+                renderSearchResults(searchInput.value.trim(), categorySelect.value);
+            }, 250);
+
             renderSearchResults('', categorySelect.value);
 
-            // Search as user types
-            searchInput.addEventListener('input', function() {
-                renderSearchResults(searchInput.value.trim(), categorySelect.value);
-            });
+            searchInput.addEventListener('input', debouncedSearch);
 
-            // Search when category changes
-            categorySelect.addEventListener('change', function() {
-                renderSearchResults('', categorySelect.value); // Clears input and searches by category
-                searchInput.value = ''; // Reset the search field when category changes
+            categorySelect.addEventListener('change', function () {
+                renderSearchResults('', categorySelect.value);
+                searchInput.value = '';
             });
         })
         .catch(error => console.error('Error fetching data:', error));
 });
+
+//changed js for faster loading
