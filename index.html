@@ -565,20 +565,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+<center>
+  <form id="uv-form" onsubmit="handleSearch(event)" class="form-wrapper">
+    <input id="uv-search-engine" value="https://duckduckgo.com/?q=%s" type="hidden">
 
- 
-  <center>
-    <form id="uv-form" onsubmit="handleSearch(event)" class="form-wrapper">
-      <input id="uv-search-engine" value="https://duckduckgo.com/?q=%s" type="hidden">
-    
-      <div class="search-container">
-        <input id="uv-address" type="text" placeholder="Search The Web Freely" class="form__input">
-        <img src="images/search.png" width="25px" height="25px" alt="" class="magnify-icon">
-      </div>
-      <button id="favorites" type="button" onclick="toggleFavorite()"></button>
-    </form>                                 
-  </center>
-  
+    <div class="search-container">
+      <input id="uv-address" type="text" placeholder="Search The Web Freely" class="form__input">
+      <img src="images/search.png" width="25px" height="25px" alt="" class="magnify-icon">
+    </div>
+
+    <button id="favorites" type="button" onclick="toggleFavorite()"></button>
+  </form>
+</center>
+
+<!-- This should be outside the form -->
+<div id="favorite">
+  <button id="closeFavorite" onclick="toggleFavorite()">❌</button>
+  <p id="favp" style="color:white;text-align:center;display:none;">No favorites yet</p>
+  <div id="favorites-container"></div>
+</div>
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
   
 
 <div id="shortcuts-area" style="margin-top: 20px; text-align: center;">

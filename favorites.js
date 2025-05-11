@@ -12,7 +12,7 @@ async function fetchDataAndPopulateDropdown() {
     const dropdown = document.getElementById('favoritesDropdown');
     dropdown.innerHTML = '<option value="">--Select--</option>';
 
-    data.forEach((item, index) => {
+    data.forEach((item) => {
       const option = document.createElement('option');
       option.title = item.title;
       option.link = item.link;
@@ -25,52 +25,51 @@ async function fetchDataAndPopulateDropdown() {
   }
 }
 
-
 fetchDataAndPopulateDropdown();
 
 // Handle confirm click
 function saveFavorite() {
-    const dropdown = document.getElementById('favoritesDropdown');
-    const selectedIndex = dropdown.selectedIndex;
-    addfavorite.classList.remove("show");
-  
-    if (selectedIndex > 0) {
-      const selectedOption = dropdown.options[selectedIndex];
-  
-      const favoriteItem = {
-        title: selectedOption.title,
-        link: selectedOption.link,
-        image: selectedOption.image
-      };
-      let savedFavorites = JSON.parse(localStorage.getItem("selectedFavorites")) || [];
-      savedFavorites.push(favoriteItem);
-      localStorage.setItem("selectedFavorites", JSON.stringify(savedFavorites));
-      console.log("Saved favorite:", favoriteItem);
+  const dropdown = document.getElementById('favoritesDropdown');
+  const selectedIndex = dropdown.selectedIndex;
+  document.getElementById('addfavorite').classList.remove("show");
 
-  
-  }
-} 
-
-function addFavorite() {
-  const addfavorite = document.getElementById("addfavorite");
-  if (addfavorite.classList.contains("show")) {
-  addfavorite.classList.remove("show");
-  } else {
-  addfavorite.classList.add("show");
+  if (selectedIndex > 0) {
+    const selectedOption = dropdown.options[selectedIndex];
+    const favoriteItem = {
+      title: selectedOption.title,
+      link: selectedOption.link,
+      image: selectedOption.image
+    };
+    let savedFavorites = JSON.parse(localStorage.getItem("selectedFavorites")) || [];
+    savedFavorites.push(favoriteItem);
+    localStorage.setItem("selectedFavorites", JSON.stringify(savedFavorites));
+    console.log("Saved favorite:", favoriteItem);
   }
 }
 
+function addFavorite() {
+  const addfavorite = document.getElementById("addfavorite");
+  addfavorite.classList.toggle("show");
+}
+
 function toggleFavorite() {
-  if (favorite.classList.contains("show")) {
-  favorite.classList.remove("show");
-  } else {
-  favorite.classList.add("show");
-  }
-  }
+  const favorite = document.getElementById("favorite");
+  favorite.classList.toggle("show");
+}
 
 function displayFavorites() {
   const favoritesContainer = document.getElementById('favorites-container');
-  favoritesContainer.innerHTML = '<div class="favorite-blockadd" onclick="addFavorite()"><p>Add a favorite</p></div>'; // Clear existing content
+
+favoritesContainer.innerHTML = `
+  <div id="closeFavoriteBtn" onclick="toggleFavorite()">
+    <i class="fas fa-times close-icon"></i>  <!-- Font Awesome X icon -->
+  </div>
+  <div class="favorite-blockadd" onclick="addFavorite()">
+    <p>Add a favorite</p>
+  </div>
+`;
+
+
 
 
   const savedFavorites = JSON.parse(localStorage.getItem('selectedFavorites')) || [];
@@ -80,33 +79,24 @@ function displayFavorites() {
     return;
   }
 
+  document.getElementById('favp').style.display = 'none';
+
   savedFavorites.forEach((favorite, index) => {
     const favDiv = document.createElement('div');
     favDiv.className = 'favorite-block';
-
     favDiv.innerHTML = `
-
-
-      <a href="${favorite.link}"><img src="${favorite.image}"><p>${favorite.title}</p></a>  <button onclick="deleteFavorite(${index});">ⓧ</button>
+      <a href="${favorite.link}">
+        <img src="${favorite.image}"><p>${favorite.title}</p>
+      </a>
+      <button onclick="deleteFavorite(${index});">ⓧ</button>
     `;
-
-    
-
-    favoritesContainer.prepend(favDiv);
+    favoritesContainer.appendChild(favDiv);
   });
 }
 
 function deleteFavorite(index) {
   let savedFavorites = JSON.parse(localStorage.getItem('selectedFavorites')) || [];
-
-  // Remove the selected item
   savedFavorites.splice(index, 1);
-
-  // Save the updated list back to localStorage
   localStorage.setItem('selectedFavorites', JSON.stringify(savedFavorites));
-
-  // Refresh the display
   displayFavorites();
 }
-
-
