@@ -95,6 +95,8 @@ padding-bottom: 2.3rem;
 text-align: center;
 flex: 1 1 10%;
 max-width: 85px;
+ animation: fadeInUp 1s ease forwards;
+  opacity: 0; 
 }
 
 .credit-item img {
@@ -150,7 +152,6 @@ box-shadow: 0 0 20px rgba(0, 0, 0, 0), 0 0 30px rgba(0, 0, 0, 0);
 
 
 
-
 body {
 
 background-color: #272727;
@@ -178,7 +179,10 @@ padding-top: 5px;
 margin: 0 auto;
 display: flex;
 justify-content: center;
+ animation: fadeInUp 1s ease forwards;
+  opacity: 0; 
 }
+
 
 .h1p {
 font-size: 12rem;
@@ -333,6 +337,8 @@ text-shadow: 7px 7px 7px black;
   border: 2px solid white;
  box-shadow: 0 0 8px rgba(255, 255, 255, 0.7); 
  filter: brightness(0.9);
+    animation: fadeInUp 0.3s ease forwards;
+  opacity: 0; 
 }
 
 #searchInput::placeholder {
@@ -448,6 +454,8 @@ padding: 60px;
   height: 1.8rem;
   color: white; 
   transition: color 0.3s ease, text-shadow 0.3s ease;
+   animation: fadeInUp 1s ease forwards;
+  opacity: 0; 
 }
 
 
@@ -635,7 +643,8 @@ position: relative;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
   font-size: 16px;
   position: relative;
-
+   animation: fadeInUp 1s ease forwards;
+  opacity: 0; 
 }
 
 
@@ -697,7 +706,10 @@ border:none;
   background-image: url("../images/star.png");  
   background-size: cover;  
   background-position: center;
+   animation: fadeInUp 1s ease forwards;
+  opacity: 0; 
 }
+
 
  #favorites:hover {
   filter: brightness(1.2); 
@@ -974,7 +986,10 @@ margin-top: 100px;
   padding: 0px 18px;
   cursor: pointer;
   border: 2px solid white;
+   animation: fadeInUp 1s ease forwards;
+  opacity: 0; 
 }
+
 
 .add-shortcut .btn-content {
   display: flex;
@@ -1070,6 +1085,8 @@ src: url(/fonts/fredoka.ttf);
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
   filter: brightness(0.9);
+ animation: fadeInUp 0.3s ease forwards;
+  opacity: 0; 
 }
 
 #categorySelect:hover,
@@ -1467,6 +1484,8 @@ color: rgb(0, 0, 0);
   flex-shrink: 0;
   font-weight: bold;
   margin-top: 20px;
+ animation: fadeInUp 1s ease forwards;
+  opacity: 0; 
 }
 
 
