@@ -418,6 +418,12 @@ if (isMobile()) {
           <option value="arcade">Arcade Games</option>
         </select>
       </div> 
+        <center>
+          <button onclick="exportLocalStorage()">Download Save</button>
+          <button id="loadSaveBtn">Load Save</button>
+          <input type="file" id="uploadSave" accept=".txt" style="display:none"/>
+          <script src="save.js"></script>
+        </center>
       <div class="games" id="games">
         <div id="searchResults"></div>
       </div>
@@ -426,6 +432,8 @@ if (isMobile()) {
               <a  href="{{link}}"><img id="gameimg" loading="lazy" src="{{image}}"/><h2>{{title}}</h2></a>
             </div>
       </script>
+
+      
   </div>
 
     
